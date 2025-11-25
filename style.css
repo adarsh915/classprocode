@@ -5,16 +5,21 @@
     width: 180px;
     height: auto;
 }
+/* .dropdown-menu[data-bs-popper] {
+    top: 67%;
+    left: 0;
+    
+} */
 
 /* MAIN MEGA DROPDOWN */
 .mega-dropdown {
-    width: 90vw;
+    width: 80vw;
     max-width: 900px;
     border-radius: 22px;
     background: #fff;
     border: 1px solid rgba(0,0,0,0.12);
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX( 15%);
     padding: 40px 50px !important;
 }
 
@@ -24,6 +29,7 @@
     border-radius: 22px;
     background: #fff;
     border: 1px solid rgba(0,0,0,0.12);
+    transform: translateX( -32%);
     padding: 30px !important;
 }
 .fornw-bg {
@@ -681,7 +687,7 @@
       url("image/home/Vectornew.png"),
       linear-gradient(183deg, #4338CA 0.86%, #262078 51.28%, #010D45 90.56%);
 
-  background-size: 98%, cover;
+  background-size: 100%, cover;
   background-repeat: no-repeat, no-repeat;
   background-position: bottom center, center;
 
