@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Class-Pro</title>
+        <!-- Bootstrap 5 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- swiper slider link -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="style.css">
+        <style>
+        /* UNIQUE CSS CLASS NAMES */
+        body {
+            background: #f7f9fc;
+        }
+
+        /* HERO SECTION */
+        .hero-full-container {
+           
+            padding: 40px 0;
+            border-radius: 0 0 25px 25px;
+            
+        }
+
+        .hero-image-box img {
+            border-radius: 20px;
+            width: 100%;
+            height: auto;
+        }
+
+        /* SIDEBAR */
+        .blg-sidebar-box {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 16px;
+            box-shadow: 0px 5px 12px rgba(0,0,0,0.05);
+        }
+
+        .blg-sidebar-title {
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        /* POSTS */
+        .blg-card {
+            border-radius: 15px;
+            overflow: hidden;
+            background: #ffffff;
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.06);
+            transition: 0.3s;
+        }
+
+        .blg-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .blg-card-img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+        }
+
+        .blg-card-body {
+            padding: 15px 0px;
+        }
+
+        .blg-pagination .page-link {
+            border-radius: 8px;
+            margin: 0 5px;
+        }
+        /* search bar css */
+         .search-wrapper {
+        position: relative;
+        padding: 10px 15px;
+        display: flex;
+        align-items: center;
+    }
+
+    .search-input {
+        border: none;
+        outline: none;
+        background: transparent;
+        width: 100%;
+        font-size: 15px;
+        color: #333;
+    }
+
+    .search-input::placeholder {
+        color: #9aa0a6;
+    }
+
+    .search-icon {
+        font-size: 18px;
+        color: #555;
+        margin-left: 8px;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    .search-icon:hover {
+        transform: scale(1.1);
+    }
+    .list-unstyled a{
+        text-decoration: none;
+        color: black;
+    }
+    .page-link{
+        color: black !important;
+        margin-right: 10px;
+    }
+    .page-link:hover{
+        background-color: green;
+        color: black !important;
+    }
+        </style>
+    </head>
+    <body>
+        <!-- 🔹 NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+            <div class="container">
+                <a class=" fs-3 main-logo" href="#">
+                    <img src="image/Classpro full website/header/classpro-logo 2 copy.svg" alt>
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                        <li class="nav-item dropdown mx-2">
+                            <a
+                                class="nav-link fw-semibold d-flex align-items-center"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                <span class="me-1">Features</span>
+                                <img
+                                    src="image/Desktop - Classpro Landing Page/header/Vector 58.svg"
+                                    alt
+                                    width="12"
+                                    height="7"
+                                    class="mt-1"
+                                >
+                            </a>
+                            <div class="dropdown-menu mega-dropdown shadow-lg">
+                                <div class="row g-4">
+                                    <div class="col-md-4">
+                                        <div class="feature-item">
+                                            Transparent
+                                            Fee Management
+                                        </div>
+                                        <div class="divider"></div>
+                                        <div class="feature-item">
+                                            Share
+                                            Notes/Study Materials
+                                        </div>
+                                        <div class="divider"></div>
+                                        <div class="feature-item">
+                                            Homework &
+                                            Assignments
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="feature-item">
+                                            Biometric
+                                            Attendance
+                                        </div>
+                                        <div class="divider"></div>
+                                        <div class="feature-item">
+                                            Student
+                                            Performance
+                                        </div>
+                                        <div class="divider"></div>
+                                        <div class="feature-item">
+                                            Insightful
+                                            Reports
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="feature-item">
+                                            Student/Parent
+                                            App
+                                        </div>
+                                        <div class="divider"></div>
+                                        <div class="feature-item">
+                                            Send
+                                            Communication And Reminders
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown mx-2">
+                            <a
+                                class="nav-link fw-semibold d-flex align-items-center gap-1"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                Company
+                                <img
+                                    src="image/Desktop - Classpro Landing Page/header/Vector 58.svg"
+                                    alt="dropdown icon"
+                                    width="12"
+                                    height="7"
+                                    class="mt-1"
+                                >
+                            </a>
+                            <!-- SAME mega dropdown box style -->
+                            <div class="dropdown-menu mega-dropdown-new shadow-lg">
+                                <div class="row g-4">
+                                    <div class="col-md-12">
+                                        <div class="feature-item">Career</div>
+                                        <div class="divider"></div>
+                                        <div class="feature-item">Team</div>
+                                        <div class="divider"></div>
+                                        <div class="feature-item">About</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link fw-semibold" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item dropdown mx-2">
+                            <a
+                                class="nav-link fw-semibold d-flex align-items-center gap-1"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                Resources
+                                <img
+                                    src="image/Desktop - Classpro Landing Page/header/Vector 58.svg"
+                                    alt="dropdown icon"
+                                    width="12"
+                                    height="7"
+                                    class="mt-1"
+                                >
+                            </a>
+                            <!-- SAME mega dropdown box style -->
+                            <div class="dropdown-menu mega-dropdown-new shadow-lg">
+                                <div class="row g-4">
+                                    <div class="col-md-12">
+                                        <div class="feature-item">blogs</div>
+                                        <div class="divider"></div>
+                                        <div class="feature-item">Testimonials</div>
+                                        <div class="divider"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link fw-semibold" href="#">
+                                Contact
+                                Us
+                            </a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <button class="btn btn-outline-success px-4 rounded-pill">
+                                Log In
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <!-- 🔥 One shared container for ALL -->
+            <!-- ================= HERO FULL WIDTH ================= -->
+            <section class="hero-full-container mt-4">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6">
+                        <div class="hero-image-box">
+                            <img src="image/blog/bloghero.png" alt="Hero Image">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h6 class="text-muted mb-3">Featured • Coaching Management</h6>
+                        <h2 class="fw-bold mb-3">Online Assignment Module: Send, Collect & Share Feedback Easily</h2>
+                        <p class="text-muted mb-3">
+                            With online assignments now a great source of insights into student learning...
+                        </p>
+                        <a href="#" class="btn btn-success mt-2">Read More</a>
+                    </div>
+                </div>
+            </section>
+            <!-- ================= MAIN CONTENT ================= -->
+            <div class="py-5">
+                <div class="row g-4">
+                    <!-- SIDEBAR -->
+                    <div class="col-lg-4">
+                        <!-- Search -->
+                        <div class="blg-sidebar-box mb-5">
+                            <div class="search-wrapper">
+                                <input type="text" class="search-input" placeholder="Search">
+                                <span class="search-icon"><img src="image/blog/Vector.svg" alt></span>
+                            </div>
+                        </div>
+                        <!-- Categories -->
+                        <div class="blg-sidebar-box mb-5">
+                            <h5 class="blg-sidebar-title">Categories</h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#" class="fw-bold">Coaching Management Software</a>
+                                </li>
+                                <hr>
+                                <li>
+                                    <a href="#">Online Assignment</a>
+                                </li>
+                                 <hr>
+                                <li>
+                                    <a href="#">Online Teaching</a>
+                                </li>
+                                 <hr>
+                                <li>
+                                    <a href="#">Online Teaching App</a>
+                                </li>
+                                 <hr>
+                            </ul>
+                        </div>
+                        <!-- Top Posts -->
+                        <div class="blg-sidebar-box">
+                            <h5 class="blg-sidebar-title">Top Posts</h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#">Razorpay Integration: Start Accepting Payments Today</a>
+                                </li>
+                                 <hr>
+                                <li>
+                                    <a href="#">Online Assignment Module: Send, Collect, and Share Feedback Easily</a>
+                                </li>
+                                 <hr>
+                                <li>
+                                    <a href="#">Choosing The Best Coaching Classes Management Software</a>
+                                </li>
+                                 <hr>
+                                <li>
+                                    <a href="#">Edtech: Unlocking students’ and teachers’ hidden potential</a>
+                                </li>
+                                 <hr>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- POSTS -->
+                    <div class="col-lg-8">
+                        <div class="row g-4">
+                            <!-- CARD 1 -->
+                            <div class="col-md-6">
+                                <div class="blg-card">
+                                    <img src="image/blog/1.png" class="blg-card-img">
+                                </div>
+                                <div class="blg-card-body">
+                                    <h6 class="">Online Assignment Module: Send, Collect, & Share Feedback EasilyGoogle Classroom Alternative</h6>
+                                    <!-- <p class="text-muted small">Send, Collect & Share Feedback</p> -->
+                                </div>
+                            </div>
+                            <!-- CARD 2 -->
+                            <div class="col-md-6">
+                                <div class="blg-card">
+                                    <img src="image/blog/2.jpg" class="blg-card-img">
+                                </div>
+                                <div class="blg-card-body">
+                                    <h6 class="">Google Course Kit: Upgrade your Learning Management System</h6>
+                                    <!-- <p class="text-muted small">Send, Collect & Share Feedback</p> -->
+                                </div>
+                            </div>
+                            <!-- CARD 3 -->
+                            <div class="col-md-6">
+                                <div class="blg-card">
+                                    <img src="image/blog/3.jpg" class="blg-card-img">
+                                </div>
+                                <div class="blg-card-body">
+                                    <h6 class="">How to keep coaching business running during vacation time?</h6>
+                                    <!-- <p class="text-muted small">Send, Collect & Share Feedback</p> -->
+                                </div>
+                            </div>
+                            <!-- CARD 4 -->
+                            <div class="col-md-6">
+                                <div class="blg-card">
+                                    <img src="image/blog/4.png" class="blg-card-img">
+                                </div>
+                                <div class="blg-card-body">
+                                    <h6 class="">5 Important Features a coaching class should look in a Coaching Management Software</h6>
+                                    <!-- <p class="text-muted small">Send, Collect & Share Feedback</p> -->
+                                </div>
+                            </div>
+                            <!-- CARD 5 -->
+                            <div class="col-md-6">
+                                <div class="blg-card">
+                                    <img src="image/blog/5.png" class="blg-card-img">
+                                </div>
+                                <div class="blg-card-body">
+                                    <h6 class="">6 Tips for Coaching Classes to Grow Visibility on Google</h6>
+                                    <!-- <p class="text-muted small">Send, Collect & Share Feedback</p> -->
+                                </div>
+                            </div>
+                            <!-- CARD 6 -->
+                            <div class="col-md-6">
+                                <div class="blg-card">
+                                    <img src="image/blog/6.png" class="blg-card-img">
+                                </div>
+                                <div class="blg-card-body">
+                                    <h6 class="">Introducing the new Classpro How to Videos</h6>
+                                    <!-- <p class="text-muted small">Send, Collect & Share Feedback</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- PAGINATION -->
+                        <div class="col-md-6"></div>
+                        <nav class="mt-4">
+                            <ul class="pagination blg-pagination justify-content-start">
+                                <li class="page-item">
+                                    <a class="page-link" href="#">1</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">2</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">3</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END main container -->
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</html>
