@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Story</title>
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+<style>
+    body {
+        font-family: "Poppins", sans-serif;
+        background: #ffffff;
+    }
+
+    /* Our Story Heading */
+    .story-title {
+        font-size: 36px;
+        font-weight: 600;
+        color: #1E9C6B;
+        margin-bottom: 20px;
+    }
+
+    .story-text {
+        font-size: 15px;
+        line-height: 1.8;
+        color: #555;
+    }
+
+    /* Right Polaroid Image Style */
+    .story-img {
+        width: 240px;
+        border-radius: 10px;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        transform: rotate(3deg);
+    }
+    .story-img:nth-child(2) {
+        transform: rotate(-4deg);
+        margin-left: -50px;
+        margin-top: 20px;
+    }
+
+    /* Stats Bar */
+    .stats-box {
+        background: linear-gradient(90deg, #2F3FE3, #0B1A47);
+        color: #ffffff;
+        border-radius: 18px;
+        padding: 25px 10px;
+        margin: 50px 0;
+    }
+
+    .stats-item {
+        text-align: center;
+    }
+
+    .stats-icon {
+        font-size: 26px;
+        margin-bottom: 5px;
+        display: block;
+    }
+
+    .stats-title {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .stats-subtitle {
+        font-size: 13px;
+        opacity: 0.9;
+    }
+
+    /* Vision & Mission Circles */
+    .circle-container {
+        position: relative;
+        margin-top: 60px;
+    }
+
+    .circle {
+        width: 380px;
+        height: 380px;
+        border: 2px solid #CFCFCF;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        text-align: center;
+    }
+
+    .circle-title {
+        font-size: 26px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .vision-title {
+        color: #1E9C6B;
+    }
+
+    .mission-title {
+        color: #4B3FEF;
+    }
+
+    .circle-text {
+        font-size: 14px;
+        color: #555;
+        margin-top: 10px;
+    }
+
+    /* Overlap Handling */
+    .circle-left {
+        margin-right: -120px;
+    }
+
+    .circle-right {
+        margin-left: -120px;
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 768px) {
+        .circle {
+            width: 300px;
+            height: 300px;
+            padding: 20px;
+        }
+        .circle-left, .circle-right {
+            margin: 0 auto;
+        }
+    }
+
+
+    /* jkbjkb */
+
+
+    /* Section background */
+.values-section {
+    background: #eaf3fc;
+}
+
+/* Title */
+.value-title {
+    color: #1ca44b;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+/* Icons */
+.value-icon {
+    font-size: 32px;
+    color: #0b1673;
+}
+
+/* Text beside icon */
+.value-text {
+    color: #0b1673;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Image Frame Styling */
+.img-frame {
+    display: inline-block;
+    padding: 10px;
+    background: #fff;
+    border-radius: 4px;
+    transform: rotate(4deg);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.values-img {
+    border-radius: 4px;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+    .value-title {
+        text-align: center;
+    }
+    .value-icon {
+        font-size: 28px;
+    }
+    .img-frame {
+        transform: rotate(0deg);
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container py-5">
+
+    <!-- Our Story Row -->
+    <div class="row align-items-center">
+
+        <!-- Left Content -->
+        <div class="col-md-6">
+            <h2 class="story-title">Our Story</h2>
+            <p class="story-text">
+                The fundamental ideology driving Classpro is to empower coaching classes by streamlining their 
+                administrative processes through a user-friendly software setup that can be completed in just 
+                10 minutes. We firmly believe that the key to effective management lies in adapting and learning 
+                at the same pace as the rapidly evolving world around us. With this conviction, we strive to equip 
+                coaching institutes with the tools and resources needed to stay ahead in an ever-changing landscape.
+            </p>
+        </div>
+
+        <!-- Right Images -->
+        <div class="col-md-6 d-flex justify-content-center">
+            <div>
+                <img src="/mnt/data/b0cdaf52-ff5f-43d7-af48-71344751a2d3.png" class="story-img" alt="story-img">
+                <img src="/mnt/data/b0cdaf52-ff5f-43d7-af48-71344751a2d3.png" class="story-img" alt="story-img">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Stats Section -->
+    <div class="stats-box row text-center">
+
+        <div class="col-md-3 stats-item">
+            <span class="stats-icon">👥</span>
+            <div class="stats-title">2000+</div>
+            <div class="stats-subtitle">Partners</div>
+        </div>
+
+        <div class="col-md-3 stats-item">
+            <span class="stats-icon">📍</span>
+            <div class="stats-title">37 cities</div>
+            <div class="stats-subtitle">in Asia</div>
+        </div>
+
+        <div class="col-md-3 stats-item">
+            <span class="stats-icon">🏢</span>
+            <div class="stats-title">2011</div>
+            <div class="stats-subtitle">Establishment</div>
+        </div>
+
+        <div class="col-md-3 stats-item">
+            <span class="stats-icon">🏢</span>
+            <div class="stats-title">2011</div>
+            <div class="stats-subtitle">Establishment</div>
+        </div>
+
+    </div>
+
+    <!-- Vision & Mission -->
+    <div class="row justify-content-center circle-container">
+
+        <div class="col-md-5 d-flex justify-content-center">
+            <div class="circle circle-left">
+                <h3 class="circle-title vision-title">Vision</h3>
+                <p class="circle-text">
+                    To revolutionize coaching management by providing innovative software solutions, enabling 
+                    coaching institutes to thrive in an evolving educational landscape.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-5 d-flex justify-content-center">
+            <div class="circle circle-right">
+                <h3 class="circle-title mission-title">Mission</h3>
+                <p class="circle-text">
+                    Empower coaching institutes across India and Asia with intuitive, efficient, and 
+                    user-friendly management software.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    
+<section class="values-section py-5">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+
+            <!-- LEFT SIDE CONTENT -->
+            <div class="col-lg-6">
+                <h3 class="value-title mb-4">Values</h3>
+
+                <div class="row">
+                    <div class="col-md-6 mb-4 d-flex align-items-center">
+                        <i class="bi bi-people-fill value-icon"></i>
+                        <span class="ms-3 value-text">Customer-Centric</span>
+                    </div>
+
+                    <div class="col-md-6 mb-4 d-flex align-items-center">
+                        <i class="bi bi-lightbulb value-icon"></i>
+                        <span class="ms-3 value-text">Innovation</span>
+                    </div>
+
+                    <div class="col-md-6 mb-4 d-flex align-items-center">
+                        <i class="bi bi-hand-thumbs-up value-icon"></i>
+                        <span class="ms-3 value-text">Community Impact</span>
+                    </div>
+
+                    <div class="col-md-6 mb-4 d-flex align-items-center">
+                        <i class="bi bi-handshake value-icon"></i>
+                        <span class="ms-3 value-text">Integrity</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT SIDE IMAGE -->
+            <div class="col-lg-5 text-center mt-4 mt-lg-0">
+                <div class="img-frame">
+                    <img src="/mnt/data/Screenshot 2025-11-25 225033.png" class="img-fluid values-img" alt="Values Image">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<!-- AWARDS SECTION -->
+<section class="awards py-5 text-center">
+<div class="container">
+<div class="row justify-content-center">
+
+
+<div class="col-6 col-sm-4 col-md-2 mb-4">
+<p class="award-text">18<br>International Clients</p>
+</div>
+
+
+<div class="col-6 col-sm-4 col-md-2 mb-4">
+<img src="https://via.placeholder.com/120x50" class="img-fluid mb-2" />
+<p class="award-text">Software Suggest</p>
+</div>
+
+
+<div class="col-6 col-sm-4 col-md-2 mb-4">
+<img src="https://img.icons8.com/ios-filled/80/trophy.png" class="img-fluid mb-2" />
+<p class="award-text">Award-winning support team</p>
+</div>
+
+
+<div class="col-6 col-sm-4 col-md-2 mb-4">
+<img src="https://via.placeholder.com/120x50" class="img-fluid mb-2" />
+<p class="award-text">Your Story</p>
+</div>
+
+
+<div class="col-6 col-sm-4 col-md-2 mb-4">
+<p class="award-text">18<br>International Clients</p>
+</div>
+</div>
+
+
+<!-- SLIDER BUTTONS -->
+<div class="d-flex justify-content-center gap-4 mt-4">
+<button class="nav-btn">&#8592;</button>
+<button class="nav-btn">&#8594;</button>
+</div>
+</div>
+</section>
+</div>
+
+</body>
+</html>
