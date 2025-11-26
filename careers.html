@@ -1,419 +1,413 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Career Section</title>
-
-<!-- Bootstrap CDN -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<style>
-    /* HERO AREA */
-   
-
-    @font-face {
-    font-family: "MyFont";
-    src: url("assets/fonts/TTF/ClashGrotesk-Variable.ttf") format("truetype"),
-         url("assets/fonts/OTF/ClashGrotesk-Regular.otf") format("opentype");
-    font-weight: normal;
-    font-style: normal;
-}
- :root {
-    --font-primary: "MyFont", Clash Grotesk;
-    --font-secondary: "Clash Grotesk", sans-serif;
-    }
-
-
-
-    .career-hero-section {
-        padding: 60px 0;
-    }
-    body {
-    font-family: var(--font-primary);
-}
-    .career-title {
-        font-family: var(--font-primary);
-        font-size: 60px;
-        font-weight: 700;
-        color: #1f8c3c;
-        line-height: 1.2;
-        
-    }
-    .career-image-box img {
-        width: 100%;
-        border-radius: 12px;
-        box-shadow: 0px 10px 25px rgba(0,0,0,0.15);
-        transform: rotate(2deg);
-    }
-
-    /* JOB CARD */
-    .job-card-box {
-        background: #eaf4ff;
-        border-radius: 20px;
-        padding: 35px;
-        margin-bottom: 40px;
-    }
-    .job-title {
-        font-weight: 700;
-        font-size: 26px;
-        color: #1f8c3c;
-    }
-
-    .job-meta {
-        font-size: 14px;
-        color: #777;
-        margin-bottom: 10px;
-    }
-
-    .job-badge {
-        font-size: 14px;
-        padding: 6px 15px;
-        border-radius: 20px;
-        border: 1px solid green;
-        margin-right: 10px;
-        margin-bottom: 10px;
-        display: inline-block;
-    }
-
-    .job-desc {
-        color: #555;
-        line-height: 1.6;
-        margin-top: 10px;
-    }
-
-    .job-btn {
-        margin-top: 15px;
-        background: #1f8c3c;
-        color: white;
-        border-radius: 25px;
-        padding: 8px 25px;
-        font-size: 14px;
-    }
-
-    @media (max-width: 768px) {
-        .career-title {
-            font-size: 32px;
-        }
-    }
-
-
-    /* Main card style */
-/* Testimonial Card */
-.testi-card-box {
-    background: #F6F6F7;
-    border-radius: 16px;
-    padding: 25px;
-    transition: 0.3s;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Keeps user section at bottom */
-}
-
-.testi-card-box:hover {
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-}
-
-/* Testimonial Text */
-.testi-text {
-    font-size: 14px;
-    color: #444;
-    line-height: 1.7;
-    margin-bottom: auto; /* Pushes user section down */
-}
-
-/* User Section */
-.testi-user {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-top: 25px;
-}
-
-.testi-user-img {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-}
-
-.testi-user-name {
-    font-weight: 600;
-    margin: 0;
-    font-size: 15px;
-}
-
-.testi-user-info {
-    font-size: 13px;
-    color: #666;
-}
-
-/* Responsive */
-@media (max-width: 767px) {
-    .testi-card-box {
-        padding: 20px;
-    }
-}
-
-
-
-
-/*  */
-/* Section title */
-.wc-title {
-    font-weight: 700;
-    font-size: 32px;
-    color: #21a36a;
-    margin-bottom: 40px;
-}
-
-/* Work Culture Card */
-.wc-card {
-    border-radius: 10px;
-    padding: 25px;
-    height: 100%;
-    background: #F6F6F7;
-}
-
-/* Text card title */
-.wc-card-title {
-    font-size: 20px;
-    font-weight: 700;
-    color: #1c3c8f;
-    margin-bottom: 15px;
-}
-
-/* Text paragraph */
-.wc-card-text {
-    font-size: 14px;
-    color: #555;
-    line-height: 1.7;
-    margin-bottom: 0;
-}
-
-/* Image Style */
-.wc-img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 6px;
-}
-
-/* Responsive */
-@media (max-width: 767px) {
-    .wc-img {
-        height: 220px;
-    }
-}
-
-</style>
-
-</head>
-<body>
-
-<!-- HERO SECTION -->
-<section class="career-hero-section">
-    <div class="container">
-        <div class="row align-items-center gy-4">
-            
-            <div class="col-md-7">
-                <h2 class="career-title">Kick start your career<br>with "Classpro"</h2>
-            </div>
-
-            <div class="col-md-5">
-                <div class="career-image-box">
-                    <img src="image/careers/hero.jpg" alt="Career Image">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Class-Pro</title>
+        <!-- Bootstrap 5 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- swiper slider link -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- 🔹 NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+            <div class="container">
+                <a class="navbar-brand fs-3 main-logo" href="#">
+                    <img src="image/home/Classpro full website/header/classpro-logo 2 copy.svg" alt>
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                        <!-- FEATURES -->
+                        <li class="nav-item dropdown mx-2 position-static">
+                            <a class="nav-link fw-semibold d-flex align-items-center" href="#" data-bs-toggle="dropdown">
+                                <span class="me-1">Features</span>
+                                <img
+                                    src="image/home/Desktop - Classpro Landing Page/header/Vector 58.svg"
+                                    width="12"
+                                    height="7"
+                                    class="mt-1"
+                                >
+                            </a>
+                            <div class="dropdown-menu mega-dropdown shadow-lg p-4" style="top: 89%;">
+                                <div class="row g-4">
+                                    <div class="col-md-4">
+                                        <div class="feature-item">
+                                            Transparent
+                                            Fee Management
+                                        </div>
+                                        <div class="divider"></div>
+                                        <div class="feature-item">
+                                            Share
+                                            Notes/Study Materials
+                                        </div>
+                                        <div class="divider"></div>
+                                        <div class="feature-item">
+                                            Homework &
+                                            Assignments
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="feature-item">
+                                            Biometric
+                                            Attendance
+                                        </div>
+                                        <div class="divider"></div>
+                                        <div class="feature-item">
+                                            Student
+                                            Performance
+                                        </div>
+                                        <div class="divider"></div>
+                                        <div class="feature-item">
+                                            Insightful
+                                            Reports
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="feature-item">
+                                            Student/Parent
+                                            App
+                                        </div>
+                                        <div class="divider"></div>
+                                        <div class="feature-item">
+                                            Send
+                                            Communication & Reminders
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- COMPANY -->
+                        <li class="nav-item dropdown mx-2">
+                            <a class="nav-link fw-semibold d-flex align-items-center gap-1" href="#" data-bs-toggle="dropdown">
+                                Company
+                                <img
+                                    src="image/home/Desktop - Classpro Landing Page/header/Vector 58.svg"
+                                    width="12"
+                                    height="7"
+                                    class="mt-1"
+                                >
+                            </a>
+                            <div class="dropdown-menu small-dropdown shadow-lg p-4 mt-3">
+                                <div class="feature-item">Career</div>
+                                <div class="divider"></div>
+                                <div class="feature-item">Team</div>
+                                <div class="divider"></div>
+                                <div class="feature-item">About</div>
+                            </div>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link fw-semibold" href="#">Pricing</a>
+                        </li>
+                        <!-- RESOURCES -->
+                        <li class="nav-item dropdown mx-2">
+                            <a class="nav-link fw-semibold d-flex align-items-center gap-1" href="#" data-bs-toggle="dropdown">
+                                Resources
+                                <img
+                                    src="image/home/Desktop - Classpro Landing Page/header/Vector 58.svg"
+                                    width="12"
+                                    height="7"
+                                    class="mt-1"
+                                >
+                            </a>
+                            <div class="dropdown-menu small-dropdown shadow-lg p-4 mt-3">
+                                <div class="feature-item">Blogs</div>
+                                <div class="divider"></div>
+                                <div class="feature-item">Testimonials</div>
+                            </div>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link fw-semibold" href="#">
+                                Contact
+                                Us
+                            </a>
+                        </li>
+                        <li class="nav-item ms-2 ms-lg-3">
+                            <button class="btn btn-outline-success px-4 fornw-bg  rounded-pill">
+                                Log In
+                            </button>
+                        </li>
+                    </ul>
                 </div>
             </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- JOB LIST SECTION -->
-<section class="py-4">
-    <div class="container">
-
-        <!-- JOB CARD 1 -->
-        <div class="job-card-box">
-            <div class="row">
-                <div class="col-md-6">
-                    <h4 class="job-title">Engineering</h4>
-                    <p class="job-meta">
-                        <img src="image/careers/location.svg"> Mumbai &nbsp;&nbsp; <img src="image/careers/calender.svg"> 26 Nov 2021
-                    </p>
-                </div>
-            <div class="col-md-6">
-            <div class="my-2">
-                <span class="job-badge">JavaScript</span>
-                <span class="job-badge">React Native</span>
-                <span class="job-badge">Redux Developer</span>
-            </div>
-
-            <p class="job-desc">
-               We are looking for talented Javascript developer who want to join our engineering team to build great application for Education domain. You will be taking a senior/lead role in building React / React Native / Javascript applications.
-            </p>
-
-            <button class="btn job-btn">View Details</button>
-            </div>
-             </div>
-        </div>
-
-        <!-- JOB CARD 2 -->
-        <div class="job-card-box">
-            <div class="row">
-                <div class="col-md-6">
-                    <h4 class="job-title">Developer</h4>
-                    <p class="job-meta">
-                      <img src="image/careers/location.svg"> Mumbai &nbsp;&nbsp; <img src="image/careers/calender.svg"> 26 Nov 2021
-                    </p>
-                </div>
-
-            <div class="col-md-6">
-            <div class="my-2">
-                <span class="job-badge">JavaScript</span>
-                <span class="job-badge">React Native</span>
-                <span class="job-badge">Redux Developer</span>
-            </div>
-
-            <p class="job-desc">
-                We are looking for talented Javascript developer who want to join our engineering team to build great application for Education domain. You will be taking a senior/lead role in building React / React Native / Javascript applications.
-            </p>
-
-            <button class="btn job-btn">View Details</button>
-            </div>
-        </div>
-        </div>
-
-    </div>
-</section>
-<section class="testi-section-wrap py-5">
-    <div class="container">
-        <div class="row g-4">
-            <!-- Testimonial 1 -->
-            <div class="col-lg-6 col-md-6">
-                <div class="testi-card-box">
-                    <p class="testi-text">
-                        After implementing Classpro for just 10 days in trial we were able to take 40+ new admissions
-                        and generate a revenue of 15+ lacs during lockdown period. Classpro provided us with an integrated
-                        tool on top of Zoom which helped in ensuring reliability.
-                    </p>
-
-                    <div class="testi-user">
-                        <img src="image/careers/red.png" class="testi-user-img">
-                        <div>
-                            <h6 class="testi-user-name">Mahesh Jadhavar</h6>
-                            <span class="testi-user-info">Ariv Education</span>
+        </nav>
+        <!-- nav bar end -->
+        <!-- HERO SECTION -->
+        <section class="career-hero-section">
+            <div class="container">
+                <div class="row align-items-center gy-4">
+                    <div class="col-md-7">
+                        <h2 class="career-title">Kick start your career
+                            <br>with "Classpro"
+                        </h2>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="career-image-box">
+                            <img src="image/careers/hero.jpg" alt="Career Image">
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Testimonial 2 -->
-            <div class="col-lg-3 col-md-6">
-                <div class="testi-card-box">
-                    <p class="testi-text">
-                        After implementing Classpro for just 10 days in trial we were able to take 40+ new admissions
-                        and generate a revenue of 15+ lacs during lockdown period. Classpro provided us with an integrated
-                        tool on top of Zoom which helped in ensuring reliability.
-                    </p>
-
-                    <div class="testi-user">
-                        <img src="image/careers/red.png" class="testi-user-img">
-                        <div>
-                            <h6 class="testi-user-name">Mahesh Jadhavar</h6>
-                            <span class="testi-user-info">Ariv Education</span>
+        </section>
+        <!-- JOB LIST SECTION -->
+        <section class="py-4">
+            <div class="container">
+                <!-- JOB CARD 1 -->
+                <div class="job-card-box">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4 class="job-title">Engineering</h4>
+                            <p class="job-meta">
+                                <img src="image/careers/location.svg"> Mumbai &nbsp;&nbsp;
+                                <img src="image/careers/calender.svg">
+                                26 Nov 2021
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="my-2">
+                                <span class="job-badge">JavaScript</span>
+                                <span class="job-badge">React Native</span>
+                                <span class="job-badge">Redux Developer</span>
+                            </div>
+                            <p class="job-desc">
+                                We are looking for talented Javascript developer who want to join our engineering team to build great application for Education domain. You will be taking a senior/lead role in building React / React Native / Javascript applications.
+                            </p>
+                            <button class="btn job-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- JOB CARD 2 -->
+                <div class="job-card-box">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4 class="job-title">Developer</h4>
+                            <p class="job-meta">
+                                <img src="image/careers/location.svg"> Mumbai &nbsp;&nbsp;
+                                <img src="image/careers/calender.svg">
+                                26 Nov 2021
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="my-2">
+                                <span class="job-badge">JavaScript</span>
+                                <span class="job-badge">React Native</span>
+                                <span class="job-badge">Redux Developer</span>
+                            </div>
+                            <p class="job-desc">
+                                We are looking for talented Javascript developer who want to join our engineering team to build great application for Education domain. You will be taking a senior/lead role in building React / React Native / Javascript applications.
+                            </p>
+                            <button class="btn job-btn">View Details</button>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Testimonial 3 -->
-            <div class="col-lg-3 col-md-6">
-                <div class="testi-card-box">
-                    <p class="testi-text">
-                        After implementing Classpro for just 10 days in trial we were able to take 40+ new admissions
+        </section>
+        <section class="testi-section-wrap py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <!-- Testimonial 1 -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="testi-card-box">
+                            <p class="testi-text">
+                                After implementing Classpro for just 10 days in trial we were able to take 40+ new admissions
                         and generate a revenue of 15+ lacs during lockdown period. Classpro provided us with an integrated
                         tool on top of Zoom which helped in ensuring reliability.
-                    </p>
-
-                    <div class="testi-user">
-                        <img src="image/careers/red.png" class="testi-user-img">
-                        <div>
-                            <h6 class="testi-user-name">Mahesh Jadhavar</h6>
-                            <span class="testi-user-info">Ariv Education</span>
+                            </p>
+                            <div class="testi-user">
+                                <img src="image/careers/red.png" class="testi-user-img">
+                                <div>
+                                    <h6 class="testi-user-name">Mahesh Jadhavar</h6>
+                                    <span class="testi-user-info">Ariv Education</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="testi-card-box">
+                            <p class="testi-text">
+                                After implementing Classpro for just 10 days in trial we were able to take 40+ new admissions
+                        and generate a revenue of 15+ lacs during lockdown period. Classpro provided us with an integrated
+                        tool on top of Zoom which helped in ensuring reliability.
+                            </p>
+                            <div class="testi-user">
+                                <img src="image/careers/red.png" class="testi-user-img">
+                                <div>
+                                    <h6 class="testi-user-name">Mahesh Jadhavar</h6>
+                                    <span class="testi-user-info">Ariv Education</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="testi-card-box">
+                            <p class="testi-text">
+                                After implementing Classpro for just 10 days in trial we were able to take 40+ new admissions
+                        and generate a revenue of 15+ lacs during lockdown period. Classpro provided us with an integrated
+                        tool on top of Zoom which helped in ensuring reliability.
+                            </p>
+                            <div class="testi-user">
+                                <img src="image/careers/red.png" class="testi-user-img">
+                                <div>
+                                    <h6 class="testi-user-name">Mahesh Jadhavar</h6>
+                                    <span class="testi-user-info">Ariv Education</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-        </div>
-    </div>
-</section>
-<section class="wc-section py-5">
-    <div class="container">
-
-        <h2 class="wc-title text-center mb-5">Work Culture</h2>
-
-        <div class="row g-4">
-
-            <!-- CARD 1 -->
-            <div class="col-lg-6 col-md-6">
-                <div class="wc-card">
-                    <h5 class="wc-card-title">Engineering</h5>
-                    <p class="wc-card-text">
-                       We are looking for talented Javascript developer who want to join our engineering team to build great application for Education domain. You will be taking a senior/lead role in building React / React Native / Javascript applications.
-                    </p>
+        </section>
+        <section class="wc-section py-5">
+            <div class="container">
+                <h2 class="wc-title text-center mb-5">Work Culture</h2>
+                <div class="row g-4">
+                    <!-- CARD 1 -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="wc-card">
+                            <h5 class="wc-card-title">Engineering</h5>
+                            <p class="wc-card-text">
+                                We are looking for talented Javascript developer who want to join our engineering team to build great application for Education domain. You will be taking a senior/lead role in building React / React Native / Javascript applications.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- CARD 2 (Image) -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="wc-card" style="padding: 0;">
+                            <img src="image/careers/work1.jpg" class="wc-img">
+                        </div>
+                    </div>
+                    <!-- CARD 3 -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="wc-card">
+                            <h5 class="wc-card-title">Engineering</h5>
+                            <p class="wc-card-text">
+                                We are looking for talented Javascript developer who want to join our engineering team to build great application for Education domain. You will be taking a senior/lead role in building React / React Native / Javascript applications.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- CARD 4 (Image) -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="wc-card" style="padding: 0;">
+                            <img src="image/careers/work2.jpg" class="wc-img">
+                        </div>
+                    </div>
+                    <!-- CARD 5 -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="wc-card">
+                            <h5 class="wc-card-title">Engineering</h5>
+                            <p class="wc-card-text">
+                                We are looking for talented Javascript developer who want to join our engineering team to build great application for Education domain. You will be taking a senior/lead role in building React / React Native / Javascript applications.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- CARD 6 (Image) -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="wc-card" style="padding: 0;">
+                            <img src="image/careers/work3.png" class="wc-img">
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <!-- CARD 2 (Image) -->
-            <div class="col-lg-3 col-md-6">
-                <div class="wc-card" style="padding: 0;">
-                    <img src="image/careers/work1.jpg" class="wc-img">
+        </section>
+        <!-- footer -->
+        <section class="india-hero pt-5">
+            <div class="container py-lg-5 py-sm-3">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h1 class="display-5">
+                            Made in India.
+                            <br>
+                            Made for the World.
+                        </h1>
+                    </div>
+                    <div class="col-lg-6 text-lg-end new-try">
+                        <a href="#" class="btn demo-btn px-4 py-3">Get Your Free Demo</a>
+                    </div>
                 </div>
             </div>
-
-            <!-- CARD 3 -->
-            <div class="col-lg-3 col-md-6">
-                <div class="wc-card">
-                    <h5 class="wc-card-title">Engineering</h5>
-                    <p class="wc-card-text">
-                       We are looking for talented Javascript developer who want to join our engineering team to build great application for Education domain. You will be taking a senior/lead role in building React / React Native / Javascript applications.
-                    </p>
+        </section>
+        <!-- FOOTER SECTION -->
+        <footer class="footer-section text-white py-5">
+            <div class="container">
+                <div class="row gy-4">
+                    <!-- CONTACT -->
+                    <div class="col-6 col-md-3">
+                        <h6 class="fw-bold mb-3">CONTACT</h6>
+                        <p>+91-76666 62330</p>
+                        <p>Support Helpdesk</p>
+                        <p>Contact Us</p>
+                    </div>
+                    <!-- ABOUT US -->
+                    <div class="col-6 col-md-3">
+                        <h6 class="fw-bold mb-3">ABOUT US</h6>
+                        <p>Blog</p>
+                        <p>Engineering Blog</p>
+                        <p>Careers</p>
+                        <p>Team</p>
+                        <p>Privacy</p>
+                        <p>Terms of Service</p>
+                        <p>How to Pay</p>
+                        <button class="btn btn-sm button-footer mt-2 py-2 px-4">
+                            Make
+                                Payment
+                        </button>
+                    </div>
+                    <!-- PRODUCT -->
+                    <div class="col-6 col-md-3">
+                        <h6 class="fw-bold mb-3">PRODUCT</h6>
+                        <p>Tour</p>
+                        <p>Plans & Pricing</p>
+                        <p>Security</p>
+                        <h6 class="fw-bold mt-4 mb-3">EXTRAS</h6>
+                        <p>Download Attendpro</p>
+                        <p>Examjoy</p>
+                        <p>Download TeamViewer</p>
+                    </div>
+                    <!-- ADMIN APP + RESOURCES -->
+                    <div class="col-6 col-md-3">
+                        <h6 class="fw-bold mb-3">ADMIN APP</h6>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" class="img-fluid mb-2" width="130">
+                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" class="img-fluid mb-4" width="130">
+                        <h6 class="fw-bold mb-3">RESOURCES</h6>
+                        <p>Free Resources</p>
+                        <p>Case Studies</p>
+                    </div>
                 </div>
             </div>
-
-            <!-- CARD 4 (Image) -->
-            <div class="col-lg-3 col-md-6">
-                <div class="wc-card" style="padding: 0;">
-                    <img src="image/careers/work2.jpg" class="wc-img">
-                </div>
-            </div>
-
-            <!-- CARD 5 -->
-            <div class="col-lg-6 col-md-6">
-                <div class="wc-card">
-                    <h5 class="wc-card-title">Engineering</h5>
-                    <p class="wc-card-text">
-                       We are looking for talented Javascript developer who want to join our engineering team to build great application for Education domain. You will be taking a senior/lead role in building React / React Native / Javascript applications.
-                    </p>
-                </div>
-            </div>
-
-            <!-- CARD 6 (Image) -->
-            <div class="col-lg-3 col-md-6">
-                <div class="wc-card" style="padding: 0;">
-                    <img src="image/careers/work3.png" class="wc-img">
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-</section>
-
-
-
+        </footer>
+    </section>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 5,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 1500,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                320: { slidesPerView: 2 },
+                576: { slidesPerView: 3 },
+                768: { slidesPerView: 4 },
+                992: { slidesPerView: 5 }
+            }
+        });
+    </script>
 </body>
 </html>

@@ -1,446 +1,481 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customers & Testimonials</title>
-
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-
-    <!-- Custom CSS -->
-    <style>
-        body{
-            background:#ffffff;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        .section-title{
-            font-size: 32px;
-            font-weight: 600;
-            color:#1E9C6B;
-            text-align:center;
-            margin-bottom:40px;
-        }
-
-        .logo-box{
-            background:#fff;
-            padding: 0px;
-            border-radius:12px;
-            box-shadow:0 0 10px rgba(0,0,0,0.08);
-            text-align:center;
-            transition:0.3s;
-        }
-
-        .logo-box:hover{
-            transform: translateY(-5px);
-        }
-
-        .logo-img{
-            max-height: 74px;
-            object-fit:contain;
-            width:100%;
-        }
-
-        .testimonial-box{
-            background:#f7f9fc;
-            padding:40px;
-            border-radius:20px;
-            box-shadow:0 0 10px rgba(0,0,0,0.08);
-            margin-top:40px;
-        }
-
-        .quote-icon{
-            font-size:90px;
-            color:#1E9C6B;
-            font-weight:700;
-        }
-
-        .testimonial-text{
-            font-size:15px;
-            line-height:1.7;
-            color:#555;
-            margin-bottom:20px;
-        }
-
-        .author-box{
-            display:flex;
-            align-items:center;
-            gap:12px;
-            margin-top:10px;
-        }
-
-        .author-img{
-            background:#E0F3EB;
-            height:55px;
-            width:55px;
-            border-radius:50%;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            color:#1E9C6B;
-            font-size:28px;
-        }
-
-        .author-name{
-            font-weight:600;
-            font-size:18px;
-        }
-
-        .author-role{
-            font-size:14px;
-            color:#777;
-        }
-
-        /*  */
-         .testimonial-card {
-            background: #f7f9fc;
-            border-radius: 18px;
-            padding: 28px;
-            box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-            transition: 0.3s;
-            height: 100%;
-        }
-
-        .testimonial-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .testimonial-text {
-            color: #4a4a4a;
-            font-size: 15px;
-            line-height: 1.7;
-        }
-
-        .author-box {
-            margin-top: 25px;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .author-img img {
-            height: 50px;
-            width: 50px;
-            border-radius: 50%;
-            background: #E1F2E8;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 26px;
-            color: #1E9C6B;
-        }
-
-        .author-name {
-            font-size: 16px;
-            font-weight: 600;
-        }
-
-        .author-role {
-            font-size: 13px;
-            color: #777;
-        }
-
-        .see-more-btn {
-            background: #1E9C6B;
-            color: #fff;
-            padding: 12px 35px;
-            font-size: 16px;
-            border-radius: 30px;
-            border: none;
-            transition: 0.3s;
-        }
-
-        .see-more-btn:hover {
-            background: #16895D;
-        }
-    </style>
-</head>
-
-<body>
-
-    <div class="container py-5">
-
-        <!-- Heading -->
-        <h2 class="section-title">Our World revolves around our customers</h2>
-
-        <!-- Customer Logos Grid -->
-        <div class="row g-4 justify-content-center">
-
-            <!-- Repeat similar blocks for all logos -->
-            <div class="col-6 col-md-3 col-lg-2">
-                <div class="logo-box">
-                    <img src="image/tests/test1.png" class="logo-img" alt="logo">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Class-Pro</title>
+        <!-- Bootstrap 5 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- swiper slider link -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- 🔹 NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+            <div class="container">
+                <a class="navbar-brand fs-3 main-logo" href="#">
+                    <img src="image/home/Classpro full website/header/classpro-logo 2 copy.svg" alt>
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                        <!-- FEATURES -->
+                        <li class="nav-item dropdown mx-2 position-static">
+                            <a class="nav-link fw-semibold d-flex align-items-center" href="#" data-bs-toggle="dropdown">
+                                <span class="me-1">Features</span>
+                                <img
+                                    src="image/home/Desktop - Classpro Landing Page/header/Vector 58.svg"
+                                    width="12"
+                                    height="7"
+                                    class="mt-1"
+                                >
+                            </a>
+                            <div class="dropdown-menu mega-dropdown shadow-lg p-4" style="top: 89%;">
+                                <div class="row g-4">
+                                    <div class="col-md-4">
+                                        <div class="feature-item">
+                                            Transparent
+                                            Fee Management
+                                        </div>
+                                        <div class="divider"></div>
+                                        <div class="feature-item">
+                                            Share
+                                            Notes/Study Materials
+                                        </div>
+                                        <div class="divider"></div>
+                                        <div class="feature-item">
+                                            Homework &
+                                            Assignments
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="feature-item">
+                                            Biometric
+                                            Attendance
+                                        </div>
+                                        <div class="divider"></div>
+                                        <div class="feature-item">
+                                            Student
+                                            Performance
+                                        </div>
+                                        <div class="divider"></div>
+                                        <div class="feature-item">
+                                            Insightful
+                                            Reports
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="feature-item">
+                                            Student/Parent
+                                            App
+                                        </div>
+                                        <div class="divider"></div>
+                                        <div class="feature-item">
+                                            Send
+                                            Communication & Reminders
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- COMPANY -->
+                        <li class="nav-item dropdown mx-2">
+                            <a class="nav-link fw-semibold d-flex align-items-center gap-1" href="#" data-bs-toggle="dropdown">
+                                Company
+                                <img
+                                    src="image/home/Desktop - Classpro Landing Page/header/Vector 58.svg"
+                                    width="12"
+                                    height="7"
+                                    class="mt-1"
+                                >
+                            </a>
+                            <div class="dropdown-menu small-dropdown shadow-lg p-4 mt-3">
+                                <div class="feature-item">Career</div>
+                                <div class="divider"></div>
+                                <div class="feature-item">Team</div>
+                                <div class="divider"></div>
+                                <div class="feature-item">About</div>
+                            </div>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link fw-semibold" href="#">Pricing</a>
+                        </li>
+                        <!-- RESOURCES -->
+                        <li class="nav-item dropdown mx-2">
+                            <a class="nav-link fw-semibold d-flex align-items-center gap-1" href="#" data-bs-toggle="dropdown">
+                                Resources
+                                <img
+                                    src="image/home/Desktop - Classpro Landing Page/header/Vector 58.svg"
+                                    width="12"
+                                    height="7"
+                                    class="mt-1"
+                                >
+                            </a>
+                            <div class="dropdown-menu small-dropdown shadow-lg p-4 mt-3">
+                                <div class="feature-item">Blogs</div>
+                                <div class="divider"></div>
+                                <div class="feature-item">Testimonials</div>
+                            </div>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link fw-semibold" href="#">
+                                Contact
+                                Us
+                            </a>
+                        </li>
+                        <li class="nav-item ms-2 ms-lg-3">
+                            <button class="btn btn-outline-success px-4 fornw-bg  rounded-pill">
+                                Log In
+                            </button>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-6 col-md-3 col-lg-2">
-                <div class="logo-box">
-                    <img src="image/tests/test2.png" class="logo-img" alt="logo">
-                </div>
-            </div>
-
-            <!-- Duplicate as needed for real logos -->
-            <div class="col-6 col-md-3 col-lg-2">
-                <div class="logo-box">
-                    <img src="image/tests/test3.png" class="logo-img" alt="logo">
-                </div>
-            </div>
-
-            <div class="col-6 col-md-3 col-lg-2">
-                <div class="logo-box">
-                    <img src="image/tests/test4.png" class="logo-img" alt="logo">
-                </div>
-            </div>
-
-            <div class="col-6 col-md-3 col-lg-2">
-                <div class="logo-box">
-                    <img src="image/tests/test5.png" class="logo-img" alt="logo">
-                </div>
-            </div>
-
-
-
-            <!--  -->
+        </nav>
+        <!-- nav bar end -->
+        <div class="container py-5 tesimonials_page">
+            <!-- Heading -->
+            <h2 class="section-title">Our World revolves around our customers</h2>
+            <!-- Customer Logos Grid -->
             <div class="row g-4 justify-content-center">
-
-            <!-- Repeat similar blocks for all logos -->
-            <div class="col-6 col-md-3 col-lg-2">
-                <div class="logo-box">
-                    <img src="image/tests/test6.png" class="logo-img" alt="logo">
+                <!-- Repeat similar blocks for all logos -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="logo-box">
+                        <img src="image/tests/test1.png" class="logo-img" alt="logo">
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="logo-box">
+                        <img src="image/tests/test2.png" class="logo-img" alt="logo">
+                    </div>
+                </div>
+                <!-- Duplicate as needed for real logos -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="logo-box">
+                        <img src="image/tests/test3.png" class="logo-img" alt="logo">
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="logo-box">
+                        <img src="image/tests/test4.png" class="logo-img" alt="logo">
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="logo-box">
+                        <img src="image/tests/test5.png" class="logo-img" alt="logo">
+                    </div>
+                </div>
+                <!--  -->
+                <div class="row g-4 justify-content-center">
+                    <!-- Repeat similar blocks for all logos -->
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <div class="logo-box">
+                            <img src="image/tests/test6.png" class="logo-img" alt="logo">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <div class="logo-box">
+                            <img src="image/tests/test7.png" class="logo-img" alt="logo">
+                        </div>
+                    </div>
+                    <!-- Duplicate as needed for real logos -->
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <div class="logo-box">
+                            <img src="image/tests/test8.png" class="logo-img" alt="logo">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <div class="logo-box">
+                            <img src="image/tests/test9.png" class="logo-img" alt="logo">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <div class="logo-box">
+                            <img src="image/tests/test10.png" class="logo-img" alt="logo">
+                        </div>
+                    </div>
+                </div>
+                <!-- 3rd row -->
+                <div class="row g-4 justify-content-center">
+                    <!-- Repeat similar blocks for all logos -->
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <div class="logo-box">
+                            <img src="image/tests/test11.png" class="logo-img" alt="logo">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <div class="logo-box">
+                            <img src="image/tests/test12.png" class="logo-img" alt="logo">
+                        </div>
+                    </div>
+                    <!-- Duplicate as needed for real logos -->
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <div class="logo-box">
+                            <img src="image/tests/test13.png" class="logo-img" alt="logo">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <div class="logo-box">
+                            <img src="image/tests/test14.png" class="logo-img" alt="logo">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <div class="logo-box">
+                            <img src="image/tests/test15.png" class="logo-img" alt="logo">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-6 col-md-3 col-lg-2">
-                <div class="logo-box">
-                    <img src="image/tests/test7.png" class="logo-img" alt="logo">
-                </div>
-            </div>
-
-            <!-- Duplicate as needed for real logos -->
-            <div class="col-6 col-md-3 col-lg-2">
-                <div class="logo-box">
-                    <img src="image/tests/test8.png" class="logo-img" alt="logo">
-                </div>
-            </div>
-
-            <div class="col-6 col-md-3 col-lg-2">
-                <div class="logo-box">
-                    <img src="image/tests/test9.png" class="logo-img" alt="logo">
-                </div>
-            </div>
-
-            <div class="col-6 col-md-3 col-lg-2">
-                <div class="logo-box">
-                    <img src="image/tests/test10.png" class="logo-img" alt="logo">
-                </div>
-            </div>
-
-        </div>
-
-
-
-        <!-- 3rd row -->
-       
-
-        <div class="row g-4 justify-content-center">
-
-            <!-- Repeat similar blocks for all logos -->
-            <div class="col-6 col-md-3 col-lg-2">
-                <div class="logo-box">
-                    <img src="image/tests/test11.png" class="logo-img" alt="logo">
-                </div>
-            </div>
-            <div class="col-6 col-md-3 col-lg-2">
-                <div class="logo-box">
-                    <img src="image/tests/test12.png" class="logo-img" alt="logo">
-                </div>
-            </div>
-
-            <!-- Duplicate as needed for real logos -->
-            <div class="col-6 col-md-3 col-lg-2">
-                <div class="logo-box">
-                    <img src="image/tests/test13.png" class="logo-img" alt="logo">
-                </div>
-            </div>
-
-            <div class="col-6 col-md-3 col-lg-2">
-                <div class="logo-box">
-                    <img src="image/tests/test14.png" class="logo-img" alt="logo">
-                </div>
-            </div>
-
-            <div class="col-6 col-md-3 col-lg-2">
-                <div class="logo-box">
-                    <img src="image/tests/test15.png" class="logo-img" alt="logo">
-                </div>
-            </div>
-
-        </div>
-        </div>
-
-        <!-- Trusted Title -->
-        <h2 class="section-title mt-5">Trusted by 7600+ Teachers</h2>
-
-        <!-- Testimonial Box -->
-        <div class="container testimonial-box row">
-
-            <div class="col-md-9">
-                <p class="testimonial-text">
-                    We tried many tools before using Classpro Online Teaching platform and most of the tools available in the 
+            <!-- Trusted Title -->
+            <h2 class="section-title mt-5">Trusted by 7600+ Teachers</h2>
+            <!-- Testimonial Box -->
+            <div class="testimonial-box">
+                <div class="row">
+                <div class="col-md-9">
+                    <p class="testimonial-text">
+                        We tried many tools before using Classpro Online Teaching platform and most of the tools available in the 
                     market were not built for scale. After implementing Classpro we are able to teach 1000+ students and Classpro 
                     provided us with an integrated tool on top of Zoom which helped in ensuring reliability.
-                </p>
-
-                <!-- Author -->
-                <div class="author-box">
-                    <div class="author-img"><img src="image/tests/right.png" alt=""></div>
-                    <div>
-                        <div class="author-name">Mahesh Jadhavar</div>
-                        <div class="author-role">Ariv Education</div>
+                    </p>
+                    <!-- Author -->
+                    <div class="author-box">
+                        <div class="author-img">
+                            <img src="image/tests/right.png" alt="">
+                        </div>
+                        <div>
+                            <div class="author-name">Mahesh Jadhavar</div>
+                            <div class="author-role">Ariv Education</div>
+                        </div>
                     </div>
                 </div>
+                <!-- Quote icon -->
+                <div class="col-md-3 d-flex justify-content-center align-items-center ps" style="height: 160px;">
+                    <div class="quote-icon">
+                        <img src="image/tests/coma.png" alt="comma" width="150px" >
+                    </div>
+                </div>
+                </div>
             </div>
-
-            <!-- Quote icon -->
-            <div class="col-md-3 d-flex justify-content-center align-items-center">
-                <div class="quote-icon"><img src="" alt=""></div>
-            </div>
-
-        </div>
-
-
-<!--  -->
-        
-<div class="container py-5">
-
-    <div class="row g-4">
-
-        <!-- CARD 1 -->
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="testimonial-card">
-                <p class="testimonial-text">
-                    After implementing Classpro for just 10 days in trial we were able to take 40+ new admissions and 
+            <!--  -->
+            <div class="py-5">
+                <div class="row g-4">
+                    <!-- CARD 1 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">
+                                After implementing Classpro for just 10 days in trial we were able to take 40+ new admissions and 
                     generate a revenue of 15+ lacs during lockdown period. Classpro provided us with an integrated tool 
                     on top of Zoom which helped in ensuring reliability.
-                </p>
-
-                <div class="author-box">
-                    <div class="author-img"><img src="image/tests/right.png" alt=""></div>
-                    <div>
-                        <div class="author-name">Mahesh Jadhavar</div>
-                        <div class="author-role">Ariv Education</div>
+                            </p>
+                            <div class="author-box">
+                                <div class="author-img">
+                                    <img src="image/tests/right.png" alt="">
+                                </div>
+                                <div>
+                                    <div class="author-name">Mahesh Jadhavar</div>
+                                    <div class="author-role">Ariv Education</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- CARD 2 -->
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="testimonial-card">
-                <p class="testimonial-text">
-                    After implementing Classpro for just 10 days in trial we were able to take 40+ new admissions and 
+                    <!-- CARD 2 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">
+                                After implementing Classpro for just 10 days in trial we were able to take 40+ new admissions and 
                     generate a revenue of 15+ lacs during lockdown period. Classpro provided us with an integrated tool 
                     on top of Zoom which helped in ensuring reliability.
-                </p>
-
-                <div class="author-box">
-                    <div class="author-img"><img src="image/tests/right.png" alt=""></div>
-                    <div>
-                        <div class="author-name">Mahesh Jadhavar</div>
-                        <div class="author-role">Ariv Education</div>
+                            </p>
+                            <div class="author-box">
+                                <div class="author-img">
+                                    <img src="image/tests/right.png" alt="">
+                                </div>
+                                <div>
+                                    <div class="author-name">Mahesh Jadhavar</div>
+                                    <div class="author-role">Ariv Education</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- CARD 3 -->
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="testimonial-card">
-                <p class="testimonial-text">
-                    After implementing Classpro for just 10 days in trial we were able to take 40+ new admissions and 
+                    <!-- CARD 3 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">
+                                After implementing Classpro for just 10 days in trial we were able to take 40+ new admissions and 
                     generate a revenue of 15+ lacs during lockdown period. Classpro provided us with an integrated tool 
                     on top of Zoom which helped in ensuring reliability.
-                </p>
-
-                <div class="author-box">
-                    <div class="author-img"><img src="image/tests/right.png" alt=""></div>
-                    <div>
-                        <div class="author-name">Mahesh Jadhavar</div>
-                        <div class="author-role">Ariv Education</div>
+                            </p>
+                            <div class="author-box">
+                                <div class="author-img">
+                                    <img src="image/tests/right.png" alt="">
+                                </div>
+                                <div>
+                                    <div class="author-name">Mahesh Jadhavar</div>
+                                    <div class="author-role">Ariv Education</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- CARD 4 -->
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="testimonial-card">
-                <p class="testimonial-text">
-                    After implementing Classpro for just 10 days in trial we were able to take 40+ new admissions and 
+                    <!-- CARD 4 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">
+                                After implementing Classpro for just 10 days in trial we were able to take 40+ new admissions and 
                     generate a revenue of 15+ lacs during lockdown period. Classpro provided us with an integrated tool 
                     on top of Zoom which helped in ensuring reliability.
-                </p>
-
-                <div class="author-box">
-                    <div class="author-img"><img src="image/tests/right.png" alt=""></div>
-                    <div>
-                        <div class="author-name">Mahesh Jadhavar</div>
-                        <div class="author-role">Ariv Education</div>
+                            </p>
+                            <div class="author-box">
+                                <div class="author-img">
+                                    <img src="image/tests/right.png" alt="">
+                                </div>
+                                <div>
+                                    <div class="author-name">Mahesh Jadhavar</div>
+                                    <div class="author-role">Ariv Education</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- CARD 5 -->
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="testimonial-card">
-                <p class="testimonial-text">
-                    After implementing Classpro for just 10 days in trial we were able to take 40+ new admissions and 
+                    <!-- CARD 5 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">
+                                After implementing Classpro for just 10 days in trial we were able to take 40+ new admissions and 
                     generate a revenue of 15+ lacs during lockdown period. Classpro provided us with an integrated tool 
                     on top of Zoom which helped in ensuring reliability.
-                </p>
-
-                <div class="author-box">
-                    <div class="author-img"><img src="image/tests/right.png" alt=""></div>
-                    <div>
-                        <div class="author-name">Mahesh Jadhavar</div>
-                        <div class="author-role">Ariv Education</div>
+                            </p>
+                            <div class="author-box">
+                                <div class="author-img">
+                                    <img src="image/tests/right.png" alt="">
+                                </div>
+                                <div>
+                                    <div class="author-name">Mahesh Jadhavar</div>
+                                    <div class="author-role">Ariv Education</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- CARD 6 -->
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="testimonial-card">
-                <p class="testimonial-text">
-                    After implementing Classpro for just 10 days in trial we were able to take 40+ new admissions and 
+                    <!-- CARD 6 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">
+                                After implementing Classpro for just 10 days in trial we were able to take 40+ new admissions and 
                     generate a revenue of 15+ lacs during lockdown period. Classpro provided us with an integrated tool 
                     on top of Zoom which helped in ensuring reliability.
-                </p>
-
-                <div class="author-box">
-                    <div class="author-img"><img src="image/tests/right.png" alt=""></div>
-                    <div>
-                        <div class="author-name">Mahesh Jadhavar</div>
-                        <div class="author-role">Ariv Education</div>
+                            </p>
+                            <div class="author-box">
+                                <div class="author-img">
+                                    <img src="image/tests/right.png" alt="">
+                                </div>
+                                <div>
+                                    <div class="author-name">Mahesh Jadhavar</div>
+                                    <div class="author-role">Ariv Education</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                </div>
+                <!-- SEE MORE -->
+                <div class="text-center mt-5">
+                    <button class="see-more-btn">See More</button>
                 </div>
             </div>
         </div>
-
-    </div>
-
-    <!-- SEE MORE -->
-    <div class="text-center mt-5">
-        <button class="see-more-btn">See More</button>
-    </div>
-
-</div>
-
-
-    </div>
-
-
-
+        <!-- footer -->
+        <section class="india-hero pt-5">
+            <div class="container py-lg-5 py-sm-3">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h1 class="display-5">
+                            Made in India.
+                            <br>
+                            Made for the World.
+                        </h1>
+                    </div>
+                    <div class="col-lg-6 text-lg-end new-try">
+                        <a href="#" class="btn demo-btn px-4 py-3">Get Your Free Demo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FOOTER SECTION -->
+        <footer class="footer-section text-white py-5">
+            <div class="container">
+                <div class="row gy-4">
+                    <!-- CONTACT -->
+                    <div class="col-6 col-md-3">
+                        <h6 class="fw-bold mb-3">CONTACT</h6>
+                        <p>+91-76666 62330</p>
+                        <p>Support Helpdesk</p>
+                        <p>Contact Us</p>
+                    </div>
+                    <!-- ABOUT US -->
+                    <div class="col-6 col-md-3">
+                        <h6 class="fw-bold mb-3">ABOUT US</h6>
+                        <p>Blog</p>
+                        <p>Engineering Blog</p>
+                        <p>Careers</p>
+                        <p>Team</p>
+                        <p>Privacy</p>
+                        <p>Terms of Service</p>
+                        <p>How to Pay</p>
+                        <button class="btn btn-sm button-footer mt-2 py-2 px-4">
+                            Make
+                                Payment
+                        </button>
+                    </div>
+                    <!-- PRODUCT -->
+                    <div class="col-6 col-md-3">
+                        <h6 class="fw-bold mb-3">PRODUCT</h6>
+                        <p>Tour</p>
+                        <p>Plans & Pricing</p>
+                        <p>Security</p>
+                        <h6 class="fw-bold mt-4 mb-3">EXTRAS</h6>
+                        <p>Download Attendpro</p>
+                        <p>Examjoy</p>
+                        <p>Download TeamViewer</p>
+                    </div>
+                    <!-- ADMIN APP + RESOURCES -->
+                    <div class="col-6 col-md-3">
+                        <h6 class="fw-bold mb-3">ADMIN APP</h6>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" class="img-fluid mb-2" width="130">
+                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" class="img-fluid mb-4" width="130">
+                        <h6 class="fw-bold mb-3">RESOURCES</h6>
+                        <p>Free Resources</p>
+                        <p>Case Studies</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 5,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 1500,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                320: { slidesPerView: 2 },
+                576: { slidesPerView: 3 },
+                768: { slidesPerView: 4 },
+                992: { slidesPerView: 5 }
+            }
+        });
+    </script>
 </body>
 </html>
