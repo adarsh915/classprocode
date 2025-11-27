@@ -1208,15 +1208,26 @@ line-height: 132.4%; /* 63.552px */
     font-family:var(--font-primary); 
  }
 .team-title {
-    font-size: 40px;
-    font-weight: 700;
-    color: #1a7f2e;
+
+    color: #22B05B;
+
+ font-family: var(--font-primary); 
+font-size: 72px;
+font-style: normal;
+font-weight: 500;
+line-height: 134%; /* 96.48px */
 }
 
 .side-images .side-img {
     width: 160px;
-    border-radius: 6px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    /* border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15); */
+}
+.side-images {
+    align-items: justify;
+}
+.sat-col {
+    padding: 0;
 }
 
 /* Team Cards */
