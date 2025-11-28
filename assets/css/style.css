@@ -968,6 +968,34 @@ background-clip: text;
 /* community */
 /* Container spacing */
 
+.comm-para {
+  color: #000;
+  font-family: var(--font-primary);
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; /* 38.4px */
+}
+.for-ariv {
+  color: #000;
+
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 163.4%; /* 26.144px */
+text-transform: capitalize;
+}
+.for-headd {
+  color: #000;
+
+font-family: Montserrat;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 163.4%; /* 32.68px */
+text-transform: capitalize;
+}
 .heading-text{
 color: #1F2431;
 text-align: center;
@@ -1152,10 +1180,10 @@ text-align: center;
   line-height: 1.2;
 }
 .career-image-box img {
-  width: 100%;
+  width: 85%;
   border-radius: 12px;
   box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
-  transform: rotate(2deg);
+  transform: rotate(4deg);
 }
 
 /* JOB CARD */
@@ -1167,19 +1195,31 @@ text-align: center;
   font-family: var(--font-primary);
 }
 .job-title {
-  font-weight: 700;
-  font-size: 26px;
-  color: #1f8c3c;
+  color: #22B05B;
+  font-family: var(--font-primary);
+font-size: 40px;
+font-style: normal;
+font-weight: 500;
+line-height: 134%; /* 53.6px */
+
 }
 
 .job-meta {
-  font-size: 14px;
-  color: #777;
-  margin-bottom: 10px;
+ color: #656565;
+  font-family: var(--font-primary);
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 134%; /* 24.12px */
 }
 
 .job-badge {
-  font-size: 14px;
+  color: #000;
+  font-family: var(--font-primary);
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 134%; /* 24.12px */
   padding: 6px 15px;
   border-radius: 20px;
   border: 1px solid green;
@@ -1189,18 +1229,27 @@ text-align: center;
 }
 
 .job-desc {
-  color: #555;
-  line-height: 1.6;
-  margin-top: 10px;
+ color: #000;
+  font-family: var(--font-primary);
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 164%; /* 32.8px */
 }
 
 .job-btn {
+  color: #FFF;
+    font-family: var(--font-primary);
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 134%; /* 26.8px */
+text-transform: capitalize;
   margin-top: 15px;
   background: #1f8c3c;
-  color: white;
   border-radius: 25px;
   padding: 8px 25px;
-  font-size: 14px;
+
 }
 
 @media (max-width: 768px) {
@@ -1228,12 +1277,7 @@ text-align: center;
 }
 
 /* Testimonial Text */
-.testi-text {
-  font-size: 14px;
-  color: #444;
-  line-height: 1.7;
-  margin-bottom: auto; /* Pushes user section down */
-}
+
 
 /* User Section */
 .testi-user {
@@ -1244,21 +1288,13 @@ text-align: center;
 }
 
 .testi-user-img {
-  width: 48px;
-  height: 48px;
+  width: 68px;
+  height: 68px;
   border-radius: 50%;
 }
 
-.testi-user-name {
-  font-weight: 600;
-  margin: 0;
-  font-size: 15px;
-}
 
-.testi-user-info {
-  font-size: 13px;
-  color: #666;
-}
+
 
 /* Responsive */
 @media (max-width: 767px) {
@@ -1271,10 +1307,12 @@ text-align: center;
 /* Section title */
 .wc-title {
   font-family: var(--font-primary);
-  font-weight: 700;
-  font-size: 32px;
-  color: #21a36a;
-  margin-bottom: 40px;
+color: #22B05B;
+font-size: 48px;
+font-style: normal;
+font-weight: 500;
+line-height: 134%; /* 64.32px */
+text-transform: capitalize;
 }
 
 /* Work Culture Card */
@@ -1288,18 +1326,23 @@ text-align: center;
 
 /* Text card title */
 .wc-card-title {
-  font-size: 20px;
-  font-weight: 700;
-  color: #1c3c8f;
-  margin-bottom: 15px;
+  color: #010d45;
+  font-family: var(--font-primary);
+font-size: 40px;
+font-style: normal;
+font-weight: 500;
+line-height: 134%; /* 53.6px */
+
 }
 
 /* Text paragraph */
 .wc-card-text {
-  font-size: 14px;
-  color: #555;
-  line-height: 1.7;
-  margin-bottom: 0;
+ color: #656565;
+  font-family: var(--font-primary);
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 164%; /* 29.52px */
 }
 
 /* Image Style */
@@ -1323,40 +1366,26 @@ text-align: center;
   font-family: var(--font-primary);
 }
 
-/* Job Header */
-.job-title {
-  font-size: 32px;
-  font-weight: 700;
-  color: #1f8f4e;
-}
+
 
 .job-meta-item {
   color: #555;
   font-size: 14px;
 }
 
-/* Tags */
-.job-tag {
-  padding: 6px 28px;
-  border-radius: 20px;
-  font-size: 13px;
-  color: black;
-  border: 1px solid green;
-}
+
 
 /* Block Title */
 .job-block-title {
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 15px;
+  color: #101828;
+    font-family: var(--font-primary);
+font-size: 26px;
+font-style: normal;
+font-weight: 500;
+line-height: 134%; /* 34.84px */
 }
 
-/* Paragraph Text */
-.job-block-text {
-  color: #444;
-  font-size: 15px;
-  line-height: 1.8;
-}
+
 
 /* List */
 .job-list {
@@ -1364,10 +1393,12 @@ text-align: center;
 }
 
 .job-list li {
-  margin-bottom: 8px;
-  color: #444;
-  font-size: 15px;
-  line-height: 1.8;
+color: #656565;
+  font-family: var(--font-primary);
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 178%; /* 35.6px */
 }
 
 /* Apply Button */
@@ -1376,10 +1407,15 @@ text-align: center;
   padding: 10px 25px;
   border-radius: 25px;
   text-decoration: none;
-  color: #fff;
-  font-weight: 600;
   display: inline-block;
   transition: 0.3s;
+  color: #FFF;
+  font-family: var(--font-primary);
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 134%; /* 32.16px */
+text-transform: capitalize;
 }
 
 .job-apply-btn:hover {
