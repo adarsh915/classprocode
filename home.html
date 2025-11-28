@@ -9,6 +9,7 @@
         <!-- swiper slider link -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
         <!-- Custom CSS -->
+         
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -29,7 +30,8 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
                         <!-- FEATURES -->
-                        <li class="nav-item dropdown mx-2 position-static">
+                        <li class="nav-item dropdown mx-2 position-relative">
+
                             <a class="nav-link fw-semibold d-flex align-items-center" href="#" data-bs-toggle="dropdown">
                                 <span class="me-1">Features</span>
                                 <img
@@ -305,7 +307,9 @@
             </div>
             <!-- end men image/home -->
             <!-- lets replace -->
-            <div class="container replace py-5">
+         
+
+   <div class="container replace py-5">
                 <!-- Heading -->
                 <h1 class="heading-main">
                     Let’s Replace
@@ -320,47 +324,100 @@
                     Just For You
                 </h1>
                 <!-- Feature Pills -->
-                <div class="d-flex flex-wrap justify-content-center mt-4">
-                    <div class="feature-btn">Transparent Fee Management</div>
-                    <div class="feature-btn">Biometric Attendance</div>
-                    <div class="feature-btn">Student Performance</div>
-                    <div class="feature-btn">Student/Parent App</div>
-                    <div class="feature-btn">Insightful Reports</div>
-                    <div class="feature-btn">Homework & Assignments</div>
-                    <div class="feature-btn">Share Notes/Study Materials</div>
-                    <div class="feature-btn">
-                        Send Communication And Reminders
-                    </div>
-                </div>
-                <!-- Two Column Section -->
-                <div class="row align-items-center mt-5">
-                    <!-- Left Text -->
-                    <div class="col-md-5 text-replace">
-                        <h5 class="fw-bold ">
-                            We streamline the financial process
-                            <br>of fee management with the help of
-                            <br>
-                            <span class="green">
-                                online payment options,
-                                automated
-                                <br>
-                                payment reminders, real time fees
-                                <br>
-                                tracking
-                            </span>
-                            and more.
-                        </h5>
-                        <button class="learn-btn mt-3  text-replace">
-                            Learn
-                            More
-                        </button>
-                    </div>
-                    <!-- Right Side UI -->
-                    <div class="col-md-7 position-relative  replace-right">
-                        <img src="image/home/Group 459.svg" alt>
-                    </div>
-                </div>
+<div class="d-flex flex-wrap justify-content-center mt-4">
+
+    <div class="feature-btn"
+         data-text=" We streamline the financial process <br>
+            of fee management with the help of <br>  <span class='green'>online payment options,
+                automated<br>
+                payment reminders, real time fees<br>
+                tracking</span>
+            and more."
+         data-img="image/home/Group 459.svg">
+        Transparent Fee Management
+    </div>
+
+    <div class="feature-btn"
+         data-text="Our <span class='green'> biometric approach </span>promises <br>
+accurate attendance tracking and <br>
+provides attendance reports and <br>
+SMS alerts for parents.."
+         data-img="image/home/Group 230.svg">
+        Biometric Attendance
+    </div>
+
+    <div class="feature-btn"
+         data-text="Our <span class='green'>comprehensive reports</span> are <br> generated to monitor student progress <br> as well as their performance."
+         data-img="image/home/Group 231.svg">
+        Student Performance
+    </div>
+
+    <div class="feature-btn"
+         data-text="Both <span class='green'>students and parents can log into the <br> Classpro app</span> and are granted unlimited free <br> app messages. They can track lectures, exam <br> schedules, view shared videos and more. "
+         data-img="image/home/Group 233.svg">
+        Student/Parent App
+    </div>
+
+    <div class="feature-btn"
+         data-text="Get <span class='green'>extensive reports regarding <br> management and functionality </span>that will <br>help you make further decisions to <br> improve your business."
+         data-img="image/home/Group 236.svg">
+        Insightful Reports
+    </div>
+
+     
+     <div class="feature-btn"
+          data-text="Classpro app makes it easy to  <span class='green'>send <br> and notify students </span> about daily <br> assignments. "
+         data-img="image/home/group11.png">
+        Homework & Assignments
+    </div>
+
+     <div class="feature-btn"
+         data-text="The Classpro app allows you to <span class='green'>share study <br> materials, manage your documents in <br> folders, and share files</span> to individual students <br> or an individual batch. "
+         data-img="image/home/Group 231.svg">
+        Share Notes/Study Materials
+    </div>
+
+    <div class="feature-btn"
+         data-text="There are multiple reminders set in <br> the Classpro <span class='green'>app for students ,<br> parents, and faculty members. </span> This <br> helps daily operations run smoothly. "
+         data-img="image/home/Group 239.svg">
+       Send Communication And Reminders
+    </div>
+
+</div>
+
+
+
+               <div class="row align-items-center mt-5">
+    <!-- Left Text -->
+    <div class="col-md-5 text-replace">
+        <h5 class="fw-bold" id="featureText">
+            We streamline the financial process <br>
+            of fee management with the help of <br>
+            <span class="green">online payment options,
+                automated<br>
+                payment reminders, real time fees<br>
+                tracking</span>
+            and more.
+        </h5>
+
+        <button class="learn-btn mt-3">Learn More</button>
+    </div>
+
+    <!-- Right Side UI -->
+    <div class="col-md-7 position-relative replace-right">
+        <img id="featureImage" src="image/home/Group 459.svg" alt>
+    </div>
+</div>
+
+
+
+
+
+
+
             </div>
+
+
             <!-- Trusted By Section -->
             <div class="trusted-section full-image d-flex align-items-center justify-content-center">
                 <div class="text-center">
@@ -380,7 +437,7 @@
             <section class="py-5">
                 <div class="container">
                     <!-- Heading -->
-                    <h2 class="text-center fw-bold mb-5">
+                    <h2 class="text-center mb-5 community-new">
                         Hear What
                         <span class="text-success">Our Community</span>
                         Has To Say
@@ -394,7 +451,7 @@
                         <div class="col-lg-7 col-md-6">
                             <!-- Testimonial 1 -->
                             <div class="testimonial-box">
-                                <p class="mb-3">
+                                <p class="mb-3 community-para">
                                     “Most of the tools available in the market were not built for scale. 
                                      After implementing Classpro we are able to teach 1000+ students and 
                                      Classpro provided us with an integrated tool on top of Zoom 
@@ -405,14 +462,14 @@
                                         <img src="image/home/community1.png" alt="">
                                     </div>
                                     <div>
-                                        <h6 class="mb-0 fw-bold">Mahesh Jadhavar</h6>
-                                        <small class="text-muted">Ariv Education</small>
+                                        <h6 class="mb-0 com-mahesh">Mahesh Jadhavar</h6>
+                                        <small class="text-muted com-sub">Ariv Education</small>
                                     </div>
                                 </div>
                             </div>
                             <!-- Testimonial 2 -->
                             <div class="testimonial-box-2">
-                                <p class="mb-3">
+                                <p class="mb-3 community-para">
                                     “The combination of live teaching, collecting fees, and communicating 
                                      with students all together is what sealed the deal for us.”
                                 </p>
@@ -421,8 +478,8 @@
                                         <img src="image/home/community2.png" alt="">
                                     </div>
                                     <div>
-                                        <h6 class="mb-0 fw-bold">Arsalan Bamni</h6>
-                                        <small class="text-muted">Farhaan Tutorials</small>
+                                        <h6 class="mb-0 com-mahesh">Arsalan Bamni</h6>
+                                        <small class="text-muted com-sub">Farhaan Tutorials</small>
                                     </div>
                                 </div>
                             </div>
@@ -518,5 +575,26 @@
             }
         });
     </script>
+         <script>
+    const buttons = document.querySelectorAll(".feature-btn");
+    const textBox = document.getElementById("featureText");
+    const imageBox = document.getElementById("featureImage");
+
+    buttons.forEach(btn => {
+        btn.addEventListener("click", function () {
+
+            // Remove active class from all buttons
+            buttons.forEach(b => b.classList.remove("active"));
+
+            // Add active to current button
+            this.classList.add("active");
+
+            // Update text & image
+            textBox.innerHTML = this.getAttribute("data-text");
+            imageBox.src = this.getAttribute("data-img");
+        });
+    });
+</script>
+
 </body>
 </html>
