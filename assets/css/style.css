@@ -2063,7 +2063,7 @@ text-transform: capitalize;
 }
 
 .notes-title {
-   color: #22B05B;
+color: #22B05B;
 font-family: var(--font-primary);
 font-size: 24px;
 font-style: normal;
@@ -2072,7 +2072,7 @@ line-height: 132.4%; /* 31.776px */
 }
 
 .notes-text {
-   color: #000;
+color: #000;
 font-family: var(--font-primary);
 font-size: 18px;
 font-style: normal;
@@ -2089,7 +2089,6 @@ line-height: 132.4%; /* 23.832px */
 
 .notes-image-box {
     width: 100%;
-    max-width: 420px;
 }
 
 /* BACKGROUND IMAGE CARD (NO STRETCH) */
@@ -2122,7 +2121,7 @@ line-height: 132.4%; /* 23.832px */
     }
 
     .notes-card {
-        padding-top: 80%; /* bigger for mobile */
+        padding-top: 0%; /* bigger for mobile */
     }
 }
 
@@ -2147,3 +2146,17 @@ font-weight: 500;
 line-height: 44px; /* 122.222% */
 letter-spacing: -0.72px;
 }
+
+
+
+
+
+
+
+/* images css */
+.image_gap{
+  margin-top: -27%;
+}
+
+
+/*  */
