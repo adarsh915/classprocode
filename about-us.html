@@ -1,239 +1,133 @@
-<!DOCTYPE html>
+
+
+
+
+
+    <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Our Story</title>
-
-<!-- Bootstrap -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-
-<style>
-    body {
-        font-family: "Poppins", sans-serif;
-        background: #ffffff;
-    }
-
-    /* Our Story Heading */
-    .story-title {
-        font-size: 36px;
-        font-weight: 600;
-        color: #1E9C6B;
-        margin-bottom: 20px;
-    }
-
-    .story-text {
-        font-size: 15px;
-        line-height: 1.8;
-        color: #555;
-    }
-    .story-img2 {
-        padding-top: 52px;
-    }
-
-    /* Right Polaroid Image Style */
-    .story-img {
-        width: 240px;
-        transform: rotate(-4deg);
-    }
-    .story-img:nth-child(2) {
-        transform: rotate(-4deg);
-        margin-left: -50px;
-        margin-top: 20px;
-    }
-
-    /* Stats Bar */
-    .stats-box {
-        border-radius: 24px;
-background: linear-gradient(202deg, #4338CA 1.04%, #262078 62.15%, #010D45 109.76%);
-        color: #ffffff;
-        
-        padding: 51px 10px;
-        margin: 50px 0;
-    }
-
-    .stats-item {
-        text-align: center;
-    }
-
-    /* .stats-icon {
-        font-size: 26px;
-        margin-bottom: 5px;
-        display: block;
-    } */
-
-    .stats-title {
-            font-size: 24px;
-    color: green;
-        font-weight: 600;
-    }
-    .imge-new {
-        height: 24px;
-    }
-
-    .stats-subtitle {
-        font-size: 13px;
-        opacity: 0.9;
-    }
-
-    /* Vision & Mission Circles */
-    .circle-container {
-        position: relative;
-        margin-top: 60px;
-            padding-bottom: 48px;
-    }
-
-    .circle {
-        width: 380px;
-        height: 380px;
-        border: 2px solid #CFCFCF;
-        border-radius: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 40px;
-        text-align: center;
-    }
-
-    .circle-title {
-        font-size: 26px;
-        font-weight: 600;
-        margin-bottom: 10px;
-    }
-
-    .vision-title {
-        color: #1E9C6B;
-    }
-
-
-
-    .circle-text {
-        font-size: 14px;
-        color: #555;
-        margin-top: 10px;
-    }
-
-    /* Overlap Handling */
-    .circle-left {
-        margin-right: -120px;
-    }
-
-    .circle-right {
-        margin-left: -120px;
-    }
-
-    /* Mobile adjustments */
-    @media (max-width: 768px) {
-        .circle {
-            width: 300px;
-            height: 300px;
-            padding: 20px;
-        }
-        .circle-left, .circle-right {
-            margin: 0 auto;
-        }
-    }
-
-
-    /* jkbjkb */
-
-
-    /* Section background */
-.values-section {
-    background: #eaf3fc;
-}
-
-/* Title */
-.value-title {
-    color: #1ca44b;
-    font-weight: 700;
-    font-size: 32px;
-}
-
-/* Icons */
-.value-icon {
-    font-size: 32px;
-    color: #0b1673;
-}
-
-/* Text beside icon */
-.value-text {
-    color: #0b1673;
-    font-size: 16px;
-    font-weight: 500;
-}
-
-/* Image Frame Styling */
-.img-frame {
-    display: inline-block;
-    padding: 10px;
-    transform: rotate(4deg);
-}
-
-.values-img {
-    border-radius: 4px;
-}
-
-/* Responsive Tweaks */
-@media (max-width: 768px) {
-    .value-title {
-        text-align: center;
-    }
-    .value-icon {
-        font-size: 28px;
-    }
-    .img-frame {
-        transform: rotate(0deg);
-    }
-}
-
-
-/*  */
-
-  .slider-container {
-  max-width: 900px;
-  margin: 50px auto;
-  position: relative;
-}
-.slider-viewport {
-  overflow: hidden;
-  width: 100%;
-}
-.slider-track {
-  display: flex;
-  gap: 20px;
-  transition: transform 0.4s ease;
-}
-.slide-item {
-  flex: 0 0 auto;
-  width: 220px;
-  text-align: center;
-}
-.slide-item img {
-  width: 100%;
-  height: auto;
-}
-
-.slider-buttons {
-  display: flex;
-  justify-content: center;
-  margin-top: 15px;
-  gap: 20px;
-}
-.nav-btn {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  background: #2FA124;
-  color: #fff;
-  border: none;
-  font-size: 22px;
-}
-</style>
-</head>
-
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Class-Pro</title>
+        <!-- Bootstrap 5 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- swiper slider link -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <!-- 🔹 NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+            <div class="container">
+                <a class="navbar-brand fs-3 main-logo" href="index.html">
+                    <img src="assets/image/home/Classpro full website/header/classpro-logo 2 copy.svg" alt="image" loading="lazy">
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                        <!-- FEATURES -->
+                        <li class="nav-item dropdown mx-2 position-relative">
+                            <a class="nav-link fw-semibold d-flex align-items-center" href="#" data-bs-toggle="dropdown">
+                                <span class="me-1">Features</span>
+                                <img
+                                    src="assets/image/home/Desktop - Classpro Landing Page/header/Vector 58.svg"
+                                    width="12"
+                                    height="7"
+                                    class="mt-1"
+                                    alt="image"
+                                    loading="lazy"
+                                >
+                            </a>
+                            <div class="dropdown-menu mega-dropdown shadow-lg p-4" style="top: 89%;">
+                                <div class="row g-4">
+                                    <div class="col-md-4">
+                                        <a href="management.html" class="feature-item">Transparent Fee Management</a>
+                                        <div class="divider"></div>
+                                        <a href="study.html" class="feature-item">Share Notes / Study Materials</a>
+                                        <div class="divider"></div>
+                                        <a href="homework.html" class="feature-item">Homework & Assignments</a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a href="biometric.html" class="feature-item">Biometric Attendance</a>
+                                        <div class="divider"></div>
+                                        <a href="performance.html" class="feature-item">Student Performance</a>
+                                        <div class="divider"></div>
+                                        <a href="reports.html" class="feature-item">Insightful Reports</a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a href="student.html" class="feature-item">Student / Parent App</a>
+                                        <div class="divider"></div>
+                                        <a href="reminders.html" class="feature-item">Communication & Reminders</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- COMPANY -->
+                        <li class="nav-item dropdown mx-2">
+                            <a class="nav-link fw-semibold d-flex align-items-center gap-1" href="#" data-bs-toggle="dropdown">
+                                Company
+                                <img
+                                    src="assets/image/home/Desktop - Classpro Landing Page/header/Vector 58.svg"
+                                    width="12"
+                                    height="7"
+                                    class="mt-1"
+                                    alt="image"
+                                    loading="lazy"
+                                >
+                            </a>
+                            <div class="dropdown-menu small-dropdown shadow-lg p-4 mt-3">
+                                <a href="careers.html" class="feature-item">Career</a>
+                                <div class="divider"></div>
+                                <a href="team-update.html" class="feature-item">Team</a>
+                                <div class="divider"></div>
+                                <a href="about-us.html" class="feature-item">About</a>
+                            </div>
+                        </li>
+                        <!-- PRICING -->
+                        <li class="nav-item mx-2">
+                            <a class="nav-link fw-semibold" href="pricing.html">Pricing</a>
+                        </li>
+                        <!-- RESOURCES -->
+                        <li class="nav-item dropdown mx-2">
+                            <a class="nav-link fw-semibold d-flex align-items-center gap-1" href="#" data-bs-toggle="dropdown">
+                                Resources
+                                <img
+                                    src="assets/image/home/Desktop - Classpro Landing Page/header/Vector 58.svg"
+                                    width="12"
+                                    height="7"
+                                    class="mt-1"
+                                    alt="image"
+                                    loading="lazy"
+                                >
+                            </a>
+                            <div class="dropdown-menu small-dropdown shadow-lg p-4 mt-3">
+                                <a href="#" class="feature-item">Blogs</a>
+                                <div class="divider"></div>
+                                <a href="testimonials.html" class="feature-item">Testimonials</a>
+                            </div>
+                        </li>
+                        <!-- CONTACT -->
+                        <li class="nav-item mx-2">
+                            <a class="nav-link fw-semibold" href="contact.html">Contact Us</a>
+                        </li>
+                        <!-- LOGIN -->
+                        <li class="nav-item ms-2 ms-lg-3">
+                            <a href="login.php" class="btn btn-outline-success px-4 fornw-bg rounded-pill">
+                                Log In
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
 <div class="container py-5">
 
@@ -243,7 +137,7 @@ background: linear-gradient(202deg, #4338CA 1.04%, #262078 62.15%, #010D45 109.7
         <!-- Left Content -->
         <div class="col-md-6">
             <h2 class="story-title">Our Story</h2>
-            <p class="story-text">
+            <p class="info-text">
                 The fundamental ideology driving Classpro is to empower coaching classes by streamlining their 
                 administrative processes through a user-friendly software setup that can be completed in just 
                 10 minutes. We firmly believe that the key to effective management lies in adapting and learning 
@@ -255,8 +149,8 @@ background: linear-gradient(202deg, #4338CA 1.04%, #262078 62.15%, #010D45 109.7
         <!-- Right Images -->
         <div class="col-md-6 d-flex justify-content-center">
             <div>
-                <img src="image/about-us/im1.png" class="story-img" alt="story-img">
-                <img src="image/about-us/im2.png" class="story-img story-img2" alt="story-img">
+                <img src="assets/image/about-us/im1.png" class="story-img" alt="story-img">
+                <img src="assets/image/about-us/im2.png" class="story-img story-img2" alt="story-img">
             </div>
         </div>
 
@@ -267,7 +161,7 @@ background: linear-gradient(202deg, #4338CA 1.04%, #262078 62.15%, #010D45 109.7
 
         <div class="col-md-3 stats-item">
             <div class="d-flex justify-content-center align-items-baseline gap-3">
-           <img class="imge-new" src="image/about-us/state1.png" alt="">
+           <img class="imge-new" src="assets/image/about-us/state1.png" alt="">
             <div class="stats-title">2000+</div>
             </div>
             <div class="stats-subtitle">Partners</div>
@@ -275,7 +169,7 @@ background: linear-gradient(202deg, #4338CA 1.04%, #262078 62.15%, #010D45 109.7
 
         <div class="col-md-3 stats-item">
               <div class="d-flex justify-content-center align-items-baseline gap-3">
-           <img class="imge-new" src="image/about-us/state2.png" alt="">
+           <img class="imge-new" src="assets/image/about-us/state2.png" alt="">
             <div class="stats-title">37 cities</div>
             </div>
             <div class="stats-subtitle">in Asia</div>
@@ -283,7 +177,7 @@ background: linear-gradient(202deg, #4338CA 1.04%, #262078 62.15%, #010D45 109.7
 
         <div class="col-md-3 stats-item">
               <div class="d-flex justify-content-center align-items-baseline gap-3">
-            <img class="imge-new" src="image/about-us/state3.png" alt="">
+            <img class="imge-new" src="assets/image/about-us/state3.png" alt="">
             <div class="stats-title">2011</div>
             </div>
             <div class="stats-subtitle">Establishment</div>
@@ -291,7 +185,7 @@ background: linear-gradient(202deg, #4338CA 1.04%, #262078 62.15%, #010D45 109.7
 
         <div class="col-md-3 stats-item">
               <div class="d-flex justify-content-center align-items-baseline gap-3">
-            <img class="imge-new" src="image/about-us/state1.png" alt="">
+             <img class="imge-new" src="assets/image/about-us/state1.png" alt="">
             
             <div class="stats-title">2011</div>
             </div>
@@ -305,9 +199,9 @@ background: linear-gradient(202deg, #4338CA 1.04%, #262078 62.15%, #010D45 109.7
 
         <div class="col-md-5 d-flex justify-content-center">
             <div class="circle circle-left">
-                <img src="image/about-us/gg1.png" alt="">
+                <img src="assets/image/about-us/gg1.png" alt="">
                 <h3 class="circle-title vision-title">Vision</h3>
-                <p class="circle-text">
+                <p class="info-text">
                     To revolutionize coaching management by providing innovative software solutions, enabling 
                     coaching institutes to thrive in an evolving educational landscape.
                 </p>
@@ -316,9 +210,9 @@ background: linear-gradient(202deg, #4338CA 1.04%, #262078 62.15%, #010D45 109.7
 
         <div class="col-md-5 d-flex justify-content-center">
             <div class="circle circle-right">
-                <img src="image/about-us/gg2.png" alt="">
+                <img src="assets/image/about-us/gg2.png" alt="">
                 <h3 class="circle-title vision-title">Mission</h3>
-                <p class="circle-text">
+                <p class="info-text">
                     Empower coaching institutes across India and Asia with intuitive, efficient, and 
                     user-friendly management software.
                 </p>
@@ -336,26 +230,26 @@ background: linear-gradient(202deg, #4338CA 1.04%, #262078 62.15%, #010D45 109.7
 
             <!-- LEFT SIDE CONTENT -->
             <div class="col-lg-6">
-                <h3 class="value-title mb-4">Values</h3>
+                <h3 class=" circle-title mb-4">Values</h3>
 
                 <div class="row">
-                    <div class="col-md-6 mb-4 d-flex align-items-center">
-                        <img src="image/about-us/g1.png" alt="">
+                    <div class="col-md-6 mb-4 d-flex align-items-center  width-image">
+                        <img src="assets/image/about-us/g1.png" alt="">
                         <span class="ms-3 value-text">Customer-Centric</span>
                     </div>
 
                     <div class="col-md-6 mb-4 d-flex align-items-center">
-                       <img src="image/about-us/g2.png" alt="">
+                       <img src="assets/image/about-us/g2.png" alt="">
                         <span class="ms-3 value-text">Innovation</span>
                     </div>
 
                     <div class="col-md-6 mb-4 d-flex align-items-center">
-                        <img src="image/about-us/g3.png" alt="">
+                        <img src="assets/image/about-us/g3.png" alt="">
                         <span class="ms-3 value-text">Community Impact</span>
                     </div>
 
                     <div class="col-md-6 mb-4 d-flex align-items-center">
-                        <img src="image/about-us/g4.png" alt="">
+                        <img src="assets/image/about-us/g4.png" alt="">
                         <span class="ms-3 value-text">Integrity</span>
                     </div>
                 </div>
@@ -364,7 +258,7 @@ background: linear-gradient(202deg, #4338CA 1.04%, #262078 62.15%, #010D45 109.7
             <!-- RIGHT SIDE IMAGE -->
             <div class="col-lg-5 text-center mt-4 mt-lg-0">
                 <div class="img-frame">
-                    <img src="image/about-us/im2.png" class="img-fluid values-img" alt="Values Image">
+                    <img src="assets/image/about-us/im2.png" class="img-fluid values-img" alt="Values Image">
                 </div>
             </div>
 
@@ -381,78 +275,162 @@ background: linear-gradient(202deg, #4338CA 1.04%, #262078 62.15%, #010D45 109.7
 
 
 
-<div class="slider-container">
+<div class="container py-5">
 
-  <div class="slider">
-    <div id="sliderTrack" class="slider-track">
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
 
-      <!-- Original slides -->
-      <div class="slide-item"><img src="image/about-us/1.png"></div>
-      <div class="slide-item"><img src="image/about-us/s2.png"></div>
-      <div class="slide-item"><img src="image/about-us/s3.png"><p class="mt-2 fw-bold"><br></p></div>
-      <div class="slide-item"><img src="image/about-us/s4.png"></div>
+      <!-- Replace images with your actual logos -->
+      <div class="swiper-slide">
+        <div class="slide-box">
+          <img src="assets/image/about-us/18-international.png">
+          <p>Client 1</p>
+        </div>
+      </div>
 
-      <!-- Duplicated slides for infinite loop -->
-      <!-- <div class="slide-item"><img src="image/about-us/1.png"></div>
-      <div class="slide-item"><img src="image/about-us/s2.png"></div>
-      <div class="slide-item"><img src="image/about-us/s3.png"><p class="mt-2 fw-bold"><br></p></div>
-      <div class="slide-item"><img src="image/about-us/s4.png"></div> -->
+      <div class="swiper-slide">
+        <div class="slide-box">
+          <img src="assets/image/about-us/award-winning.png">
+          <p>Client 2</p>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="slide-box">
+          <img src="assets/image/about-us/software-suggest.png">
+          <p>Support Team</p>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="slide-box">
+          <img src="assets/image/about-us/your-story.png">
+          <p>Client 4</p>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="slide-box">
+          <img src="assets/image/about-us/software-suggest.png">
+          <p>Client 5</p>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="slide-box">
+          <img src="assets/image/about-us/s4.png">
+          <p>Client 6</p>
+        </div>
+      </div>
 
     </div>
   </div>
 
-  <div class="slider-buttons">
-    <button id="prevBtn" class="nav-btn">❮</button>
-    <button id="nextBtn" class="nav-btn">❯</button>
+  <!-- Custom Arrows -->
+  <div class="swiper-nav-wrapper">
+    <button class="nav-btn prev" id="customPrev"></button>
+    <button class="nav-btn next" id="customNext"></button>
   </div>
 
 </div>
 
 
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+   <!-- FOOTER SECTION -->
+        <footer class="footer-section text-white py-5">
+            <div class="container">
+                <div class="row gy-4">
+                    <!-- CONTACT -->
+                    <div class="col-6 col-md-3 ">
+                        <h6 class="fw-bold mb-3">CONTACT</h6>
+                        <p>+91-76666 62330</p>
+                        <p>Support Helpdesk</p>
+                        <p>Contact Us</p>
+                    </div>
+                    <!-- ABOUT US -->
+                    <div class="col-6 col-md-3">
+                        <h6 class="fw-bold mb-3">ABOUT US</h6>
+                        <p>Blog</p>
+                        <p>Engineering Blog</p>
+                        <p>Careers</p>
+                        <p>Team</p>
+                        <p>Privacy</p>
+                        <p>Terms of Service</p>
+                        <p>How to Pay</p>
+                        <button class="btn btn-sm button-footer mt-2 py-2 px-4">
+                            Make Payment
+                        </button>
+                    </div>
+                    <!-- PRODUCT -->
+                    <div class="col-6 col-md-3">
+                        <h6 class="fw-bold mb-3">PRODUCT</h6>
+                        <p>Tour</p>
+                        <p>Plans & Pricing</p>
+                        <p>Security</p>
+                        <h6 class="fw-bold mt-4 mb-3">EXTRAS</h6>
+                        <p>Download Attendpro</p>
+                        <p>Examjoy</p>
+                        <p>Download TeamViewer</p>
+                    </div>
+                    <!-- ADMIN APP + RESOURCES -->
+                    <div class="col-6 col-md-3">
+                        <h6 class="fw-bold mb-3">ADMIN APP</h6>
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                            class="img-fluid mb-2"
+                            width="130"
+                            alt="image"
+                            loading="lazy"
+                        >
+                        <img
+                            src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                            class="img-fluid mb-4"
+                            width="130"
+                            alt="image"
+                            loading="lazy"
+                        >
+                        <h6 class="fw-bold mb-3">RESOURCES</h6>
+                        <p>Free Resources</p>
+                        <p>Case Studies</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+       
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <script>
-const track = document.getElementById("sliderTrack");
-const slides = document.querySelectorAll(".slide-item");
-const slideWidth = slides[0].offsetWidth + 20; // 20 = gap
-let position = 0;
+  var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    centeredSlides: true,
+    spaceBetween: 20,
 
-// Next Slide (move left infinitely)
-document.getElementById("nextBtn").addEventListener("click", () => {
-  position -= slideWidth;
-  
-  track.style.transition = "0.4s ease";
-  track.style.transform = `translateX(${position}px)`;
+    // ⭐ SHOW 5 IMAGES ON DESKTOP ⭐
+    slidesPerView: 5,
 
-  // If reached duplicate end → jump back to original without animation
-  if (Math.abs(position) >= slideWidth * (slides.length / 2)) {
-    setTimeout(() => {
-      track.style.transition = "none";
-      position = 0;
-      track.style.transform = `translateX(${position}px)`;
-    }, 400);
-  }
-});
+    breakpoints: {
+      0: { slidesPerView: 1 },
+      576: { slidesPerView: 2 },
+      768: { slidesPerView: 3 },
+      992: { slidesPerView: 4 },
+      1200: { slidesPerView: 5 }  // Desktop full width
+    },
 
-// Prev Slide (move right infinitely)
-document.getElementById("prevBtn").addEventListener("click", () => {
-  if (position === 0) {
-    // jump instantly to end duplicate set
-    track.style.transition = "none";
-    position = -slideWidth * ((slides.length / 2) - 1);
-    track.style.transform = `translateX(${position}px)`;
-  }
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    }
+  });
 
-  setTimeout(() => {
-    track.style.transition = "0.4s ease";
-    position += slideWidth;
-    track.style.transform = `translateX(${position}px)`;
-  }, 10);
-});
+  // Custom buttons
+  document.getElementById("customPrev").onclick = () => swiper.slidePrev();
+  document.getElementById("customNext").onclick = () => swiper.slideNext();
 </script>
 
-
-</body>
+    </body>
 </html>

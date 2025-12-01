@@ -50,7 +50,7 @@ nav a {
 .fornw-bg {
   background: transparent !important;
   border-color: #2fa124 !important;
-  color: #2fa124 !important;
+  color: #000000 !important;
 }
 
 /* Hover works now */
@@ -2147,3 +2147,236 @@ font-weight: 500;
 line-height: 44px; /* 122.222% */
 letter-spacing: -0.72px;
 }
+
+
+/* about us page */
+
+
+/* Our Story Heading */
+    .story-title {
+      color: #22B05B;
+font-family: var(--font-primary);
+font-size: 72px;
+font-style: normal;
+font-weight: 500;
+line-height: 134%; /* 96.48px */
+text-transform: capitalize;
+    }
+
+
+    .story-img2 {
+        padding-top: 52px;
+    }
+
+    /* Right Polaroid Image Style */
+    .story-img {
+        width: 240px;
+        transform: rotate(-4deg);
+    }
+    .story-img:nth-child(2) {
+        transform: rotate(-4deg);
+        margin-left: -50px;
+        margin-top: 20px;
+    }
+
+    /* Stats Bar */
+    .stats-box {
+        border-radius: 24px;
+background: linear-gradient(202deg, #4338CA 1.04%, #262078 62.15%, #010D45 109.76%);
+        color: #ffffff;
+        
+        padding: 51px 10px;
+        margin: 50px 0;
+    }
+
+    .stats-item {
+        text-align: center;
+    }
+
+    /* .stats-icon {
+        font-size: 26px;
+        margin-bottom: 5px;
+        display: block;
+    } */
+
+    .stats-title {
+          color: #22B05B;
+font-family: var(--font-primary);
+font-size: 41.997px;
+font-style: normal;
+font-weight: 500;
+line-height: 134%; /* 56.275px */
+    }
+    .imge-new {
+width: 52.828px;
+height: 33.62px;
+    }
+
+    .stats-subtitle {
+        color: #FFF;
+        font-family: var(--font-primary);
+font-size: 17.499px;
+font-style: normal;
+font-weight: 500;
+line-height: 164%; /* 28.698px */
+text-transform: capitalize;
+    }
+
+    /* Vision & Mission Circles */
+    .circle-container {
+        position: relative;
+        margin-top: 60px;
+            padding-bottom: 48px;
+    }
+
+    .circle {
+        width: 380px;
+        height: 380px;
+        border: 2px solid #CFCFCF;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        text-align: center;
+    }
+
+    .circle-title {
+        color: #22B05B;
+font-family: var(--font-primary);
+font-size: 48px;
+font-style: normal;
+font-weight: 500;
+line-height: 134%; /* 64.32px */
+    }
+    .circle-right img {
+      width: 64.964px;
+height: 64.798px;
+    }
+
+    .vision-title {
+        color: #1E9C6B;
+    }
+
+    /* Overlap Handling */
+    .circle-left {
+        margin-right: -120px;
+    }
+
+    .circle-right {
+        margin-left: -120px;
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 768px) {
+        .circle {
+            width: 300px;
+            height: 300px;
+            padding: 20px;
+        }
+        .circle-left, .circle-right {
+            margin: 0 auto;
+        }
+    }
+
+
+    /* jkbjkb */
+
+
+    /* Section background */
+.values-section {
+    background: #eaf3fc;
+}
+
+
+
+/* Icons */
+.value-icon {
+    font-size: 32px;
+    color: #0b1673;
+}
+
+/* Text beside icon */
+.value-text {
+  color: #2B2388;
+  font-family: var(--font-primary);
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 132.4%; /* 31.776px */
+}
+.width-image img {
+  width: 67.492px;
+height: 63.275px;
+}
+/* Image Frame Styling */
+.img-frame {
+    display: inline-block;
+    padding: 10px;
+    transform: rotate(4deg);
+}
+
+.values-img {
+    border-radius: 4px;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+    .value-title {
+        text-align: center;
+    }
+    .value-icon {
+        font-size: 28px;
+    }
+    .img-frame {
+        transform: rotate(0deg);
+    }
+}
+
+
+/*  */
+.slide-box {
+      text-align: center;
+      opacity: 0.25;
+      transition: 0.4s ease;
+    }
+    .slide-box img {
+      width: 110px;
+      max-width: 100%;
+      display: block;
+      margin: 0 auto 8px;
+    }
+    .swiper-slide-active .slide-box {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+
+    /* Custom Buttons */
+    .swiper-nav-wrapper {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      margin-top: 15px;
+    }
+    .nav-btn {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: #1FAE42;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      cursor: pointer;
+      border: none;
+    }
+    .nav-btn.prev::after { content: "‹"; }
+    .nav-btn.next::after { content: "›"; }
+
+    /* Hide default swiper arrows */
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: none !important;
+    }
