@@ -7,12 +7,13 @@
         <!-- Bootstrap 5 -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
         <!-- swiper slider link -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
         <!-- Custom CSS -->
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
-        <!-- NAVBAR -->
+        <!-- 🔹 NAVBAR -->
         <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
             <div class="container">
                 <a class="navbar-brand fs-3 main-logo" href="index.html">
@@ -127,103 +128,59 @@
         <!-- nav bar end -->
         <!-- main start -->
         <main>
-            <!-- HERO SECTION -->
-            <section class="job-detail-section py-5">
-                <div class="container">
-                    <div class="row">
-                        <!-- JOB HEADER -->
-                        <div class="col-lg-6">
-                            <h2 class="job-title">Engineering</h2>
-                            <div class="job-meta d-flex align-items-center flex-wrap gap-3 mt-2">
-                                <span class="job-meta-item">
-                                    <img src="assets/image/careers/location.svg" alt="image" loading="lazy">
-                                    Mumbai
-                                </span>
-                                <span class="job-meta-item">
-                                    <img src="assets/image/careers/calender.svg" alt="image" loading="lazy">
-                                    26 Nov 2021
-                                </span>
+            <section class="contact-section container py-5">
+                <div class="row justify-content-between align-items-start">
+                    <!-- LEFT SIDE FORM -->
+                    <div class="col-lg-6">
+                        <h2 class="contact-title mb-4">Let’s Talk</h2>
+                        <form>
+                            <div class="mb-4">
+                                <input type="text" class="form-control custom-input" placeholder="Name">
                             </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <!-- TAGS -->
-                            <div class="job-tags mt-3 d-flex flex-wrap gap-2">
-                                <span class="job-badge">JavaScript</span>
-                                <span class="job-badge">React Native</span>
-                                <span class="job-badge">Redux Developer</span>
+                            <div class="mb-4">
+                                <input type="email" class="form-control custom-input" placeholder="Email">
                             </div>
+                            <div class="mb-4">
+                                <input type="text" class="form-control custom-input" placeholder="Mobile Number">
+                            </div>
+                            <div class="mb-4">
+                                <textarea class="form-control custom-input" placeholder="Message"></textarea>
+                            </div>
+                            <div class="trycent">
+                                <button class="submit-btn">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- RIGHT SIDE INFO -->
+                    <div class="col-lg-5 mt-5 mt-lg-0">
+                        <p class="info-heading">
+                            For any queries, doubts, or questions,
+                            <br>
+                            feel free to reach us at
+                        </p>
+                        <div class="info-item d-flex mt-2">
+                            <i class="bi bi-geo-alt-fill info-icon"></i>
+                            <p class="ms-3 info-text">
+                                Address: Classpro, A5, Ganna Bhavan,
+                                <br>
+                                Akurli Road No. 1, Kandivali East, Mumbai,
+                                <br>
+                                India - 400101
+                            </p>
                         </div>
-                    </div>
-                    <hr>
-                    <!-- SECTION 1 -->
-                    <div class="job-block mb-5">
-                        <h5 class="job-block-title">What we do?</h5>
-                        <p class="job-desc">
-                            Classpro is India’s leading online software for coaching classes. With 1000+ coaching classes using it 
-                daily in 150+ cities, it is changing the way coaching classes manage their business in India.
-                We are a small team of young, highly enthusiastic, creative and performance-driven people who will do 
-                anything (literally) to deliver the best possible user experience to our customers.
-                        </p>
-                        <p class="job-desc">
-                            Interested to know more about how we use technology? See our engineering blog.
-                        </p>
-                    </div>
-                    <hr>
-                    <!-- SECTION 2 -->
-                    <div class="job-block mb-5">
-                        <h5 class="job-block-title">What are we looking for ?</h5>
-                        <p class="job-desc">
-                            We are looking for talented Javascript developer who want to join our engineering team to build great 
-                application for Education domain. You will be taking a senior/lead role in building 
-                React / React Native / Javascript applications.
-                        </p>
-                        <p class="job-desc">
-                            The position requires a developer with experience developing modern web applications and mobile web apps 
-                using the latest technology. At Classpro we are using React & Javascript to build our next-generation platform.
-                        </p>
-                    </div>
-                    <hr>
-                    <!-- SECTION 3 -->
-                    <div class="job-block mb-5">
-                        <h5 class="job-block-title">Roles and Responsibilities:</h5>
-                        <ul class="job-list">
-                            <li>Understand requirements from Product Owner & convert visuals to interactive web interfaces.</li>
-                            <li>Develop new user-facing features.</li>
-                            <li>Write reusable code for future use.</li>
-                            <li>Ensure technical feasibility of UI/UX designs.</li>
-                            <li>Optimize application speed & scalability.</li>
-                            <li>Experience in a mainstream library/framework (ReactJS preferred).</li>
-                            <li>Collaborate with Designers, Product Managers & Backend Engineers.</li>
-                        </ul>
-                    </div>
-                    <hr>
-                    <!-- SECTION 4 -->
-                    <div class="job-block mb-5">
-                        <h5 class="job-block-title">Skills & Requirements:</h5>
-                        <ul class="job-list">
-                            <li>Expert knowledge of React, React Native, Redux, Javascript, HTML, CSS & related packages.</li>
-                        </ul>
-                    </div>
-                    <hr>
-                    <!-- SECTION 5 -->
-                    <div class="job-block mb-5">
-                        <h5 class="job-block-title">Job perks:</h5>
-                        <ul class="job-list">
-                            <li>Learning Atmosphere & Fun Environment</li>
-                            <li>Saturday is a learning day</li>
-                            <li>Events & team activities</li>
-                            <li>Training and development budget</li>
-                            <li>3 - 8 LPA (may vary)</li>
-                        </ul>
-                    </div>
-                    <!-- APPLY BUTTON -->
-                    <div>
-                        <a href="#" class="job-apply-btn">Apply Now</a>
+                        <div class="info-item d-flex mt-2 ps-1">
+                            <i class="bi bi-telephone info-icon"></i>
+                            <p class="ms-3 info-text">Phone no. +91-7666662930</p>
+                        </div>
+                        <div class="info-item d-flex mt-2 ps-1">
+                            <i class="bi bi-envelope info-icon"></i>
+                            <p class="ms-3 info-text">Email: support@classpro.in</p>
+                        </div>
                     </div>
                 </div>
             </section>
+            <!-- main end -->
         </main>
-        <!-- main end -->
         <!-- footer -->
         <section class="india-hero pt-5">
             <div class="container py-lg-5 py-sm-3">

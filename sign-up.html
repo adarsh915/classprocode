@@ -8,114 +8,24 @@
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <style>
-        body {
-            background: #fff;
-            font-family: "Poppins", sans-serif;
-        }
-
-        .signup-wrapper {
-            max-width: 420px;
-            width: 100%;
-            margin: 60px auto;
-            padding: 0 15px;
-            text-align: center;
-        }
-
-        .signup-title {
-            font-size: 28px;
-            font-weight: 600;
-            color: #4a2ff7;
-            margin-bottom: 30px;
-        }
-
-        .form-control {
-            height: 50px;
-            border-radius: 10px;
-            border: 2px solid #C9C9C9;
-            font-size: 15px;
-        }
-
-        .form-control:focus {
-            border-color: #4a2ff7;
-            box-shadow: none;
-        }
-
-        .login-text {
-            font-size: 14px;
-            margin-top: 15px;
-        }
-
-        .login-text a {
-            color: #1a73e8;
-            font-weight: 600;
-            text-decoration: none;
-        }
-
-        .signup-btn {
-            background: #1DB954;
-            color: #fff;
-            border: none;
-            width: 100%;
-            height: 50px;
-            border-radius: 10px;
-            font-size: 18px;
-            margin-top: 20px;
-        }
-
-        .signup-btn:hover {
-            background: #17a548;
-        }
-
-        .terms-text {
-            margin-top: 15px;
-            font-size: 12px;
-            color: #444;
-        }
-
-        .terms-text span {
-            font-weight: 600;
-        }
-
-        /* RESPONSIVE ADJUSTMENTS */
-        @media (max-width: 576px) {
-            .signup-wrapper {
-                margin-top: 40px;
-            }
-
-            .signup-title {
-                font-size: 24px;
-            }
-
-            .form-control {
-                height: 46px;
-                font-size: 14px;
-            }
-
-            .signup-btn {
-                height: 46px;
-                font-size: 16px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-
+<div class="signup-box_p">
     <div class="signup-wrapper">
         <h2 class="signup-title">Sign up for free</h2>
 
         <form>
-            <input type="text" class="form-control mb-3" placeholder="Full Name">
-            <input type="email" class="form-control mb-3" placeholder="Email ID">
-            <input type="text" class="form-control mb-3" placeholder="Mobile Number">
-            <input type="text" class="form-control mb-3" placeholder="Coaching Classes Name">
-            <input type="password" class="form-control mb-2" placeholder="Password">
+            <input type="text" class="form-control mb-3 form-log" placeholder="Full Name">
+            <input type="email" class="form-control mb-3 form-log" placeholder="Email ID">
+            <input type="text" class="form-control mb-3 form-log" placeholder="Mobile Number">
+            <input type="text" class="form-control mb-3 form-log" placeholder="Coaching Classes Name">
+            <input type="password" class="form-control mb-2 form-log" placeholder="Password">
 
             <p class="login-text">
                 Already have an Account?
-                <a href="#">Login</a>
+                <a href="login.html">Login</a>
             </p>
 
             <button class="signup-btn">Sign Up</button>
@@ -126,7 +36,7 @@
             </p>
         </form>
     </div>
-
+</div>
 </body>
 
 </html>
