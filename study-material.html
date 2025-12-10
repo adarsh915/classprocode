@@ -4,119 +4,114 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Class-Pro</title>
-        <!-- Bootstrap 5 -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-        <!-- swiper slider link -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-        <!-- Custom CSS -->
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
-        <!-- 🔹 NAVBAR -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3" aria-label="Main Navigation">
             <div class="container">
-                <a class="navbar-brand fs-3 main-logo" href="index.html">
-                    <img src="assets/image/home/Classpro full website/header/classpro-logo 2 copy.svg" alt="image" loading="lazy">
+                <a class="navbar-brand fs-3 main-logo" href="index.html" aria-label="Classpro Home">
+                    <img src="assets/image/home/Classpro full website/header/classpro-logo 2 copy.svg" alt="Classpro Logo" loading="lazy">
                 </a>
                 <button
                     class="navbar-toggler"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
                 >
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
-                        <!-- FEATURES -->
                         <li class="nav-item dropdown mx-2 position-relative">
-                            <a class="nav-link fw-semibold d-flex align-items-center" href="#" data-bs-toggle="dropdown">
+                            <a class="nav-link fw-semibold d-flex align-items-center" href="#" id="featuresDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <span class="me-1">Features</span>
                                 <img
                                     src="assets/image/home/Desktop - Classpro Landing Page/header/Vector 58.svg"
                                     width="12"
                                     height="7"
                                     class="mt-1"
-                                    alt="image"
+                                    alt=""
+                                    aria-hidden="true"
                                     loading="lazy"
                                 >
                             </a>
-                            <div class="dropdown-menu mega-dropdown shadow-lg p-4" style="top: 89%;">
+                            <div class="dropdown-menu mega-dropdown shadow-lg p-4" aria-labelledby="featuresDropdown" style="top: 89%;">
                                 <div class="row g-4">
                                     <div class="col-md-4">
                                         <a href="fee-management.html" class="feature-item">Transparent Fee Management</a>
-                                        <div class="divider"></div>
+                                        <div class="divider" role="separator"></div>
                                         <a href="study-material.html" class="feature-item">Share Notes / Study Materials</a>
-                                        <div class="divider"></div>
+                                        <div class="divider" role="separator"></div>
                                         <a href="assignments.html" class="feature-item">Homework & Assignments</a>
                                     </div>
                                     <div class="col-md-4">
                                         <a href="biometric-attendance.html" class="feature-item">Biometric Attendance</a>
-                                        <div class="divider"></div>
+                                        <div class="divider" role="separator"></div>
                                         <a href="student-performance.html" class="feature-item">Student Performance</a>
-                                        <div class="divider"></div>
+                                        <div class="divider" role="separator"></div>
                                         <a href="reports.html" class="feature-item">Insightful Reports</a>
                                     </div>
                                     <div class="col-md-4">
                                         <a href="app.html" class="feature-item">Student / Parent App</a>
-                                        <div class="divider"></div>
+                                        <div class="divider" role="separator"></div>
                                         <a href="communication.html" class="feature-item">Communication & Reminders</a>
                                     </div>
                                 </div>
                             </div>
-                            
                         </li>
-                        <!-- COMPANY -->
                         <li class="nav-item dropdown mx-2">
-                            <a class="nav-link fw-semibold d-flex align-items-center gap-1" href="#" data-bs-toggle="dropdown">
+                            <a class="nav-link fw-semibold d-flex align-items-center gap-1" href="#" id="companyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Company
                                 <img
                                     src="assets/image/home/Desktop - Classpro Landing Page/header/Vector 58.svg"
                                     width="12"
                                     height="7"
                                     class="mt-1"
-                                    alt="image"
+                                    alt=""
+                                    aria-hidden="true"
                                     loading="lazy"
                                 >
                             </a>
-                            <div class="dropdown-menu small-dropdown shadow-lg p-4 mt-3">
+                            <div class="dropdown-menu small-dropdown shadow-lg p-4 mt-3" aria-labelledby="companyDropdown">
                                 <a href="careers.html" class="feature-item">Career</a>
-                                <div class="divider"></div>
+                                <div class="divider" role="separator"></div>
                                 <a href="team.html" class="feature-item">Team</a>
-                                <div class="divider"></div>
+                                <div class="divider" role="separator"></div>
                                 <a href="our-story.html" class="feature-item">About</a>
                             </div>
                         </li>
-                        <!-- PRICING -->
                         <li class="nav-item mx-2">
                             <a class="nav-link fw-semibold" href="plans.html">Pricing</a>
                         </li>
-                        <!-- RESOURCES -->
                         <li class="nav-item dropdown mx-2">
-                            <a class="nav-link fw-semibold d-flex align-items-center gap-1" href="#" data-bs-toggle="dropdown">
+                            <a class="nav-link fw-semibold d-flex align-items-center gap-1" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Resources
                                 <img
                                     src="assets/image/home/Desktop - Classpro Landing Page/header/Vector 58.svg"
                                     width="12"
                                     height="7"
                                     class="mt-1"
-                                    alt="image"
+                                    alt=""
+                                    aria-hidden="true"
                                     loading="lazy"
                                 >
                             </a>
-                            <div class="dropdown-menu small-dropdown shadow-lg p-4 mt-3">
+                            <div class="dropdown-menu small-dropdown shadow-lg p-4 mt-3" aria-labelledby="resourcesDropdown">
                                 <a href="#" class="feature-item">Blogs</a>
-                                <div class="divider"></div>
+                                <div class="divider" role="separator"></div>
                                 <a href="customers.html" class="feature-item">Customers</a>
                             </div>
                         </li>
-                        <!-- CONTACT -->
                         <li class="nav-item mx-2">
                             <a class="nav-link fw-semibold" href="contact-us.html">Contact Us</a>
                         </li>
-                        <!-- LOGIN -->
                         <li class="nav-item ms-2 ms-lg-3">
-                            <a href="login.html" class="btn btn-outline-success px-4 fornw-bg rounded-pill">
+                            <a href="login.html" class="btn btn-outline-success px-4 fornw-bg rounded-pill" role="button">
                                 Log In
                             </a>
                         </li>
@@ -124,15 +119,11 @@
                 </div>
             </div>
         </nav>
-        <!-- nav bar end -->
-        <!-- main start -->
-        <main>
-            <!-- 🔹 HERO SECTION -->
-            <section class="hero-section">
+        <main role="main">
+            <section class="hero-section" aria-label="Study Materials Overview">
                 <div class="box-image">
                     <div class="container py-5">
                         <div class="row align-items-center">
-                            <!-- LEFT TEXT -->
                             <div class="col-lg-6 col-md-6 mb-5">
                                 
                                 <h1 class="green-text text-success mt-3">
@@ -144,18 +135,17 @@
                                  The feature enables educators to effectively distribute course-related resources to students. This feature streamlines the process of sharing notes, presentations, study materials, and other educational documents, enhancing students' access to valuable learning resources.
                                 </p>
                                 <div class="d-flex justify-content-center justify-content-md-start">
-                                    <button class="btn px-4 py-2 rounded-pill-2 mt-3">
+                                    <button class="btn px-4 py-2 rounded-pill-2 mt-3" aria-label="Request a free demo">
                                         Get Your Free Demo
                                     </button>
                                 </div>
                             </div>
-                            <!-- RIGHT CARD -->
                             <div class="col-lg-6 col-md-6 text-center">
                                 <div class="right-card position-relative mx-auto">
                                     <img
                                         src="assets/image/study/Group 238.png"
                                         class="main-hero-img"
-                                        alt="image"
+                                        alt="Illustration of students sharing study materials online"
                                         loading="lazy"
                                     >
                                 </div>
@@ -163,16 +153,15 @@
                         </div>
                     </div>
                 </div>
-                <section class="info-block-section py-5">
+                <section class="info-block-section py-5" aria-label="Key Benefits">
     <div class="container">
         <div class="info-block-wrapper p-4">
 
             <div class="row text-center gy-4">
 
-                <!-- Item 1 -->
                 <div class="col-12 col-md-4 info-item-box">
                     <div class="info-icon-wrap">
-                        <img src="assets/image/study/Group 253.svg" alt="Universal Access" class="img-fluid-1">
+                        <img src="assets/image/study/Group 253.svg" alt="" aria-hidden="true" class="img-fluid-1">
                     </div>
                     <h5 class="info-title mt-3">Universal Access</h5>
                     <p class="info-desc">
@@ -181,10 +170,9 @@
                     </p>
                 </div>
 
-                <!-- Item 2 -->
                 <div class="col-12 col-md-4 info-item-box">
                     <div class="info-icon-wrap">
-                        <img src="assets/image/study/Group.svg" alt="Batch-Wide Consistency" class="img-fluid-2">
+                        <img src="assets/image/study/Group.svg" alt="" aria-hidden="true" class="img-fluid-2">
                     </div>
                     <h5 class="info-title mt-3">Batch-Wide Consistency</h5>
                     <p class="info-desc">
@@ -193,10 +181,9 @@
                     </p>
                 </div>
 
-                <!-- Item 3 -->
                 <div class="col-12 col-md-4 info-item-box">
                     <div class="info-icon-wrap">
-                        <img src="assets//image/study/XMLID_1031_.svg" alt="Time Saving" class="img-fluid-3">
+                        <img src="assets//image/study/XMLID_1031_.svg" alt="" aria-hidden="true" class="img-fluid-3">
                     </div>
                     <h5 class="info-title mt-3">Time Saving</h5>
                     <p class="info-desc">
@@ -210,18 +197,16 @@
         </div>
     </div>
 </section>
-<section class="notes-section">
+<section class="notes-section" aria-label="Document Sharing Features">
     <div class="container">
         <div class="row notes-row">
                 <h2 class="notes-heading text-start mb-5">
                     Easily Share Notes/Study Materials
                 </h2>
-            <!-- LEFT COLUMN -->
             <div class="col-lg-6 col-md-6 col-12 notes-left">
-                <!-- Feature 1 -->
                 <div class="notes-feature-box d-flex">
                     <div class="notes-icon">
-                        <img src="assets/image/study/Group1.svg" alt="Document Upload">
+                        <img src="assets/image/study/Group1.svg" alt="" aria-hidden="true">
                     </div>
                     <div class="notes-content">
                         <h4 class="notes-title">Document Upload</h4>
@@ -232,10 +217,9 @@
                     </div>
                 </div>
 
-                <!-- Feature 2 -->
                 <div class="notes-feature-box d-flex">
                     <div class="notes-icon">
-                        <img src="assets/image/study/Group2.svg" alt="Centralized Platform">
+                        <img src="assets/image/study/Group2.svg" alt="" aria-hidden="true">
                     </div>
                     <div class="notes-content">
                         <h4 class="notes-title">Centralized Platform</h4>
@@ -245,10 +229,9 @@
                     </div>
                 </div>
 
-                <!-- Feature 3 -->
                 <div class="notes-feature-box d-flex">
                     <div class="notes-icon">
-                        <img src="assets/image/study/Group 428.svg" alt="User-Friendly Interface">
+                        <img src="assets/image/study/Group 428.svg" alt="" aria-hidden="true">
                     </div>
                     <div class="notes-content">
                         <h4 class="notes-title">User-Friendly Interface</h4>
@@ -260,17 +243,15 @@
 
             </div>
 
-            <!-- RIGHT COLUMN -->
             <div class="col-lg-6 col-md-6 col-12 notes-right">
                 <div class="notes-image-box">
-                    <!-- Background image applied from CSS -->
                     <div class="notes-card">
                           <img
-                                        src="assets/image/study/easyshare.png"
-                                        class="main-hero-img study1"
-                                        alt="image"
-                                        loading="lazy"
-                                    >
+                                    src="assets/image/study/easyshare.png"
+                                    class="main-hero-img study1"
+                                    alt="Interface showing easy document sharing options"
+                                    loading="lazy"
+                                >
                     </div>
                 </div>
             </div>
@@ -278,33 +259,29 @@
         </div>
     </div>
 </section>
-<section class="notes-section" style="background-color: #EDF6FF;">
+<section class="notes-section" style="background-color: #EDF6FF;" aria-label="Document Management Features">
     <div class="container">
         <div class="row notes-row">
-            <!-- LEFT COLUMN -->
-             <!-- RIGHT COLUMN -->
             <div class="col-lg-6 col-md-6 col-12 notes-right">
                 
                 <div class="notes-image-box">
-                    <!-- Background image applied from CSS -->
                     <div class="notes-card" style="">
                           <img
-                                        src="assets/image/study/Group 384.png"
-                                        class="main-hero-img study2"
-                                        alt="image"
-                                        loading="lazy"
-                                    >
+                                    src="assets/image/study/Group 384.png"
+                                    class="main-hero-img study2"
+                                    alt="Dashboard view of document folders organization"
+                                    loading="lazy"
+                                >
                     </div>
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-12 notes-left">
-                <!-- Feature 1 -->
-                 <h2 class="notes-heading text-start mb-5 mt-5">
+                <h2 class="notes-heading text-start mb-5 mt-5">
                    Manage Documents in Folders
                 </h2>
                 <div class="notes-feature-box d-flex">
                     <div class="notes-icon">
-                        <img src="assets/image/study/Group 417.svg" alt="Document Upload">
+                        <img src="assets/image/study/Group 417.svg" alt="" aria-hidden="true">
                     </div>
                     <div class="notes-content">
                         <h4 class="notes-title">Folder Creation</h4>
@@ -314,10 +291,9 @@
                     </div>
                 </div>
 
-                <!-- Feature 2 -->
                 <div class="notes-feature-box d-flex">
                     <div class="notes-icon">
-                        <img src="assets/image/study/Group 414.svg" alt="Centralized Platform">
+                        <img src="assets/image/study/Group 414.svg" alt="" aria-hidden="true">
                     </div>
                     <div class="notes-content">
                         <h4 class="notes-title">Document Organization</h4>
@@ -327,10 +303,9 @@
                     </div>
                 </div>
 
-                <!-- Feature 3 -->
                 <div class="notes-feature-box d-flex">
                     <div class="notes-icon">
-                        <img src="assets/image/study/Group 416.svg" alt="User-Friendly Interface">
+                        <img src="assets/image/study/Group 416.svg" alt="" aria-hidden="true">
                     </div>
                     <div class="notes-content">
                         <h4 class="notes-title">Easy Retrieval</h4>
@@ -347,18 +322,16 @@
         </div>
     </div>
 </section>
-<section class="notes-section">
+<section class="notes-section" aria-label="Sharing Permissions">
     <div class="container">
         <div class="row notes-row">
                 <h2 class="notes-heading text-start mt-5 mb-5">
                     Share Files to Individual<br> Students or Individual Batch
                 </h2>
-            <!-- LEFT COLUMN -->
             <div class="col-lg-6 col-md-6 col-12 notes-left">
-                <!-- Feature 1 -->
                 <div class="notes-feature-box d-flex">
                     <div class="notes-icon">
-                        <img src="assets/image/study/group51.svg" alt="Document Upload">
+                        <img src="assets/image/study/group51.svg" alt="" aria-hidden="true">
                     </div>
                     <div class="notes-content">
                         <h4 class="notes-title">Customized Sharing</h4>
@@ -368,10 +341,9 @@
                     </div>
                 </div>
 
-                <!-- Feature 2 -->
                 <div class="notes-feature-box d-flex">
                     <div class="notes-icon">
-                        <img src="assets/image/study/Group52.svg" alt="Centralized Platform">
+                        <img src="assets/image/study/Group52.svg" alt="" aria-hidden="true">
                     </div>
                     <div class="notes-content">
                         <h4 class="notes-title">Batch-Wide Distribution</h4>
@@ -381,10 +353,9 @@
                     </div>
                 </div>
 
-                <!-- Feature 3 -->
                 <div class="notes-feature-box d-flex">
                     <div class="notes-icon">
-                        <img src="assets/image/study/Group53.svg" alt="User-Friendly Interface">
+                        <img src="assets/image/study/Group53.svg" alt="" aria-hidden="true">
                     </div>
                     <div class="notes-content">
                         <h4 class="notes-title">Individual Tailoring</h4>
@@ -396,17 +367,15 @@
 
             </div>
 
-            <!-- RIGHT COLUMN -->
             <div class="col-lg-6 col-md-6 col-12 notes-right">
                 <div class="notes-image-box">
-                    <!-- Background image applied from CSS -->
                     <div class="notes-card">
                           <img
-                                        src="assets/image/study/Group 402.png"
-                                        class="main-hero-img study3"
-                                        alt="image"
-                                        loading="lazy"
-                                    >
+                                    src="assets/image/study/Group 402.png"
+                                    class="main-hero-img study3"
+                                    alt="Visual representation of batch sharing options"
+                                    loading="lazy"
+                                >
                     </div>
                 </div>
             </div>
@@ -414,19 +383,15 @@
         </div>
     </div>
 </section>
-<section class="faq-section">
+<section class="faq-section" aria-labelledby="faq-heading">
     <div class="container">
         <div class="row faq-row align-items-start">
 
-            <!-- LEFT TITLE COLUMN -->
             <div class="col-lg-4 col-md-4 col-12 faq-left">
-                <h2 class="faq-title">Frequently asked<br>questions</h2>
+                <h2 class="faq-title" id="faq-heading">Frequently asked<br>questions</h2>
             </div>
 
-            <!-- RIGHT ACCORDION COLUMN -->
             <div class="col-md-8 app-left-column">
-      <!-- <h2 class="app-heading-green mb-4">Get Your Free<br> Trial Today</h2> -->
-
       <div class="accordion accordion-flush app-faq-accordion" id="appFaqAccordion">
 
         <div class="accordion-item app-accordion-item">
@@ -513,9 +478,8 @@
 </section>
 
                 
-        </main>
-        <!-- main end -->
-        <section class="india-hero pt-5">
+        </section>
+        <section class="india-hero pt-5" aria-label="Call to Action">
             <div class="container py-lg-5 py-sm-3">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
@@ -526,25 +490,22 @@
                         </div>
                     </div>
                     <div class="col-lg-6 text-lg-end new-try d-flex justify-content-center justify-content-lg-end">
-                        <button class="footer-btn">
+                        <button class="footer-btn" aria-label="Get Your Free Demo">
                             Get Your Free Demo
                         </button>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- FOOTER SECTION -->
-        <footer class="footer-section text-white py-5">
+        <footer class="footer-section text-white py-5" role="contentinfo">
             <div class="container">
                 <div class="row gy-4">
-                    <!-- CONTACT -->
                     <div class="col-6 col-md-3 ">
                         <h6 class="mb-4" style="opacity: 0.4;font-weight: 400;">CONTACT</h6>
                         <p>+91-76666 62330</p>
                         <p>Support Helpdesk</p>
                         <p>Contact Us</p>
                     </div>
-                    <!-- ABOUT US -->
                     <div class="col-6 col-md-3">
                         <h6 class="mb-4" style="opacity: 0.4;font-weight: 400;">ABOUT US</h6>
                         <p>Blog</p>
@@ -554,11 +515,10 @@
                         <p>Privacy</p>
                         <p>Terms of Service</p>
                         <p>How to Pay</p>
-                        <button class="btn btn-sm button-footer mt-2 py-2 px-4">
+                        <button class="btn btn-sm button-footer mt-2 py-2 px-4" aria-label="Make a Payment">
                             Make Payment
                         </button>
                     </div>
-                    <!-- PRODUCT -->
                     <div class="col-6 col-md-3">
                         <h6 class="mb-4" style="opacity: 0.4;font-weight: 400;">PRODUCT</h6>
                         <p>Tour</p>
@@ -569,21 +529,20 @@
                         <p>Examjoy</p>
                         <p>Download TeamViewer</p>
                     </div>
-                    <!-- ADMIN APP + RESOURCES -->
                     <div class="col-6 col-md-3">
                         <h6 class="mb-4" style="opacity: 0.4;font-weight: 400;">ADMIN APP</h6>
                         <img
                             src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
                             class="img-fluid mb-2"
                             width="130"
-                            alt="image"
+                            alt="Get it on Google Play"
                             loading="lazy"
                         ><br>
                         <img
                             src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
                             class="img-fluid mb-4"
                             width="130"
-                            alt="image"
+                            alt="Download on the App Store"
                             loading="lazy"
                         > 
                         <h6 class="mb-4" style="opacity: 0.4;font-weight: 400;">RESOURCES</h6>
@@ -593,46 +552,46 @@
                 </div>
             </div>
         </footer>
-        <!-- Bootstrap JS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Swiper JS -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 5,
-            spaceBetween: 30,
-            loop: true,
-            autoplay: {
-                delay: 1500,
-                disableOnInteraction: false,
-            },
-            breakpoints: {
-                320: { slidesPerView: 2 },
-                576: { slidesPerView: 3 },
-                768: { slidesPerView: 4 },
-                992: { slidesPerView: 5 }
-            }
-        });
-        </script>
-        <script>
-    const buttons = document.querySelectorAll(".feature-btn");
-    const textBox = document.getElementById("featureText");
-    const imageBox = document.getElementById("featureImage");
-
-    buttons.forEach(btn => {
-        btn.addEventListener("click", function () {
-
-            // Remove active class from all buttons
-            buttons.forEach(b => b.classList.remove("active"));
-
-            // Add active to current button
-            this.classList.add("active");
-
-            // Update text & image
-            textBox.innerHTML = this.getAttribute("data-text");
-            imageBox.src = this.getAttribute("data-img");
-        });
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 5,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+            delay: 1500,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            320: { slidesPerView: 2 },
+            576: { slidesPerView: 3 },
+            768: { slidesPerView: 4 },
+            992: { slidesPerView: 5 }
+        }
     });
-        </script>
-    </body>
+    </script>
+    <script>
+const buttons = document.querySelectorAll(".feature-btn");
+const textBox = document.getElementById("featureText");
+const imageBox = document.getElementById("featureImage");
+
+buttons.forEach(btn => {
+    btn.addEventListener("click", function () {
+
+        // Remove active class from all buttons
+        buttons.forEach(b => b.classList.remove("active"));
+
+        // Add active to current button
+        this.classList.add("active");
+
+        // Update text & image
+        textBox.innerHTML = this.getAttribute("data-text");
+        imageBox.src = this.getAttribute("data-img");
+    });
+});
+    </script>
+</body>
 </html>

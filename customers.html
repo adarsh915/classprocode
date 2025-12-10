@@ -9,110 +9,109 @@
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3" aria-label="Main Navigation">
             <div class="container">
-                <a class="navbar-brand fs-3 main-logo" href="index.html">
-                    <img src="assets/image/home/Classpro full website/header/classpro-logo 2 copy.svg" alt="image" loading="lazy">
+                <a class="navbar-brand fs-3 main-logo" href="index.html" aria-label="Classpro Home">
+                    <img src="assets/image/home/Classpro full website/header/classpro-logo 2 copy.svg" alt="Classpro Logo" loading="lazy">
                 </a>
                 <button
                     class="navbar-toggler"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
                 >
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
-                        <!-- FEATURES -->
                         <li class="nav-item dropdown mx-2 position-relative">
-                            <a class="nav-link fw-semibold d-flex align-items-center" href="#" data-bs-toggle="dropdown">
+                            <a class="nav-link fw-semibold d-flex align-items-center" href="#" id="featuresDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <span class="me-1">Features</span>
                                 <img
                                     src="assets/image/home/Desktop - Classpro Landing Page/header/Vector 58.svg"
                                     width="12"
                                     height="7"
                                     class="mt-1"
-                                    alt="image"
+                                    alt=""
+                                    aria-hidden="true"
                                     loading="lazy"
                                 >
                             </a>
-                            <div class="dropdown-menu mega-dropdown shadow-lg p-4" style="top: 89%;">
+                            <div class="dropdown-menu mega-dropdown shadow-lg p-4" aria-labelledby="featuresDropdown" style="top: 89%;">
                                 <div class="row g-4">
                                     <div class="col-md-4">
                                         <a href="fee-management.html" class="feature-item">Transparent Fee Management</a>
-                                        <div class="divider"></div>
+                                        <div class="divider" role="separator"></div>
                                         <a href="study-material.html" class="feature-item">Share Notes / Study Materials</a>
-                                        <div class="divider"></div>
+                                        <div class="divider" role="separator"></div>
                                         <a href="assignments.html" class="feature-item">Homework & Assignments</a>
                                     </div>
                                     <div class="col-md-4">
                                         <a href="biometric-attendance.html" class="feature-item">Biometric Attendance</a>
-                                        <div class="divider"></div>
+                                        <div class="divider" role="separator"></div>
                                         <a href="student-performance.html" class="feature-item">Student Performance</a>
-                                        <div class="divider"></div>
+                                        <div class="divider" role="separator"></div>
                                         <a href="reports.html" class="feature-item">Insightful Reports</a>
                                     </div>
                                     <div class="col-md-4">
                                         <a href="app.html" class="feature-item">Student / Parent App</a>
-                                        <div class="divider"></div>
+                                        <div class="divider" role="separator"></div>
                                         <a href="communication.html" class="feature-item">Communication & Reminders</a>
                                     </div>
                                 </div>
                             </div>
-                            
                         </li>
-                        <!-- COMPANY -->
                         <li class="nav-item dropdown mx-2">
-                            <a class="nav-link fw-semibold d-flex align-items-center gap-1" href="#" data-bs-toggle="dropdown">
+                            <a class="nav-link fw-semibold d-flex align-items-center gap-1" href="#" id="companyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Company
                                 <img
                                     src="assets/image/home/Desktop - Classpro Landing Page/header/Vector 58.svg"
                                     width="12"
                                     height="7"
                                     class="mt-1"
-                                    alt="image"
+                                    alt=""
+                                    aria-hidden="true"
                                     loading="lazy"
                                 >
                             </a>
-                            <div class="dropdown-menu small-dropdown shadow-lg p-4 mt-3">
+                            <div class="dropdown-menu small-dropdown shadow-lg p-4 mt-3" aria-labelledby="companyDropdown">
                                 <a href="careers.html" class="feature-item">Career</a>
-                                <div class="divider"></div>
+                                <div class="divider" role="separator"></div>
                                 <a href="team.html" class="feature-item">Team</a>
-                                <div class="divider"></div>
+                                <div class="divider" role="separator"></div>
                                 <a href="our-story.html" class="feature-item">About</a>
                             </div>
                         </li>
-                        <!-- PRICING -->
                         <li class="nav-item mx-2">
                             <a class="nav-link fw-semibold" href="plans.html">Pricing</a>
                         </li>
-                        <!-- RESOURCES -->
                         <li class="nav-item dropdown mx-2">
-                            <a class="nav-link fw-semibold d-flex align-items-center gap-1" href="#" data-bs-toggle="dropdown">
+                            <a class="nav-link fw-semibold d-flex align-items-center gap-1" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Resources
                                 <img
                                     src="assets/image/home/Desktop - Classpro Landing Page/header/Vector 58.svg"
                                     width="12"
                                     height="7"
                                     class="mt-1"
-                                    alt="image"
+                                    alt=""
+                                    aria-hidden="true"
                                     loading="lazy"
                                 >
                             </a>
-                            <div class="dropdown-menu small-dropdown shadow-lg p-4 mt-3">
+                            <div class="dropdown-menu small-dropdown shadow-lg p-4 mt-3" aria-labelledby="resourcesDropdown">
                                 <a href="#" class="feature-item">Blogs</a>
-                                <div class="divider"></div>
+                                <div class="divider" role="separator"></div>
                                 <a href="customers.html" class="feature-item">Customers</a>
                             </div>
                         </li>
-                        <!-- CONTACT -->
                         <li class="nav-item mx-2">
                             <a class="nav-link fw-semibold" href="contact-us.html">Contact Us</a>
                         </li>
-                        <!-- LOGIN -->
                         <li class="nav-item ms-2 ms-lg-3">
-                            <a href="login.html" class="btn btn-outline-success px-4 fornw-bg rounded-pill">
+                            <a href="login.html" class="btn btn-outline-success px-4 fornw-bg rounded-pill" role="button">
                                 Log In
                             </a>
                         </li>
@@ -120,16 +119,17 @@
                 </div>
             </div>
         </nav>
-        <main>
+        
+        <main role="main">
             <div class="container py-5 tesimonials_page">
                 <h2 class="section-title">Our World revolves around our customers</h2>
-                <div class="row g-4 justify-content-center">
+                <div class="row g-3 custom-spacing justify-content-center" role="group" aria-label="Customer Logos">
                     <div class="col-6 col-md-3 col-lg-2">
                         <div class="logo-box">
                             <img
                                 src="assets/image/tests/test1.png"
                                 class="logo-img"
-                                alt="logo"
+                                alt="Client Logo 1"
                                 loading="lazy"
                             >
                         </div>
@@ -139,7 +139,7 @@
                             <img
                                 src="assets/image/tests/test2.png"
                                 class="logo-img"
-                                alt="logo"
+                                alt="Client Logo 2"
                                 loading="lazy"
                             >
                         </div>
@@ -149,7 +149,7 @@
                             <img
                                 src="assets/image/tests/test3.png"
                                 class="logo-img"
-                                alt="logo"
+                                alt="Client Logo 3"
                                 loading="lazy"
                             >
                         </div>
@@ -159,7 +159,7 @@
                             <img
                                 src="assets/image/tests/test4.png"
                                 class="logo-img"
-                                alt="logo"
+                                alt="Client Logo 4"
                                 loading="lazy"
                             >
                         </div>
@@ -169,7 +169,7 @@
                             <img
                                 src="assets/image/tests/test5.png"
                                 class="logo-img"
-                                alt="logo"
+                                alt="Client Logo 5"
                                 loading="lazy"
                             >
                         </div>
@@ -180,7 +180,7 @@
                                 <img
                                     src="assets/image/tests/test6.png"
                                     class="logo-img"
-                                    alt="logo"
+                                    alt="Client Logo 6"
                                     loading="lazy"
                                 >
                             </div>
@@ -190,7 +190,7 @@
                                 <img
                                     src="assets/image/tests/test7.png"
                                     class="logo-img"
-                                    alt="logo"
+                                    alt="Client Logo 7"
                                     loading="lazy"
                                 >
                             </div>
@@ -200,7 +200,7 @@
                                 <img
                                     src="assets/image/tests/test8.png"
                                     class="logo-img"
-                                    alt="logo"
+                                    alt="Client Logo 8"
                                     loading="lazy"
                                 >
                             </div>
@@ -210,7 +210,7 @@
                                 <img
                                     src="assets/image/tests/test9.png"
                                     class="logo-img"
-                                    alt="logo"
+                                    alt="Client Logo 9"
                                     loading="lazy"
                                 >
                             </div>
@@ -220,7 +220,7 @@
                                 <img
                                     src="assets/image/tests/test10.png"
                                     class="logo-img"
-                                    alt="logo"
+                                    alt="Client Logo 10"
                                     loading="lazy"
                                 >
                             </div>
@@ -232,7 +232,7 @@
                                 <img
                                     src="assets/image/tests/test11.png"
                                     class="logo-img"
-                                    alt="logo"
+                                    alt="Client Logo 11"
                                     loading="lazy"
                                 >
                             </div>
@@ -242,7 +242,7 @@
                                 <img
                                     src="assets/image/tests/test12.png"
                                     class="logo-img"
-                                    alt="logo"
+                                    alt="Client Logo 12"
                                     loading="lazy"
                                 >
                             </div>
@@ -252,7 +252,7 @@
                                 <img
                                     src="assets/image/tests/test13.png"
                                     class="logo-img"
-                                    alt="logo"
+                                    alt="Client Logo 13"
                                     loading="lazy"
                                 >
                             </div>
@@ -262,7 +262,7 @@
                                 <img
                                     src="assets/image/tests/test14.png"
                                     class="logo-img"
-                                    alt="logo"
+                                    alt="Client Logo 14"
                                     loading="lazy"
                                 >
                             </div>
@@ -272,7 +272,7 @@
                                 <img
                                     src="assets/image/tests/test15.png"
                                     class="logo-img"
-                                    alt="logo"
+                                    alt="Client Logo 15"
                                     loading="lazy"
                                 >
                             </div>
@@ -290,7 +290,7 @@
                             </p>
                             <div class="author-box">
                                 <div class="author-img">
-                                    <img src="assets/image/tests/right.png" alt="" loading="lazy">
+                                    <img src="assets/image/tests/right.png" alt="" aria-hidden="true" loading="lazy">
                                 </div>
                                 <div>
                                     <div class="author-name">Mahesh Jadhavar</div>
@@ -302,7 +302,8 @@
                             <div class="quote-icon">
                                 <img
                                     src="assets/image/tests/coma.png"
-                                    alt="comma"
+                                    alt=""
+                                    aria-hidden="true"
                                     width="150px"
                                     loading="lazy"
                                 >
@@ -321,7 +322,7 @@
                                 </p>
                                 <div class="author-box">
                                     <div class="author-img">
-                                        <img src="assets/image/tests/right.png" alt="" loading="lazy">
+                                        <img src="assets/image/tests/right.png" alt="" aria-hidden="true" loading="lazy">
                                     </div>
                                     <div>
                                         <div class="author-name">Mahesh Jadhavar</div>
@@ -339,7 +340,7 @@
                                 </p>
                                 <div class="author-box">
                                     <div class="author-img">
-                                        <img src="assets/image/tests/right.png" alt="" loading="lazy">
+                                        <img src="assets/image/tests/right.png" alt="" aria-hidden="true" loading="lazy">
                                     </div>
                                     <div>
                                         <div class="author-name">Mahesh Jadhavar</div>
@@ -357,61 +358,7 @@
                                 </p>
                                 <div class="author-box">
                                     <div class="author-img">
-                                        <img src="assets/image/tests/right.png" alt="" loading="lazy">
-                                    </div>
-                                    <div>
-                                        <div class="author-name">Mahesh Jadhavar</div>
-                                        <div class="author-role">Ariv Education</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="testimonial-card">
-                                <p class="testimonial-text">
-                                    After implementing Classpro for just 10 days in trial we were able to take 40+ new admissions and 
-                    generate a revenue of 15+ lacs during lockdown period. Classpro provided us with an integrated tool 
-                    on top of Zoom which helped in ensuring reliability.
-                                </p>
-                                <div class="author-box">
-                                    <div class="author-img">
-                                        <img src="assets/image/tests/right.png" alt="" loading="lazy">
-                                    </div>
-                                    <div>
-                                        <div class="author-name">Mahesh Jadhavar</div>
-                                        <div class="author-role">Ariv Education</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="testimonial-card">
-                                <p class="testimonial-text">
-                                    After implementing Classpro for just 10 days in trial we were able to take 40+ new admissions and 
-                    generate a revenue of 15+ lacs during lockdown period. Classpro provided us with an integrated tool 
-                    on top of Zoom which helped in ensuring reliability.
-                                </p>
-                                <div class="author-box">
-                                    <div class="author-img">
-                                        <img src="assets/image/tests/right.png" alt="" loading="lazy">
-                                    </div>
-                                    <div>
-                                        <div class="author-name">Mahesh Jadhavar</div>
-                                        <div class="author-role">Ariv Education</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="testimonial-card">
-                                <p class="testimonial-text">
-                                    After implementing Classpro for just 10 days in trial we were able to take 40+ new admissions and 
-                    generate a revenue of 15+ lacs during lockdown period. Classpro provided us with an integrated tool 
-                    on top of Zoom which helped in ensuring reliability.
-                                </p>
-                                <div class="author-box">
-                                    <div class="author-img">
-                                        <img src="assets/image/tests/right.png" alt="" loading="lazy">
+                                        <img src="assets/image/tests/right.png" alt="" aria-hidden="true" loading="lazy">
                                     </div>
                                     <div>
                                         <div class="author-name">Mahesh Jadhavar</div>
@@ -421,13 +368,73 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="py-5">
+
+                      <div class="row g-4">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="testimonial-card">
+                                <p class="testimonial-text">
+                                    After implementing Classpro for just 10 days in trial we were able to take 40+ new admissions and 
+                    generate a revenue of 15+ lacs during lockdown period. Classpro provided us with an integrated tool 
+                    on top of Zoom which helped in ensuring reliability.
+                                </p>
+                                <div class="author-box">
+                                    <div class="author-img">
+                                        <img src="assets/image/tests/right.png" alt="" aria-hidden="true" loading="lazy">
+                                    </div>
+                                    <div>
+                                        <div class="author-name">Mahesh Jadhavar</div>
+                                        <div class="author-role">Ariv Education</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="testimonial-card">
+                                <p class="testimonial-text">
+                                    After implementing Classpro for just 10 days in trial we were able to take 40+ new admissions and 
+                    generate a revenue of 15+ lacs during lockdown period. Classpro provided us with an integrated tool 
+                    on top of Zoom which helped in ensuring reliability.
+                                </p>
+                                <div class="author-box">
+                                    <div class="author-img">
+                                        <img src="assets/image/tests/right.png" alt="" aria-hidden="true" loading="lazy">
+                                    </div>
+                                    <div>
+                                        <div class="author-name">Mahesh Jadhavar</div>
+                                        <div class="author-role">Ariv Education</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="testimonial-card">
+                                <p class="testimonial-text">
+                                    After implementing Classpro for just 10 days in trial we were able to take 40+ new admissions and 
+                    generate a revenue of 15+ lacs during lockdown period. Classpro provided us with an integrated tool 
+                    on top of Zoom which helped in ensuring reliability.
+                                </p>
+                                <div class="author-box">
+                                    <div class="author-img">
+                                        <img src="assets/image/tests/right.png" alt="" aria-hidden="true" loading="lazy">
+                                    </div>
+                                    <div>
+                                        <div class="author-name">Mahesh Jadhavar</div>
+                                        <div class="author-role">Ariv Education</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
                     <div class="text-center mt-5">
-                        <button class="see-more-btn">See More</button>
+                        <button class="see-more-btn" aria-label="Load more testimonials">See More</button>
                     </div>
                 </div>
             </div>
         </main>
-        <section class="india-hero pt-5">
+        <section class="india-hero pt-5" aria-label="Call to Action">
             <div class="container py-lg-5 py-sm-3">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
@@ -438,22 +445,20 @@
                         </h1>
                     </div>
                     <div class="col-lg-6 text-lg-end new-try">
-                        <a href="#" class="btn demo-btn px-4 py-3">Get Your Free Demo</a>
+                        <a href="#" class="btn demo-btn px-4 py-3" role="button">Get Your Free Demo</a>
                     </div>
                 </div>
             </div>
         </section>
-        <footer class="footer-section text-white py-5">
+        <footer class="footer-section text-white py-5" role="contentinfo">
             <div class="container">
                 <div class="row gy-4">
-                    <!-- CONTACT -->
                     <div class="col-6 col-md-3 ">
                         <h6 class="mb-4" style="opacity: 0.4;font-weight: 400;">CONTACT</h6>
                         <p>+91-76666 62330</p>
                         <p>Support Helpdesk</p>
                         <p>Contact Us</p>
                     </div>
-                    <!-- ABOUT US -->
                     <div class="col-6 col-md-3">
                         <h6 class="mb-4" style="opacity: 0.4;font-weight: 400;">ABOUT US</h6>
                         <p>Blog</p>
@@ -463,11 +468,10 @@
                         <p>Privacy</p>
                         <p>Terms of Service</p>
                         <p>How to Pay</p>
-                        <button class="btn btn-sm button-footer mt-2 py-2 px-4">
+                        <button class="btn btn-sm button-footer mt-2 py-2 px-4" aria-label="Make Payment">
                             Make Payment
                         </button>
                     </div>
-                    <!-- PRODUCT -->
                     <div class="col-6 col-md-3">
                         <h6 class="mb-4" style="opacity: 0.4;font-weight: 400;">PRODUCT</h6>
                         <p>Tour</p>
@@ -478,21 +482,20 @@
                         <p>Examjoy</p>
                         <p>Download TeamViewer</p>
                     </div>
-                    <!-- ADMIN APP + RESOURCES -->
                     <div class="col-6 col-md-3">
                         <h6 class="mb-4" style="opacity: 0.4;font-weight: 400;">ADMIN APP</h6>
                         <img
                             src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
                             class="img-fluid mb-2"
                             width="130"
-                            alt="image"
+                            alt="Get it on Google Play"
                             loading="lazy"
                         ><br>
                         <img
                             src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
                             class="img-fluid mb-4"
                             width="130"
-                            alt="image"
+                            alt="Download on the App Store"
                             loading="lazy"
                         > 
                         <h6 class="mb-4" style="opacity: 0.4;font-weight: 400;">RESOURCES</h6>

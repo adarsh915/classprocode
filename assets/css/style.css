@@ -552,6 +552,8 @@ nav a {
   margin-top: 30px;
   border: none;
   color: #fff;
+  font-size: 20px;
+  font-weight: 500px;
 }
 /* Button */
 
@@ -894,8 +896,9 @@ nav a {
 
 .trusted-label {
   margin-top: -8px;
-  font-size: 30px;
+  font-size: 27px;
   opacity: 0.9;
+  font-weight: 600;
 }
 
 /* Text styling */
@@ -1033,10 +1036,10 @@ nav a {
   color: #000;
 
   font-family: Montserrat;
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 600;
-  line-height: 163.4%; /* 32.68px */
+  line-height: 50%; 
   text-transform: capitalize;
 }
 .heading-text {
@@ -1233,11 +1236,16 @@ footer {
   display: flex;
   justify-content: center;
 }
+
+
 .career-image-box img {
-  width: 85%;
+ 
   border-radius: 12px;
   box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
-  transform: rotate(4deg);
+ 
+  width: 397.497px;
+height: 405.922px;
+transform: rotate(4.132deg);
 }
 
 /* JOB CARD */
@@ -1282,7 +1290,7 @@ footer {
 }
 
 .job-desc {
-  color: #000;
+  color: #656565;
   font-family: var(--font-primary);
   font-size: 20px;
   font-style: normal;
@@ -1316,7 +1324,7 @@ footer {
   font-family: var(--font-primary);
   background: #f6f6f7;
   border-radius: 16px;
-  padding: 25px;
+  padding: 9px;
   transition: 0.3s;
   height: 100%;
   display: flex;
@@ -1407,7 +1415,7 @@ footer {
   }
 }
 
-/* Job Detail Section */
+
 .job-detail-section {
   background: #ffffff;
   font-family: var(--font-primary);
@@ -1418,14 +1426,19 @@ footer {
   font-size: 14px;
 }
 
-/* Block Title */
 .job-block-title {
   color: #101828;
   font-family: var(--font-primary);
   font-size: 26px;
   font-style: normal;
   font-weight: 500;
-  line-height: 134%; /* 34.84px */
+  line-height: 134%; 
+  margin-top: 40px;
+}
+.sat-hr {
+      margin-top: 52px;
+    margin-bottom: 26px;
+
 }
 
 /* List */
@@ -1641,6 +1654,9 @@ footer {
 .team-card {
   padding: 20px;
 }
+.color-img {
+  background-color: #22B05B;;
+}
 
 .team-photo {
   width: 100%;
@@ -1846,17 +1862,24 @@ footer {
 }
 
 .see-more-btn {
-  background: #1e9c6b;
+  background: #22B05B;
   color: white;
   padding: 12px 35px;
-  font-size: 16px;
+  font-size: 24px;
+  font-weight: 500;
   border-radius: 30px;
   border: none;
   transition: 0.3s;
 }
+.custom-spacing {
+    margin-right: calc(-2.5 * var(--bs-gutter-x)) !important;
+    margin-left: calc(-3.5 * var(--bs-gutter-x)) !important;
+}
+
 
 .see-more-btn:hover {
-  background: #16895d;
+   background: linear-gradient(87deg, #22b05b 29.12%, #75d69c 106.65%);
+  color: white;
 }
 .tesimonials_page {
   font-family: var(--font-primary);
@@ -1885,7 +1908,8 @@ footer {
   border-bottom: 1px solid black;
   border-radius: 0;
   padding: 5px 0px;
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: 400px;
 }
 
 .custom-input:focus {
@@ -1899,7 +1923,8 @@ footer {
   padding: 12px 0;
   border-radius: 30px;
   color: #fff;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 20px;
   cursor: pointer;
 }
 
@@ -2474,7 +2499,10 @@ footer {
   margin-top: 60px;
   padding-bottom: 48px;
 }
+.mission-sat {
+      margin-top: -56px;
 
+}
 .circle {
   width: 380px;
   height: 380px;
@@ -2529,20 +2557,28 @@ footer {
 
 /* jkbjkb */
 
-/* Section background */
+    
+    /* Section background */
 .values-section {
-  background: #eaf3fc;
+    background: #eaf3fc;
+}
+
+/* Title */
+.value-title {
+    color: #1ca44b;
+    font-weight: 700;
+    font-size: 32px;
 }
 
 /* Icons */
 .value-icon {
-  font-size: 32px;
-  color: #0b1673;
+    font-size: 32px;
+    color: #0b1673;
 }
 
 /* Text beside icon */
 .value-text {
-  color: #2b2388;
+     color: #2b2388;
   font-family: var(--font-primary);
   font-size: 24px;
   font-style: normal;
@@ -2553,28 +2589,29 @@ footer {
   width: 67.492px;
   height: 63.275px;
 }
+
 /* Image Frame Styling */
 .img-frame {
-  display: inline-block;
-  padding: 10px;
-  transform: rotate(4deg);
+    display: inline-block;
+    padding: 10px;
+    transform: rotate(4deg);
 }
 
 .values-img {
-  border-radius: 4px;
+    border-radius: 4px;
 }
 
 /* Responsive Tweaks */
 @media (max-width: 768px) {
-  .value-title {
-    text-align: center;
-  }
-  .value-icon {
-    font-size: 28px;
-  }
-  .img-frame {
-    transform: rotate(0deg);
-  }
+    .value-title {
+        text-align: center;
+    }
+    .value-icon {
+        font-size: 28px;
+    }
+    .img-frame {
+        transform: rotate(0deg);
+    }
 }
 
 /*  */

@@ -4,14 +4,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Class-Pro</title>
-        <!-- Bootstrap 5 -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-        <!-- swiper slider link -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-        <!-- Custom CSS -->
         <link rel="stylesheet" href="assets/css/style.css">
         <style>
- 
    :root{
     --koni-gap:1px;
     --koni-visible:5; /* default desktop */
@@ -20,110 +16,109 @@
         </style>
     </head>
     <body>
-        <!-- 🔹 NAVBAR -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3" aria-label="Main Navigation">
             <div class="container">
-                <a class="navbar-brand fs-3 main-logo" href="index.html">
-                    <img src="assets/image/home/Classpro full website/header/classpro-logo 2 copy.svg" alt="image" loading="lazy">
+                <a class="navbar-brand fs-3 main-logo" href="index.html" aria-label="Classpro Home">
+                    <img src="assets/image/home/Classpro full website/header/classpro-logo 2 copy.svg" alt="Classpro Logo" loading="lazy">
                 </a>
                 <button
                     class="navbar-toggler"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
                 >
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
-                        <!-- FEATURES -->
                         <li class="nav-item dropdown mx-2 position-relative">
-                            <a class="nav-link fw-semibold d-flex align-items-center" href="#" data-bs-toggle="dropdown">
+                            <a class="nav-link fw-semibold d-flex align-items-center" href="#" id="featuresDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <span class="me-1">Features</span>
                                 <img
                                     src="assets/image/home/Desktop - Classpro Landing Page/header/Vector 58.svg"
                                     width="12"
                                     height="7"
                                     class="mt-1"
-                                    alt="image"
+                                    alt=""
+                                    aria-hidden="true"
                                     loading="lazy"
                                 >
                             </a>
-                            <div class="dropdown-menu mega-dropdown shadow-lg p-4" style="top: 89%;">
+                            <div class="dropdown-menu mega-dropdown shadow-lg p-4" aria-labelledby="featuresDropdown" style="top: 89%;">
                                 <div class="row g-4">
                                     <div class="col-md-4">
                                         <a href="fee-management.html" class="feature-item">Transparent Fee Management</a>
-                                        <div class="divider"></div>
+                                        <div class="divider" role="presentation"></div>
                                         <a href="study-material.html" class="feature-item">Share Notes / Study Materials</a>
-                                        <div class="divider"></div>
+                                        <div class="divider" role="presentation"></div>
                                         <a href="assignments.html" class="feature-item">Homework & Assignments</a>
                                     </div>
                                     <div class="col-md-4">
                                         <a href="biometric-attendance.html" class="feature-item">Biometric Attendance</a>
-                                        <div class="divider"></div>
+                                        <div class="divider" role="presentation"></div>
                                         <a href="student-performance.html" class="feature-item">Student Performance</a>
-                                        <div class="divider"></div>
+                                        <div class="divider" role="presentation"></div>
                                         <a href="reports.html" class="feature-item">Insightful Reports</a>
                                     </div>
                                     <div class="col-md-4">
                                         <a href="app.html" class="feature-item">Student / Parent App</a>
-                                        <div class="divider"></div>
+                                        <div class="divider" role="presentation"></div>
                                         <a href="communication.html" class="feature-item">Communication & Reminders</a>
                                     </div>
                                 </div>
                             </div>
                         </li>
-                        <!-- COMPANY -->
                         <li class="nav-item dropdown mx-2">
-                            <a class="nav-link fw-semibold d-flex align-items-center gap-1" href="#" data-bs-toggle="dropdown">
+                            <a class="nav-link fw-semibold d-flex align-items-center gap-1" href="#" id="companyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Company
                                 <img
                                     src="assets/image/home/Desktop - Classpro Landing Page/header/Vector 58.svg"
                                     width="12"
                                     height="7"
                                     class="mt-1"
-                                    alt="image"
+                                    alt=""
+                                    aria-hidden="true"
                                     loading="lazy"
                                 >
                             </a>
-                            <div class="dropdown-menu small-dropdown shadow-lg p-4 mt-3">
+                            <div class="dropdown-menu small-dropdown shadow-lg p-4 mt-3" aria-labelledby="companyDropdown">
                                 <a href="careers.html" class="feature-item">Career</a>
-                                <div class="divider"></div>
+                                <div class="divider" role="presentation"></div>
                                 <a href="team.html" class="feature-item">Team</a>
-                                <div class="divider"></div>
+                                <div class="divider" role="presentation"></div>
                                 <a href="our-story.html" class="feature-item">About</a>
                             </div>
                         </li>
-                        <!-- PRICING -->
                         <li class="nav-item mx-2">
                             <a class="nav-link fw-semibold" href="plans.html">Pricing</a>
                         </li>
-                        <!-- RESOURCES -->
                         <li class="nav-item dropdown mx-2">
-                            <a class="nav-link fw-semibold d-flex align-items-center gap-1" href="#" data-bs-toggle="dropdown">
+                            <a class="nav-link fw-semibold d-flex align-items-center gap-1" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Resources
                                 <img
                                     src="assets/image/home/Desktop - Classpro Landing Page/header/Vector 58.svg"
                                     width="12"
                                     height="7"
                                     class="mt-1"
-                                    alt="image"
+                                    alt=""
+                                    aria-hidden="true"
                                     loading="lazy"
                                 >
                             </a>
-                            <div class="dropdown-menu small-dropdown shadow-lg p-4 mt-3">
+                            <div class="dropdown-menu small-dropdown shadow-lg p-4 mt-3" aria-labelledby="resourcesDropdown">
                                 <a href="#" class="feature-item">Blogs</a>
-                                <div class="divider"></div>
+                                <div class="divider" role="presentation"></div>
                                 <a href="customers.html" class="feature-item">Customers</a>
                             </div>
                         </li>
-                        <!-- CONTACT -->
                         <li class="nav-item mx-2">
                             <a class="nav-link fw-semibold" href="contact-us.html">Contact Us</a>
                         </li>
-                        <!-- LOGIN -->
                         <li class="nav-item ms-2 ms-lg-3">
-                            <a href="login.html" class="btn btn-outline-success px-4 fornw-bg rounded-pill">
+                            <a href="login.html" class="btn btn-outline-success px-4 fornw-bg rounded-pill" role="button">
                                 Log In
                             </a>
                         </li>
@@ -131,175 +126,195 @@
                 </div>
             </div>
         </nav>
-        <div class="container py-5">
-            <!-- Our Story Row -->
-            <div class="row align-items-center">
-                <!-- Left Content -->
-                <div class="col-md-6">
-                    <h2 class="story-title">Our Story</h2>
-                    <p class="info-text">
-                        The fundamental ideology driving Classpro is to empower coaching classes by streamlining their 
-                administrative processes through a user-friendly software setup that can be completed in just 
-                10 minutes. We firmly believe that the key to effective management lies in adapting and learning 
-                at the same pace as the rapidly evolving world around us. With this conviction, we strive to equip 
-                coaching institutes with the tools and resources needed to stay ahead in an ever-changing landscape.
-                    </p>
-                </div>
-                <!-- Right Images -->
-                <div class="col-md-6 d-flex justify-content-center">
-                    <div>
-                        <img src="assets/image/about-us/im1.png" class="story-img" alt="story-img">
-                        <img src="assets/image/about-us/im2.png" class="story-img story-img2" alt="story-img">
+
+        <main role="main">
+            <div class="container py-5">
+                <section class="row align-items-center" aria-labelledby="story-heading">
+                    <div class="col-md-6">
+                        <h2 class="story-title" id="story-heading">Our Story</h2>
+                        <p class="info-text">
+                            The fundamental ideology driving Classpro is to empower coaching classes by streamlining their 
+                            administrative processes through a user-friendly software setup that can be completed in just 
+                            10 minutes. We firmly believe that the key to effective management lies in adapting and learning 
+                            at the same pace as the rapidly evolving world around us. With this conviction, we strive to equip 
+                            coaching institutes with the tools and resources needed to stay ahead in an ever-changing landscape.
+                        </p>
                     </div>
-                </div>
-            </div>
-            <!-- Stats Section -->
-            <div class="stats-box row text-center">
-                <div class="col-md-3 stats-item">
-                    <div class="d-flex justify-content-start justify-content-lg-center align-items-baseline gap-3 mb-2">
-                        <img class="imge-new" src="assets/image/about-us/state1.png" alt="">
-                        <div class="d-flex flex-column align-items-baseline">
-                            <div class="stats-title">2000+</div>
-                            <div class="stats-subtitle">Partners</div>
+                    <div class="col-md-6 d-flex justify-content-center">
+                        <div>
+                            <img src="assets/image/about-us/im1.png" class="story-img" alt="Office working environment">
+                            <img src="assets/image/about-us/im2.png" class="story-img story-img2" alt="Team collaborating">
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3 stats-item">
-                    <div class="d-flex justify-content-start justify-content-lg-center gap-3 mb-2">
-                        <img class="imge-new" src="assets/image/about-us/state2.png" alt="">
-                        <div class="d-flex flex-column align-items-baseline">
-                            <div class="stats-title">37 cities</div>
-                            <div class="stats-subtitle">in Asia</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 stats-item">
-                    <div class="d-flex justify-content-start justify-content-lg-center align-items-baseline gap-3 mb-2">
-                        <img class="imge-new" src="assets/image/about-us/state3.png" alt="">
-                        <div class="d-flex flex-column align-items-baseline">
-                            <div class="stats-title">2011</div>
-                            <div class="stats-subtitle">Establishment</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 stats-item">
-                    <div class="d-flex justify-content-start justify-content-lg-center align-items-baseline gap-3 mb-2">
-                        <img class="imge-new" src="assets/image/about-us/state1.png" alt="">
-                        <div class="d-flex flex-column align-items-baseline">
-                            <div class="stats-title">2011</div>
-                            <div class="stats-subtitle">Establishment</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <section class="vm-section py-5">
-                <div class="container d-flex justify-content-center align-items-center">
-                    <div class="vm-wrapper">
-                        <!-- Vision Circle -->
-                        <div class="vm-circle vm-left text-center">
-                            <div class="d-flex align-items-center">
-                                <img src="assets/image/about-us/gg1.png" class="vm-icon">
-                                <h3 class="vm-title px-2">Vision</h3>
+                </section>
+
+                <section class="stats-box row text-center" aria-label="Company Statistics">
+                    <div class="col-md-3 stats-item">
+                        <div class="d-flex justify-content-start justify-content-lg-center align-items-baseline gap-3 mb-2">
+                            <img class="imge-new" src="assets/image/about-us/state1.png" alt="" aria-hidden="true">
+                            <div class="d-flex flex-column align-items-baseline">
+                                <div class="stats-title">2000+</div>
+                                <div class="stats-subtitle">Partners</div>
                             </div>
-                            <p class="vm-text">
-                                To revolutionize coaching management by providing innovative software solutions,
-                    enabling coaching institutes to thrive in an evolving educational landscape.
-                            </p>
                         </div>
-                        <!-- Mission Circle -->
-                        <div class="vm-circle vm-right text-center upside">
-                            <div class="d-flex align-items-center">
-                                <img src="assets/image/about-us/gg2.png" class="vm-icon">
-                                <h3 class="vm-title px-2">Mission</h3>
+                    </div>
+                    <div class="col-md-3 stats-item">
+                        <div class="d-flex justify-content-start justify-content-lg-center gap-3 mb-2">
+                            <img class="imge-new" src="assets/image/about-us/state2.png" alt="" aria-hidden="true">
+                            <div class="d-flex flex-column align-items-baseline">
+                                <div class="stats-title">37 cities</div>
+                                <div class="stats-subtitle">in Asia</div>
                             </div>
-                            <p class="vm-text">
-                                Empower coaching institutes across India and Asia with intuitive, efficient,
-                    and user-friendly management software.
-                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 stats-item">
+                        <div class="d-flex justify-content-start justify-content-lg-center align-items-baseline gap-3 mb-2">
+                            <img class="imge-new" src="assets/image/about-us/state3.png" alt="" aria-hidden="true">
+                            <div class="d-flex flex-column align-items-baseline">
+                                <div class="stats-title">2011</div>
+                                <div class="stats-subtitle">Establishment</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 stats-item">
+                        <div class="d-flex justify-content-start justify-content-lg-center align-items-baseline gap-3 mb-2">
+                            <img class="imge-new" src="assets/image/about-us/state1.png" alt="" aria-hidden="true">
+                            <div class="d-flex flex-column align-items-baseline">
+                                <div class="stats-title">2011</div>
+                                <div class="stats-subtitle">Establishment</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="vm-section py-5" aria-labelledby="vision-mission-heading">
+                    <h2 id="vision-mission-heading" class="visually-hidden">Vision and Mission</h2>
+                    <div class="container d-flex justify-content-center align-items-center">
+                        <div class="vm-wrapper">
+                            <div class="vm-circle vm-left text-center">
+                                <div class=" align-items-center">
+                                    <img src="assets/image/about-us/gg1.png" class="vm-icon" alt="" aria-hidden="true">
+                                    <h3 class="vm-title px-2">Vision</h3>
+                                </div>
+                                <p class="vm-text">
+                                    To revolutionize coaching management by providing innovative software solutions,
+                                    enabling coaching institutes to thrive in an evolving educational landscape.
+                                </p>
+                            </div>
+                            <div class="vm-circle vm-right text-center upside">
+                                <div class=" align-items-center mission-sat">
+                                    <img src="assets/image/about-us/gg2.png" class="vm-icon" alt="" aria-hidden="true">
+                                    <h3 class="vm-title px-2">Mission</h3>
+                                </div>
+                                <p class="vm-text">
+                                    Empower coaching institutes across India and Asia with intuitive, efficient,
+                                    and user-friendly management software.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <section class="values-section py-5" aria-labelledby="values-heading">
+                <div class="container-fluid">
+                    <div class="row align-items-center justify-content-end">
+                        <div class="col-lg-6">
+                            <h3 class="value-title mb-4" id="values-heading">Values</h3>
+                            <div class="row">
+                                <div class="col-md-6 mb-4 d-flex align-items-center">
+                                    <img src="assets/image/about-us/g1.png" alt="" aria-hidden="true">
+                                    <span class="ms-3 value-text">Customer-Centric</span>
+                                </div>
+                                <div class="col-md-6 mb-4 d-flex align-items-center">
+                                    <img src="assets/image/about-us/g2.png" alt="" aria-hidden="true">
+                                    <span class="ms-3 value-text">Innovation</span>
+                                </div>
+                                <div class="col-md-6 mb-4 d-flex align-items-center">
+                                    <img src="assets/image/about-us/g3.png" alt="" aria-hidden="true">
+                                    <span class="ms-3 value-text">Community Impact</span>
+                                </div>
+                                <div class="col-md-6 mb-4 d-flex align-items-center">
+                                    <img src="assets/image/about-us/g4.png" alt="" aria-hidden="true">
+                                    <span class="ms-3 value-text">Integrity</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 text-center mt-4 mt-lg-0">
+                            <div class="img-frame">
+                                <img src="assets/image/about-us/im2.png" class="img-fluid values-img" alt="Team members displaying company values">
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- Vision & Mission -->
-            <!-- <div class="row justify-content-center circle-container">
-                    <div class="col-md-5 d-flex justify-content-center">
-                        <div class="circle circle-left">
-                            <img src="assets/image/about-us/gg1.png" alt="">
-                            <h3 class="circle-title vision-title">Vision</h3>
-                            <p class="info-text">
-                                To revolutionize coaching management by providing innovative software solutions, enabling 
-                    coaching institutes to thrive in an evolving educational landscape.
-                            </p>
+
+            <div class="con" role="region" aria-label="Awards and Recognition Carousel">
+                <div class="koni-carousel-wrap">
+                    <div class="koni-carousel-track" id="koniTrack" aria-live="polite">
+                        <div class="koni-carousel-item text-center">
+                            <img src="assets/image/about-us/18-international.png" alt="International Award">
+                            <p class="text-client">Client 1</p>
+                        </div>
+                        <div class="koni-carousel-item">
+                            <img src="assets/image/about-us/award-winning.png" alt="Award Winning Software">
+                            <p class="text-client">Client 1</p>
+                        </div>
+                        <div class="koni-carousel-item">
+                            <img src="assets/image/about-us/software-suggest.png" alt="Software Suggest Recognition">
+                            <p class="text-client">Client 1</p>
+                        </div>
+                        <div class="koni-carousel-item">
+                            <img src="assets/image/about-us/your-story.png" alt="YourStory Feature">
+                            <p class="text-client">Client 1</p>
+                        </div>
+                        <div class="koni-carousel-item">
+                            <img src="assets/image/about-us/software-suggest.png" alt="Software Suggest Recognition">
+                            <p class="text-client">Client 1</p>
+                        </div>
+                        <div class="koni-carousel-item">
+                            <img src="assets/image/about-us/s4.png" alt="Award Image">
+                            <p class="text-client">Client 1</p>
+                        </div>
+                        <div class="koni-carousel-item">
+                            <img src="assets/image/about-us/s4.png" alt="Award Image">
+                            <p class="text-client">Client 1</p>
                         </div>
                     </div>
-                    <div class="col-md-5 d-flex justify-content-center">
-                        <div class="circle circle-right">
-                            <img src="assets/image/about-us/gg2.png" alt="">
-                            <h3 class="circle-title vision-title">Mission</h3>
-                            <p class="info-text">
-                                Empower coaching institutes across India and Asia with intuitive, efficient, and 
-                    user-friendly management software.
-                            </p>
+                </div>
+                <div class="swiper-nav-wrapper koni-controls">
+                    <button class="nav-btn prev koni-btn" id="koniPrev" aria-label="Previous Slide"></button>
+                    <button class="nav-btn next koni-btn" id="koniNext" aria-label="Next Slide"></button>
+                </div>
+            </div>
+
+            <section class="india-hero pt-5" aria-label="Call to Action">
+                <div class="container py-lg-5 py-sm-3">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <h1 class="display-5">
+                                Made in India.
+                                <br>
+                                Made for the World.
+                            </h1>
+                        </div>
+                        <div class="col-lg-6 text-lg-end new-try">
+                            <a href="#" class="btn demo-btn px-4 py-3" role="button">Get Your Free Demo</a>
                         </div>
                     </div>
-                </div> -->
-        </div>
-        <!-- AWARDS SECTION -->
-        
-        <div class="con">
-        <div class="koni-carousel-wrap">
-            <div class="koni-carousel-track" id="koniTrack">
-                <div class="koni-carousel-item text-center">
-                    <img src="assets/image/about-us/18-international.png" alt="">
-                    <p class="text-client">Client 1</p>
                 </div>
-                <div class="koni-carousel-item">
-                    <img src="assets/image/about-us/award-winning.png" alt="">
-                    <p class="text-client">Client 1</p>
-                </div>
-                <div class="koni-carousel-item">
-                    <img src="assets/image/about-us/software-suggest.png" alt="">
-                    <p class="text-client">Client 1</p>
-                </div>
-                <div class="koni-carousel-item">
-                    <img src="assets/image/about-us/your-story.png" alt="">
-                    <p class="text-client">Client 1</p>
-                </div>
-                <div class="koni-carousel-item">
-                    <img src="assets/image/about-us/software-suggest.png" alt="">
-                    <p class="text-client">Client 1</p>
-                </div>
-                <div class="koni-carousel-item">
-                    <img src="assets/image/about-us/s4.png" alt="">
-                    <p class="text-client">Client 1</p>
-                </div>
-                <div class="koni-carousel-item">
-                    <img src="assets/image/about-us/s4.png" alt="">
-                    <p class="text-client">Client 1</p>
-                </div>
-            </div>
-        </div>
-        <!-- <div class="koni-controls">
-            <button class="koni-btn" id="koniPrev">Prev</button>
-            <button class="koni-btn" id="koniNext">Next</button>
-        </div> -->
-        <div class="swiper-nav-wrapper koni-controls">
-                <button class="nav-btn prev koni-btn" id="koniPrev"></button>
-                <button class="nav-btn next koni-btn" id="koniNext"></button>
-            </div>
-        </div>
-        <!-- FOOTER SECTION -->
-        <footer class="footer-section text-white py-5">
+            </section>
+        </main>
+
+        <footer class="footer-section text-white py-5" role="contentinfo">
             <div class="container">
                 <div class="row gy-4">
-                    <!-- CONTACT -->
                     <div class="col-6 col-md-3 ">
                         <h6 class="mb-4" style="opacity: 0.4;font-weight: 400;">CONTACT</h6>
                         <p>+91-76666 62330</p>
                         <p>Support Helpdesk</p>
                         <p>Contact Us</p>
                     </div>
-                    <!-- ABOUT US -->
                     <div class="col-6 col-md-3">
                         <h6 class="mb-4" style="opacity: 0.4;font-weight: 400;">ABOUT US</h6>
                         <p>Blog</p>
@@ -309,11 +324,10 @@
                         <p>Privacy</p>
                         <p>Terms of Service</p>
                         <p>How to Pay</p>
-                        <button class="btn btn-sm button-footer mt-2 py-2 px-4">
+                        <button class="btn btn-sm button-footer mt-2 py-2 px-4" aria-label="Make a Payment">
                             Make Payment
                         </button>
                     </div>
-                    <!-- PRODUCT -->
                     <div class="col-6 col-md-3">
                         <h6 class="mb-4" style="opacity: 0.4;font-weight: 400;">PRODUCT</h6>
                         <p>Tour</p>
@@ -324,21 +338,20 @@
                         <p>Examjoy</p>
                         <p>Download TeamViewer</p>
                     </div>
-                    <!-- ADMIN APP + RESOURCES -->
                     <div class="col-6 col-md-3">
                         <h6 class="mb-4" style="opacity: 0.4;font-weight: 400;">ADMIN APP</h6>
                         <img
                             src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
                             class="img-fluid mb-2"
                             width="130"
-                            alt="image"
+                            alt="Get it on Google Play"
                             loading="lazy"
                         ><br>
                         <img
                             src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
                             class="img-fluid mb-4"
                             width="130"
-                            alt="image"
+                            alt="Download on the App Store"
                             loading="lazy"
                         > 
                         <h6 class="mb-4" style="opacity: 0.4;font-weight: 400;">RESOURCES</h6>
@@ -348,11 +361,8 @@
                 </div>
             </div>
         </footer>
-        <!-- Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Swiper JS -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <!-- Swiper JS -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script>
 var swiper = new Swiper(".mySwiper", {
@@ -403,12 +413,14 @@ document.getElementById("customNext").onclick = () => swiper.slideNext();
       for(let i=originalItems.length-visible;i<originalItems.length;i++){
           const node = originalItems[i % originalItems.length].cloneNode(true);
           node.classList.add('koni-clone');
+          node.setAttribute('aria-hidden', 'true'); // Add accessibility to clones to prevent duplicates in screen reader
           clonesBefore.push(node);
           track.insertBefore(node, track.firstChild);
       }
       for(let i=0;i<visible;i++){
           const node = originalItems[i % originalItems.length].cloneNode(true);
           node.classList.add('koni-clone');
+          node.setAttribute('aria-hidden', 'true'); // Add accessibility to clones
           clonesAfter.push(node);
           track.appendChild(node);
       }

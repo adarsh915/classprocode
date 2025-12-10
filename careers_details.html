@@ -4,119 +4,114 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Class-Pro</title>
-        <!-- Bootstrap 5 -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-        <!-- swiper slider link -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-        <!-- Custom CSS -->
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
-        <!-- NAVBAR -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3" aria-label="Main Navigation">
             <div class="container">
-                <a class="navbar-brand fs-3 main-logo" href="index.html">
-                    <img src="assets/image/home/Classpro full website/header/classpro-logo 2 copy.svg" alt="image" loading="lazy">
+                <a class="navbar-brand fs-3 main-logo" href="index.html" aria-label="Classpro Home">
+                    <img src="assets/image/home/Classpro full website/header/classpro-logo 2 copy.svg" alt="Classpro Logo" loading="lazy">
                 </a>
                 <button
                     class="navbar-toggler"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
                 >
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
-                        <!-- FEATURES -->
                         <li class="nav-item dropdown mx-2 position-relative">
-                            <a class="nav-link fw-semibold d-flex align-items-center" href="#" data-bs-toggle="dropdown">
+                            <a class="nav-link fw-semibold d-flex align-items-center" href="#" id="featuresDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <span class="me-1">Features</span>
                                 <img
                                     src="assets/image/home/Desktop - Classpro Landing Page/header/Vector 58.svg"
                                     width="12"
                                     height="7"
                                     class="mt-1"
-                                    alt="image"
+                                    alt=""
+                                    aria-hidden="true"
                                     loading="lazy"
                                 >
                             </a>
-                            <div class="dropdown-menu mega-dropdown shadow-lg p-4" style="top: 89%;">
+                            <div class="dropdown-menu mega-dropdown shadow-lg p-4" aria-labelledby="featuresDropdown" style="top: 89%;">
                                 <div class="row g-4">
                                     <div class="col-md-4">
                                         <a href="fee-management.html" class="feature-item">Transparent Fee Management</a>
-                                        <div class="divider"></div>
+                                        <div class="divider" role="presentation"></div>
                                         <a href="study-material.html" class="feature-item">Share Notes / Study Materials</a>
-                                        <div class="divider"></div>
+                                        <div class="divider" role="presentation"></div>
                                         <a href="assignments.html" class="feature-item">Homework & Assignments</a>
                                     </div>
                                     <div class="col-md-4">
                                         <a href="biometric-attendance.html" class="feature-item">Biometric Attendance</a>
-                                        <div class="divider"></div>
+                                        <div class="divider" role="presentation"></div>
                                         <a href="student-performance.html" class="feature-item">Student Performance</a>
-                                        <div class="divider"></div>
+                                        <div class="divider" role="presentation"></div>
                                         <a href="reports.html" class="feature-item">Insightful Reports</a>
                                     </div>
                                     <div class="col-md-4">
                                         <a href="app.html" class="feature-item">Student / Parent App</a>
-                                        <div class="divider"></div>
+                                        <div class="divider" role="presentation"></div>
                                         <a href="communication.html" class="feature-item">Communication & Reminders</a>
                                     </div>
                                 </div>
                             </div>
-                            
                         </li>
-                        <!-- COMPANY -->
                         <li class="nav-item dropdown mx-2">
-                            <a class="nav-link fw-semibold d-flex align-items-center gap-1" href="#" data-bs-toggle="dropdown">
+                            <a class="nav-link fw-semibold d-flex align-items-center gap-1" href="#" id="companyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Company
                                 <img
                                     src="assets/image/home/Desktop - Classpro Landing Page/header/Vector 58.svg"
                                     width="12"
                                     height="7"
                                     class="mt-1"
-                                    alt="image"
+                                    alt=""
+                                    aria-hidden="true"
                                     loading="lazy"
                                 >
                             </a>
-                            <div class="dropdown-menu small-dropdown shadow-lg p-4 mt-3">
+                            <div class="dropdown-menu small-dropdown shadow-lg p-4 mt-3" aria-labelledby="companyDropdown">
                                 <a href="careers.html" class="feature-item">Career</a>
-                                <div class="divider"></div>
+                                <div class="divider" role="presentation"></div>
                                 <a href="team.html" class="feature-item">Team</a>
-                                <div class="divider"></div>
+                                <div class="divider" role="presentation"></div>
                                 <a href="our-story.html" class="feature-item">About</a>
                             </div>
                         </li>
-                        <!-- PRICING -->
                         <li class="nav-item mx-2">
                             <a class="nav-link fw-semibold" href="plans.html">Pricing</a>
                         </li>
-                        <!-- RESOURCES -->
                         <li class="nav-item dropdown mx-2">
-                            <a class="nav-link fw-semibold d-flex align-items-center gap-1" href="#" data-bs-toggle="dropdown">
+                            <a class="nav-link fw-semibold d-flex align-items-center gap-1" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Resources
                                 <img
                                     src="assets/image/home/Desktop - Classpro Landing Page/header/Vector 58.svg"
                                     width="12"
                                     height="7"
                                     class="mt-1"
-                                    alt="image"
+                                    alt=""
+                                    aria-hidden="true"
                                     loading="lazy"
                                 >
                             </a>
-                            <div class="dropdown-menu small-dropdown shadow-lg p-4 mt-3">
+                            <div class="dropdown-menu small-dropdown shadow-lg p-4 mt-3" aria-labelledby="resourcesDropdown">
                                 <a href="#" class="feature-item">Blogs</a>
-                                <div class="divider"></div>
+                                <div class="divider" role="presentation"></div>
                                 <a href="customers.html" class="feature-item">Customers</a>
                             </div>
                         </li>
-                        <!-- CONTACT -->
                         <li class="nav-item mx-2">
                             <a class="nav-link fw-semibold" href="contact-us.html">Contact Us</a>
                         </li>
-                        <!-- LOGIN -->
                         <li class="nav-item ms-2 ms-lg-3">
-                            <a href="login.html" class="btn btn-outline-success px-4 fornw-bg rounded-pill">
+                            <a href="login.html" class="btn btn-outline-success px-4 fornw-bg rounded-pill" role="button">
                                 Log In
                             </a>
                         </li>
@@ -124,38 +119,32 @@
                 </div>
             </div>
         </nav>
-        <!-- nav bar end -->
-        <!-- main start -->
-        <main>
-            <!-- HERO SECTION -->
-            <section class="job-detail-section py-5">
+        <main role="main">
+            <section class="job-detail-section py-5" aria-labelledby="job-title-heading">
                 <div class="container">
                     <div class="row">
-                        <!-- JOB HEADER -->
                         <div class="col-lg-6">
-                            <h2 class="job-title">Engineering</h2>
+                            <h2 class="job-title" id="job-title-heading">Engineering</h2>
                             <div class="job-meta d-flex align-items-center flex-wrap gap-3 mt-2">
                                 <span class="job-meta-item">
-                                    <img src="assets/image/careers/location.svg" alt="image" loading="lazy">
+                                    <img src="assets/image/careers/location.svg" alt="" aria-hidden="true" loading="lazy">
                                     Mumbai
                                 </span>
                                 <span class="job-meta-item">
-                                    <img src="assets/image/careers/calender.svg" alt="image" loading="lazy">
+                                    <img src="assets/image/careers/calender.svg" alt="" aria-hidden="true" loading="lazy">
                                     26 Nov 2021
                                 </span>
                             </div>
                         </div>
                         <div class="col-lg-6">
-                            <!-- TAGS -->
-                            <div class="job-tags mt-3 d-flex flex-wrap gap-2">
+                            <div class="job-tags mt-3 d-flex flex-wrap gap-2" aria-label="Job Tags">
                                 <span class="job-badge">JavaScript</span>
                                 <span class="job-badge">React Native</span>
                                 <span class="job-badge">Redux Developer</span>
                             </div>
                         </div>
                     </div>
-                    <hr>
-                    <!-- SECTION 1 -->
+                    <hr class="sat-hr" aria-hidden="true">
                     <div class="job-block mb-5">
                         <h5 class="job-block-title">What we do?</h5>
                         <p class="job-desc">
@@ -168,8 +157,7 @@
                             Interested to know more about how we use technology? See our engineering blog.
                         </p>
                     </div>
-                    <hr>
-                    <!-- SECTION 2 -->
+                    <hr aria-hidden="true">
                     <div class="job-block mb-5">
                         <h5 class="job-block-title">What are we looking for ?</h5>
                         <p class="job-desc">
@@ -182,8 +170,7 @@
                 using the latest technology. At Classpro we are using React & Javascript to build our next-generation platform.
                         </p>
                     </div>
-                    <hr>
-                    <!-- SECTION 3 -->
+                    <hr aria-hidden="true">
                     <div class="job-block mb-5">
                         <h5 class="job-block-title">Roles and Responsibilities:</h5>
                         <ul class="job-list">
@@ -196,16 +183,14 @@
                             <li>Collaborate with Designers, Product Managers & Backend Engineers.</li>
                         </ul>
                     </div>
-                    <hr>
-                    <!-- SECTION 4 -->
+                    <hr aria-hidden="true">
                     <div class="job-block mb-5">
                         <h5 class="job-block-title">Skills & Requirements:</h5>
                         <ul class="job-list">
                             <li>Expert knowledge of React, React Native, Redux, Javascript, HTML, CSS & related packages.</li>
                         </ul>
                     </div>
-                    <hr>
-                    <!-- SECTION 5 -->
+                    <hr aria-hidden="true">
                     <div class="job-block mb-5">
                         <h5 class="job-block-title">Job perks:</h5>
                         <ul class="job-list">
@@ -216,16 +201,13 @@
                             <li>3 - 8 LPA (may vary)</li>
                         </ul>
                     </div>
-                    <!-- APPLY BUTTON -->
                     <div>
-                        <a href="#" class="job-apply-btn">Apply Now</a>
+                        <a href="#" class="job-apply-btn" role="button">Apply Now</a>
                     </div>
                 </div>
             </section>
         </main>
-        <!-- main end -->
-        <!-- footer -->
-        <section class="india-hero pt-5">
+        <section class="india-hero pt-5" aria-label="Call to Action">
             <div class="container py-lg-5 py-sm-3">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
@@ -236,23 +218,20 @@
                         </h1>
                     </div>
                     <div class="col-lg-6 text-lg-end new-try">
-                        <a href="#" class="btn demo-btn px-4 py-3">Get Your Free Demo</a>
+                        <a href="#" class="btn demo-btn px-4 py-3" role="button">Get Your Free Demo</a>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- FOOTER SECTION -->
-        <footer class="footer-section text-white py-5">
+        <footer class="footer-section text-white py-5" role="contentinfo">
             <div class="container">
                 <div class="row gy-4">
-                    <!-- CONTACT -->
                     <div class="col-6 col-md-3 ">
                         <h6 class="mb-4" style="opacity: 0.4;font-weight: 400;">CONTACT</h6>
                         <p>+91-76666 62330</p>
                         <p>Support Helpdesk</p>
                         <p>Contact Us</p>
                     </div>
-                    <!-- ABOUT US -->
                     <div class="col-6 col-md-3">
                         <h6 class="mb-4" style="opacity: 0.4;font-weight: 400;">ABOUT US</h6>
                         <p>Blog</p>
@@ -262,11 +241,10 @@
                         <p>Privacy</p>
                         <p>Terms of Service</p>
                         <p>How to Pay</p>
-                        <button class="btn btn-sm button-footer mt-2 py-2 px-4">
+                        <button class="btn btn-sm button-footer mt-2 py-2 px-4" aria-label="Make Payment">
                             Make Payment
                         </button>
                     </div>
-                    <!-- PRODUCT -->
                     <div class="col-6 col-md-3">
                         <h6 class="mb-4" style="opacity: 0.4;font-weight: 400;">PRODUCT</h6>
                         <p>Tour</p>
@@ -277,21 +255,20 @@
                         <p>Examjoy</p>
                         <p>Download TeamViewer</p>
                     </div>
-                    <!-- ADMIN APP + RESOURCES -->
                     <div class="col-6 col-md-3">
                         <h6 class="mb-4" style="opacity: 0.4;font-weight: 400;">ADMIN APP</h6>
                         <img
                             src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
                             class="img-fluid mb-2"
                             width="130"
-                            alt="image"
+                            alt="Get it on Google Play"
                             loading="lazy"
                         ><br>
                         <img
                             src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
                             class="img-fluid mb-4"
                             width="130"
-                            alt="image"
+                            alt="Download on the App Store"
                             loading="lazy"
                         > 
                         <h6 class="mb-4" style="opacity: 0.4;font-weight: 400;">RESOURCES</h6>
@@ -302,7 +279,6 @@
             </div>
         </footer>
     </section>
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
