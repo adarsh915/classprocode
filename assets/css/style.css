@@ -332,7 +332,6 @@ nav a {
 
 /* Mobile scaling for logos */
 
-
 /* why do section  */
 .text-box-container {
   color: #1f2431;
@@ -423,7 +422,6 @@ nav a {
 }
 /* Mobile view: image below text */
 
-
 /* blue container */
 
 .men-image {
@@ -497,7 +495,6 @@ nav a {
     font-size: 30px;
   }
 }
-
 
 .banner-title {
   font-weight: 700;
@@ -575,8 +572,6 @@ nav a {
 .heading-main span.green {
   color: #00c36d;
 }
-
-
 
 .green {
   color: #00c36d;
@@ -736,7 +731,6 @@ nav a {
 }
 
 /* Mobile (≤ 576px) */
-
 
 /* trusted by */
 
@@ -1939,32 +1933,6 @@ footer {
   background-position: center;
 }
 
-/* RESPONSIVE */
-@media (max-width: 767px) {
-  .notes-section {
-    padding: 50px 0;
-  }
-
-  .notes-heading {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 35px;
-  }
-
-  .notes-feature-box {
-    margin-bottom: 30px;
-  }
-
-  .notes-right {
-    margin-top: 40px;
-  }
-
-  .notes-card {
-    padding-top: 0%; /* bigger for mobile */
-  }
-}
-
-/* WRAPPER */
 .faq-section {
   padding: 80px 0;
 }
@@ -2536,7 +2504,6 @@ footer {
 
 /* RESPONSIVE FIXES */
 
-
 .signup-box_p {
   background: #ffffff;
   font-family: var(--font-primary);
@@ -2617,7 +2584,6 @@ footer {
 }
 
 /* RESPONSIVE ADJUSTMENTS */
-
 
 .vm-section {
   height: 500px;
@@ -2901,10 +2867,10 @@ footer {
 
 /* 376px to 425px */
 @media (max-width: 767px) {
-     .start-text {
+  .start-text {
     font-size: 1.5rem;
   }
-  .app-heading-green{
+  .app-heading-green {
     font-size: 23px;
     line-height: 30px;
   }
@@ -2991,10 +2957,9 @@ footer {
   }
   .text-replace h5 {
     text-align: center;
-  
   }
 
-   .text-footer {
+  .text-footer {
     font-size: 23px;
     text-align: center;
   }
@@ -3017,7 +2982,7 @@ footer {
   .trusted-label {
     font-size: 17px;
   }
-    .login-box_p h2 {
+  .login-box_p h2 {
     font-size: 26px;
   }
 
@@ -3048,143 +3013,141 @@ footer {
     height: 46px;
     font-size: 16px;
   }
-  .contact-title{
+  .contact-title {
     font-size: 23px;
   }
   .wc-title {
     font-size: 23px;
-}
-.job-title{
-  font-size: 30px;
-}
-.job-badge{
-  font-size: 14px;
-}
-.wc-card-title{
-  font-size: 30px;
-}
-.job-btn{
-  font-size: 14px;
-  margin-top: 5px;
-}
-.team-title{
-  font-size: 32px;
-}
-.new-fonts{
-  font-size: 23px;
-}
-.story-title{
-  font-size: 25px;
-}
-.hero_text{
-  font-size: 17px;
-}
-.rounded-pill-2{
-  width: 213px;
-  height: 53px;
-  font-size: 18px;
-}
-.info-title{
-  font-size: 25px;
-}
-.info-desc{
-  font-size: 18px;
-} 
-.notes-heading{
-  font-size: 31px;
-}
-.notes-title{
-  font-size: 25px;
-}
-.faq-title {
-  font-size: 32px;
-  line-height: 40px;
-}
-.login-box {
-  max-width: 90%;
-}
-.signup-wrapper{
-max-width: 90%;
-    }
-  .section-title{
-    font-size: 23px;
-    line-height: 30px;
   }
-  .section-title{
-    font-size: 23px;
-    line-height: 30px;
+  .job-title {
+    font-size: 30px;
   }
-  .testimonial-text{
+  .job-badge {
+    font-size: 14px;
+  }
+  .wc-card-title {
+    font-size: 30px;
+  }
+  .job-btn {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  .team-title {
+    font-size: 32px;
+  }
+  .new-fonts {
+    font-size: 23px;
+  }
+  .story-title {
+    font-size: 25px;
+  }
+  .hero_text {
+    font-size: 17px;
+  }
+  .rounded-pill-2 {
+    width: 213px;
+    height: 53px;
     font-size: 18px;
   }
- 
-    
+  .info-title {
+    font-size: 25px;
+  }
+  .info-desc {
+    font-size: 18px;
+  }
+  .notes-heading {
+    font-size: 31px;
+  }
+  .notes-title {
+    font-size: 25px;
+  }
+  .faq-title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .login-box {
+    max-width: 90%;
+  }
+  .signup-wrapper {
+    max-width: 90%;
+  }
+  .section-title {
+    font-size: 23px;
+    line-height: 30px;
+  }
+  .section-title {
+    font-size: 23px;
+    line-height: 30px;
+  }
+  .testimonial-text {
+    font-size: 18px;
+  }
 }
 
 /* ritik css */
 /* Feature Section Responsive Styling */
 .feature-box {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: space-between !important;
-    gap: clamp(1rem, 3vw, 2rem) !important;
-    flex-direction: row !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: clamp(1rem, 3vw, 2rem) !important;
+  flex-direction: row !important;
 }
 
 /* Text Content */
 .feature-title {
-    font-size: clamp(1.2rem, 2.5vw, 1.8rem) !important;
-    font-weight: 700 !important;
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem) !important;
+  font-weight: 700 !important;
 }
 
 .feature-text {
-    font-size: clamp(0.9rem, 2vw, 1.3rem) !important;
-    line-height: 1.4 !important;
+  font-size: clamp(0.9rem, 2vw, 1.3rem) !important;
+  line-height: 1.4 !important;
 }
 
 /* Responsive Icon Box */
 .feature-icon {
-    width: clamp(3rem, 8vw, 6rem) !important;
-    height: clamp(3rem, 8vw, 6rem) !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
+  width: clamp(3rem, 8vw, 6rem) !important;
+  height: clamp(3rem, 8vw, 6rem) !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
 .feature-icon img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: contain !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
 }
 
 /* ---------- MOBILE RESPONSIVENESS ---------- */
 @media (max-width: 767px) {
-    .feature-box {
-        gap: clamp(1rem, 4vw, 1.5rem) !important;
-    }
+  .feature-box {
+    gap: clamp(1rem, 4vw, 1.5rem) !important;
+  }
 
-    .feature-title {
-        font-size: clamp(1.1rem, 4vw, 1.6rem) !important;
-    }
+  .feature-title {
+    font-size: clamp(1.1rem, 4vw, 1.6rem) !important;
+  }
 
-    .feature-text {
-        font-size: clamp(0.85rem, 3vw, 1.1rem) !important;
-    }
+  .feature-text {
+    font-size: clamp(0.85rem, 3vw, 1.1rem) !important;
+  }
 
-    .feature-icon {
-        width: clamp(4.8rem, 10vw, 4.5rem) !important;
-        height: clamp(4.8rem, 10vw, 4.5rem) !important;
-    }
+  .feature-icon {
+    width: clamp(4.8rem, 10vw, 4.5rem) !important;
+    height: clamp(4.8rem, 10vw, 4.5rem) !important;
+  }
 }
 
 /* ---------- TABLET RESPONSIVE ---------- */
 @media (min-width: 768px) and (max-width: 1024px) {
-    .feature-box {
-        gap: clamp(1.5rem, 3vw, 2rem) !important;
-    }
+  .feature-box {
+    gap: clamp(1.5rem, 3vw, 2rem) !important;
+  }
 
-    .feature-icon {
-        width: clamp(3.5rem, 7vw, 5rem) !important;
-        height: clamp(3.5rem, 7vw, 5rem) !important;
-    }
+  .feature-icon {
+    width: clamp(3.5rem, 7vw, 5rem) !important;
+    height: clamp(3.5rem, 7vw, 5rem) !important;
+  }
 }
